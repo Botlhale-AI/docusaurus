@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[8870],{3361:function(s){s.exports=JSON.parse('{"allTagsPath":"/docusaurus/blog/tags","slug":"/docusaurus/blog/tags/fun-facts","name":"fun facts","count":1,"permalink":"/docusaurus/blog/tags/fun-facts"}')}}]);

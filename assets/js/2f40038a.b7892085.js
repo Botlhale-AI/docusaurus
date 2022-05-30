@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[1336],{7797:function(o){o.exports=JSON.parse('{"allTagsPath":"/docusaurus/blog/tags","slug":"/docusaurus/blog/tags/remote-locations","name":"remote locations","count":1,"permalink":"/docusaurus/blog/tags/remote-locations"}')}}]);
