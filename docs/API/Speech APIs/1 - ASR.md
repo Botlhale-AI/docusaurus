@@ -8,7 +8,7 @@ This endpoint handles single speech to text conversion.
 
 Request Params | 
 | ------------- | ------------- |
-| SpeechFile  | `file` <br />Required. Binary audio file of the user's message.| 
+| SpeechFile  | `file` <br />This is required. Binary audio file of the user's message.| 
 | LanguageCode  | `string` <br /> Required. This is the language the user is using to interact with the bot. See **list of supported languages** to get the language<!-- theme: info -->
 
 >  Note\! You need to Include `Authentication Token` in request headers. See how to 
