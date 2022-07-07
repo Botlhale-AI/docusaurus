@@ -4,12 +4,18 @@
 ```bash
 https://dev-botlhale.xyz/asr
 ```
-This endpoint handles single speech to text conversion.
+This endpoint handles single speech to text conversion. This API returns a text transcript of the audio file provided. This API supports audio clips of up to 15 minutes.
 
-Request Params | 
+Request Params | |
 | ------------- | ------------- |
-| SpeechFile  | `file` <br />This is required. Binary audio file of the user's message.| 
-| LanguageCode  | `string` <br /> Required. This is the language the user is using to interact with the bot. See **list of supported languages** to get the language<!-- theme: info -->
+| SpeechFile  | `File` <br />**Required.** Binary audio file of the user's message.| 
+| SampleRate  | `Number` <br /> **Optional.** The sample rate of the supplied audio clip in hertz e.g 8000 for 8kHz|
+| LanguageCode  | `String` <br /> **Required.** This is the language spoken in the supplied audio clip. We use BCP-47 language tags. See [list of supported languages](2%20-%20Languages.md) for supported languages and codes. |
+| Diarization  | `Boolean` <br /> **Optional.** Speaker diarization is used to identify different speakers in the clip as well as when the different speakers are speaking <br><br/> * **False** - Default, Speaker diarization is disabled. <br/> * **True** - Speaker diarization is enabled  |
+| LanguageId  | `Boolean` <br /> **Optional.** This is used to automatically detect the language spoken on the audio clip. This is done at sentence level. When this is enabled, the provided LanguageCode will be ignored.<br><br> * **False** - Default, Language identification is disabled. <br/> * **True** - Language identification is enabled|
+
+
+<!-- theme: info -->
 
 >  Note\! You need to Include `Authentication Token` in request headers. See how to 
 [Generate Auth Token](../../1%20-%20Authentication.md#generate-a-bearer-token-post)
@@ -29,7 +35,7 @@ import requests
 
 url = "https://dev-botlhale.xyz/asr"
 
-payload={'LanguageCode': 'IsiZulu'}
+payload={'LanguageCode': 'zu-ZA'}
 files=[
   ('SpeechFile',('bot_YPBDDDGASKSEVTHT_English_V5v5DS992s.wav',open('mPMBv3Y3c/bot_YPBDDDGASKSEVTHT_English_V5v5DS992s.wav','rb'),'audio/wav'))
 ]
@@ -47,7 +53,7 @@ title: cURL
 ```bash 
 curl --location --request POST 'https://dev-botlhale.xyz/asr' \
 --form 'SpeechFile=@"mPMBv3Y3c/bot_YPBDDDGASKSEVTHT_English_V5v5DS992s.wav"' \
---form 'LanguageCode="IsiZulu"'
+--form 'LanguageCode="zu-ZA"'
 ```
 
 <!--
@@ -57,7 +63,7 @@ title: Javascipt
 ```javascript 
 var formdata = new FormData();
 formdata.append("SpeechFile", fileInput.files[0], "[PROXY]");
-formdata.append("LanguageCode", "IsiZulu");
+formdata.append("LanguageCode", "zu-ZA");
 
 var requestOptions = {
   method: 'POST',
@@ -122,7 +128,17 @@ req.end();
 ```bash
 {
     "DateReceived": "01/05/2021 15:39:41",
-    "LanguageCode": "English",
+    "LanguageCode": "zu-ZA",
     "Transcription": "Siyabonga"
 }
 ```
+#### Supported formats
+* `File Type` - We currently only support **wav, flac and ogg.**
+<br>
+* `Sample Rate` - We support all sample rates between 8000Hz and 48000 Hz. If you can choose the sample rate of the source, record the audio at 16000 Hz. This is because sample rates below that may impair the accuracy of our models and sample rates above 16000 Hz have no significant impact on the accuracy of our models.  
+<br>
+
+
+
+
+

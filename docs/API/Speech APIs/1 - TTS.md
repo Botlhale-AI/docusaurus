@@ -6,10 +6,10 @@ https://dev-botlhale.xyz/tts
 ```
 This endpoint handles single text to speech conversion.
 
-Request Params | 
+Request Params | |
 | ------------- | ------------- |
 | TextMsg  | `string` <br />Required. Text Message from the user to the bot.| 
-| LanguageCode  | `string` <br /> Required. This is the language the user is using to interact with the bot. See **list of supported languages** to get the languae
+| LanguageCode  | `string` <br /> Required. This is the language the user is using to interact with the bot. See [list of supported languages](2%20-%20Languages.md) for supported languages and codes. |
 <!-- theme: info -->
 
 >  Note\! You need to Include `Authentication Token` in request headers. See how to 
@@ -29,8 +29,8 @@ import requests
 
 url = "hhttps://dev-botlhale.xyz/tts"
 
-payload={'LanguageCode': 'IsiXhosa',
-'TextMsg': 'hello'}
+payload={'LanguageCode': 'xh-ZA',
+'TextMsg': 'molo Xolisani'}
 files=[
 
 ]
@@ -47,7 +47,7 @@ title: cURL
 -->
 ```bash 
 curl --location --request POST 'https://dev-botlhale.xyz/tts' \
---form 'LanguageCode="IsiXhosa"' \
+--form 'LanguageCode="xh-ZA"' \
 --form 'TextMsg="hello"'
 ```
 
@@ -57,7 +57,7 @@ title: Javascipt
 -->
 ```javascript 
 var formdata = new FormData();
-formdata.append("LanguageCode", "IsiXhosa");
+formdata.append("LanguageCode", "xh-ZA");
 formdata.append("TextMsg", "hello");
 
 var requestOptions = {
@@ -123,7 +123,7 @@ req.end();
 ```bash
 {
     "DateReceived": "01/05/2021 15:38:35",
-    "LanguageCode": "IsiXhosa",
+    "LanguageCode": "xh-ZA",
     "SpeechResponseURL": "<URL>",
     "TextMsg": "molo Xolisani"
 }
