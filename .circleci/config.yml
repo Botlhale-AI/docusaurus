@@ -1,26 +1,32 @@
-# Use the latest 2.1 version of CircleCI pipeline process engine.
-# See: https://circleci.com/docs/2.0/configuration-reference
-version: 2.1
+# If you only want the circle to run on direct commits to master, you can uncomment this out
+# and uncomment the filters: *filter-only-master down below too
+#
+# aliases:
+#  - &filter-only-master
+#    branches:
+#      only:
+#        - master
 
-# Define a job to be invoked later in a workflow.
-# See: https://circleci.com/docs/2.0/configuration-reference/#jobs
+version: 2
 jobs:
-  say-hello:
-    # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
-    # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
+  deploy-website:
     docker:
-      - image: cimg/base:stable
-    # Add steps to the job
-    # See: https://circleci.com/docs/2.0/configuration-reference/#steps
+      # specify the version you desire here
+      - image: circleci/node:8.11.1
+
     steps:
       - checkout
       - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
+          name: Deploying to GitHub Pages
+          command: |
+            git config --global user.email "athi@botlhale.ai"
+            git config --global user.name "Athenkosi-Cetyana"
+            echo "machine github.com login Athenkosi-Cetyana password $GITHUB_TOKEN" > ~/.netrc
+            cd website && yarn install && GIT_USER=Athenkosi-Cetyana yarn run publish-gh-pages
 
-# Invoke jobs via workflows
-# See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
-  say-hello-workflow:
+  version: 2
+  build_and_deploy:
     jobs:
-      - say-hello
+      - deploy-website:
+#         filters: *filter-only-master
