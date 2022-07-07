@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 (module.exports = {
   title: 'Botlhale NLP Toolkit Documentation',
   tagline: "Let's get started! 🚀",
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://botlhale-ai.github.io/docusaurus/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
