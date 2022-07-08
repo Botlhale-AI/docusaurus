@@ -18,7 +18,7 @@ Request Params | |
 <!-- theme: info -->
 
 >  Note\! You need to Include `Authentication Token` in request headers. See how to 
-[Generate Auth Token](../../1%20-%20Authentication.md#generate-a-bearer-token-post)
+[Generate Auth Token](../1%20-%20Authentication.md#generate-a-bearer-token-post)
  codes. 
 
 
