@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[4136],{8163:function(t){t.exports=JSON.parse('{"allTagsPath":"/documentation/blog/tags","slug":"/documentation/blog/tags/fun-facts","name":"fun facts","count":1,"permalink":"/documentation/blog/tags/fun-facts"}')}}]);

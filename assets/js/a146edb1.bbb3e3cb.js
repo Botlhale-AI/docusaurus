@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[2334],{5213:function(t){t.exports=JSON.parse('{"allTagsPath":"/documentation/blog/tags","slug":"/documentation/blog/tags/csat","name":"csat","count":1,"permalink":"/documentation/blog/tags/csat"}')}}]);

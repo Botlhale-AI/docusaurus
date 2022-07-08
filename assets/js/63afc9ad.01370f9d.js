@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[7602],{2627:function(a){a.exports=JSON.parse('{"allTagsPath":"/documentation/blog/tags","slug":"/documentation/blog/tags/african-languages","name":"african languages","count":2,"permalink":"/documentation/blog/tags/african-languages"}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[1824],{4530:function(s){s.exports=JSON.parse('{"allTagsPath":"/docusaurus/blog/tags","slug":"/docusaurus/blog/tags/nlp","name":"nlp","count":2,"permalink":"/docusaurus/blog/tags/nlp"}')}}]);
