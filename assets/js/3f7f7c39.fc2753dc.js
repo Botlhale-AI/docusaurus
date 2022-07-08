@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[2726],{5137:function(o){o.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/remote-locations","name":"remote locations","count":1,"permalink":"/blog/tags/remote-locations"}')}}]);

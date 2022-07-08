@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[4286],{8882:function(t){t.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/shortcuts","name":"shortcuts","count":1,"permalink":"/blog/tags/shortcuts"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[4036],{6301:function(a){a.exports=JSON.parse('{"allTagsPath":"/docusaurus/blog/tags","slug":"/docusaurus/blog/tags/language-preservation","name":"language preservation","count":1,"permalink":"/docusaurus/blog/tags/language-preservation"}')}}]);
