@@ -10,7 +10,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   tagline: "Let's get started! 🚀",
   url: 'https://botlhale-ai.github.io',
   baseUrl: '/documentation/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.svg',
   organizationName: 'botlhale-AI', // Usually your GitHub org/user name.
