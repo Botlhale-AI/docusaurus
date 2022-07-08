@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[1897],{7681:function(o){o.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/gig-economy","name":"gig-economy","count":1,"permalink":"/blog/tags/gig-economy"}')}}]);

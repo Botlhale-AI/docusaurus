@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://Botlhale-AI.github.io/docusaurus/blog</id>
+    <id>https://botlhale-ai.github.io/blog</id>
     <title>Botlhale NLP Toolkit Documentation Blog</title>
     <updated>2021-08-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://Botlhale-AI.github.io/docusaurus/blog"/>
+    <link rel="alternate" href="https://botlhale-ai.github.io/blog"/>
     <subtitle>Botlhale NLP Toolkit Documentation Blog</subtitle>
-    <icon>https://Botlhale-AI.github.io/docusaurus/img/logo.svg</icon>
+    <icon>https://botlhale-ai.github.io/img/logo.svg</icon>
     <entry>
         <title type="html"><![CDATA[Welcome to Our Blogs]]></title>
         <id>welcome</id>
-        <link href="https://Botlhale-AI.github.io/docusaurus/blog/welcome"/>
+        <link href="https://botlhale-ai.github.io/blog/welcome"/>
         <updated>2021-08-26T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Features are powered by the Botlhale AI.]]></summary>
         <author>
@@ -21,7 +21,7 @@
     <entry>
         <title type="html"><![CDATA[Did You Know?]]></title>
         <id>mdx-blog-post</id>
-        <link href="https://Botlhale-AI.github.io/docusaurus/blog/mdx-blog-post"/>
+        <link href="https://botlhale-ai.github.io/blog/mdx-blog-post"/>
         <updated>2021-08-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Blog posts support Docusaurus Markdown features, such as MDX.]]></summary>
         <author>
@@ -32,7 +32,7 @@
     <entry>
         <title type="html"><![CDATA[9 Reasons Your Business Needs A Chatbot]]></title>
         <id>first-blog-post</id>
-        <link href="https://Botlhale-AI.github.io/docusaurus/blog/first-blog-post"/>
+        <link href="https://botlhale-ai.github.io/blog/first-blog-post"/>
         <updated>2021-07-13T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[“We’ve communicated with all 20 000 customers that needed support today, ” said no support team of 20 people or less.]]></summary>
         <author>
@@ -43,7 +43,7 @@
     <entry>
         <title type="html"><![CDATA[Remote Data Collection introduces Micro-Jobs]]></title>
         <id>long-blog-post</id>
-        <link href="https://Botlhale-AI.github.io/docusaurus/blog/long-blog-post"/>
+        <link href="https://botlhale-ai.github.io/blog/long-blog-post"/>
         <updated>2021-06-06T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[This is the summary of a very long blog post,]]></summary>
         <author>

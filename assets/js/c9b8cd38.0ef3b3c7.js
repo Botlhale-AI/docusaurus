@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[5672],{7164:function(a){a.exports=JSON.parse('{"allTagsPath":"/docusaurus/blog/tags","slug":"/docusaurus/blog/tags/trivia","name":"trivia","count":1,"permalink":"/docusaurus/blog/tags/trivia"}')}}]);

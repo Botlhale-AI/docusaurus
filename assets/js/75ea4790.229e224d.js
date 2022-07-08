@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[3675],{6820:function(o){o.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/township-economy","name":"township economy","count":1,"permalink":"/blog/tags/township-economy"}')}}]);
