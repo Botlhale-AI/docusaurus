@@ -125,11 +125,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           },
           {
             title: 'Speech APIs',
-            items: [
-              {
-                label: 'Overview',
-                to: 'docs/API/Speech APIs/Overview',
-              },                   
+            items: [                                
               {
                 label: 'ASR',
                 to: 'docs/API/Speech APIs/ASR',
