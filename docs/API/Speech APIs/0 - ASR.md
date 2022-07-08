@@ -11,15 +11,15 @@ Request Params | |
 | SpeechFile  | `File` **Required.** Binary audio file of the user's message.| 
 | SampleRate  | `Number` **Optional.** The sample rate of the supplied audio clip in hertz e.g 8000 for 8kHz|
 | LanguageCode  | `String` **Required.** This is the language spoken in the supplied audio clip. We use BCP-47 language tags. See [list of supported languages](2%20-%20Languages.md) for supported languages and codes. |
-| Diarization  | `Boolean`  **Optional.** Speaker diarization is used to identify different speakers in the clip as well as when the different speakers are speaking  * **False** - Default, Speaker diarization is disabled.  * **True** - Speaker diarization is enabled  |
-| LanguageId  | `Boolean` **Optional.** This is used to automatically detect the language spoken on the audio clip. This is done at sentence level. When this is enabled, the provided LanguageCode will be ignored.* **False** - Default, Language identification is disabled. * **True** - Language identification is enabled|
+| Diarization  | `Boolean`  **Optional.** Speaker diarization is used to identify different speakers in the clip as well as when the different speakers are speaking  * **False** - Default, Speaker diarization is enabled.  * **True** - Speaker diarization is enabled. `Note! This will have an impact on the cost of the request` |
+| LanguageId  | `Boolean` **Optional.** This is used to automatically detect the language spoken on the audio clip. This is done at sentence level. When this is enabled, the provided LanguageCode will be ignored.* **False** - Default, Language identification is enabled. * **True** - Language identification is enabled. `Note! This will have an impact on the cost of the request`|
 
 
-<!-- theme: info -->
+:::note
 
->  Note\! You need to Include `Authentication Token` in request headers. See how to 
+You need to Include `Authentication Token` in request headers. See how to 
 [Generate Auth Token](../1%20-%20Authentication.md#generate-a-bearer-token-post)
- codes. 
+ codes. :::
 
 
 <br />
