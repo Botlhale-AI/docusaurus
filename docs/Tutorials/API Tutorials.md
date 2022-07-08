@@ -16,7 +16,7 @@ Request Params |
 | ConversationID  | `string` <br />Optional. This is a unique Id for keeping track of different conversations. It will be automatically generated if it's not pro|po
 <!-- theme: info -->
 
->  Note\! You need the `Authentication Token` in request headers. See how to [Generate Auth Token](../1%20-%20Authentication.md#generate-a-bearer-token-post)
+>  Note\! You need the `Authentication Token` in request headers. See how to [Generate Auth Token](../API/1%20-%20Authentication.md#generate-a-bearer-token-post)
 st)
  codes. 
 
