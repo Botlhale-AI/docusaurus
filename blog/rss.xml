@@ -2,35 +2,35 @@
 <rss version="2.0">
     <channel>
         <title>Botlhale NLP Toolkit Documentation Blog</title>
-        <link>https://docs.botlhale.xyz/documentation/blog</link>
+        <link>https://docs.botlhale.xyz/blog</link>
         <description>Botlhale NLP Toolkit Documentation Blog</description>
         <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[Welcome to Our Blogs]]></title>
-            <link>https://docs.botlhale.xyz/documentation/blog/welcome</link>
+            <link>https://docs.botlhale.xyz/blog/welcome</link>
             <guid>welcome</guid>
             <pubDate>Thu, 26 Aug 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Features are powered by the Botlhale AI.]]></description>
         </item>
         <item>
             <title><![CDATA[Did You Know?]]></title>
-            <link>https://docs.botlhale.xyz/documentation/blog/mdx-blog-post</link>
+            <link>https://docs.botlhale.xyz/blog/mdx-blog-post</link>
             <guid>mdx-blog-post</guid>
             <pubDate>Sun, 01 Aug 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Blog posts support Docusaurus Markdown features, such as MDX.]]></description>
         </item>
         <item>
             <title><![CDATA[9 Reasons Your Business Needs A Chatbot]]></title>
-            <link>https://docs.botlhale.xyz/documentation/blog/first-blog-post</link>
+            <link>https://docs.botlhale.xyz/blog/first-blog-post</link>
             <guid>first-blog-post</guid>
             <pubDate>Tue, 13 Jul 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[“We’ve communicated with all 20 000 customers that needed support today, ” said no support team of 20 people or less.]]></description>
         </item>
         <item>
             <title><![CDATA[Remote Data Collection introduces Micro-Jobs]]></title>
-            <link>https://docs.botlhale.xyz/documentation/blog/long-blog-post</link>
+            <link>https://docs.botlhale.xyz/blog/long-blog-post</link>
             <guid>long-blog-post</guid>
             <pubDate>Sun, 06 Jun 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[This is the summary of a very long blog post,]]></description>

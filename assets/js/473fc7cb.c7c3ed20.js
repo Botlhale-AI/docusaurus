@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[2050],{1005:function(e){e.exports=JSON.parse('{"allTagsPath":"/documentation/blog/tags","slug":"/documentation/blog/tags/speech","name":"speech","count":2,"permalink":"/documentation/blog/tags/speech"}')}}]);

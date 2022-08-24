@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[8375],{2962:function(a){a.exports=JSON.parse('{"allTagsPath":"/documentation/blog/tags","slug":"/documentation/blog/tags/language-preservation","name":"language preservation","count":1,"permalink":"/documentation/blog/tags/language-preservation"}')}}]);
