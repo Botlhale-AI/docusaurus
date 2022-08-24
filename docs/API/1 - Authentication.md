@@ -198,7 +198,7 @@ fetch("https://app-dev.botlhale.xyz/generateAuthToken", requestOptions)
 ```
 
 </TabItem>
-<TabItem value="js" label="Node JS - Native">
+<TabItem value="js1" label="Node JS - Native">
 
 ```js
 var https = require('follow-redirects').https;
@@ -240,10 +240,5 @@ req.end();
 ```
 
 </TabItem>
-<TabItem value="js" label="Node JS - Native">
 
-```js
-curl --location --request POST 'https://app-dev.botlhale.xyz/generateAuthToken' \ --form 'REFRESH_TOKEN=REFRESH_TOKEN'
-```
-</TabItem>
 </Tabs
