@@ -161,11 +161,6 @@ or
 
 <Tabs>
   <TabItem value="Python" label="Python" default>
-    <!--
-    type: tab
-    title: Python
-    -->
-
     ```python 
     import requests
 
@@ -186,11 +181,6 @@ or
 
 
   <TabItem value="cURL" label="cURL">
-    <!--
-    type: tab
-    title: cURL
-    -->
-
     ```xyzsh 
     curl --location --request POST 'https://dev-botlhale.io/generateAuthToken' \
     --form 'REFRESH_TOKEN=<REFRESH_TOKEN>'
@@ -198,12 +188,7 @@ or
   </TabItem>
 
 
-  <TabItem value="JavaScript" label="JavaScript">    
-    <!--
-    type: tab
-    title: Javascipt
-    -->
-
+  <TabItem value="JavaScript" label="JavaScript"> 
     ```javascript 
     var formdata = new FormData();
     formdata.append("REFRESH_TOKEN", <REFRESH_TOKEN>);
@@ -222,11 +207,6 @@ or
   </TabItem>
   
   <TabItem value="nodejs" label="Node JS - Native"> 
-    <!--
-    type: tab
-    title: NODEJS - NATIVE
-    -->
-
     ```js
     var https = require('follow-redirects').https;
     var fsxyz require('fs');
@@ -265,8 +245,7 @@ or
 
     req.end();
     ```
-    <!-- type: tab-end -->
+   
    </TabItem>
   
 </Tabs>
-
