@@ -179,14 +179,14 @@ or
   <TabItem value="cURL" label="cURL">
    xyzsh 
     curl --location --request POST 'https://app-dev.botlhale.xyz/generateAuthToken' \
-    --form 'REFRESH_TOKEN=<REFRESH_TOKEN>'   
+    --form 'REFRESH_TOKEN=REFRESH_TOKEN'   
   </TabItem>
 
 
   <TabItem value="JavaScript" label="JavaScript">
    javascript 
     var formdata = new FormData();
-    formdata.append("REFRESH_TOKEN", <REFRESH_TOKEN>);
+    formdata.append("REFRESH_TOKEN", REFRESH_TOKEN);
 
     var requestOptions = {
     method: 'POST',
