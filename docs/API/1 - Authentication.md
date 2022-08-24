@@ -157,12 +157,8 @@ or
 
 ### Request Example
 
-   
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs>
-
 <TabItem value="py" label="Python">
 
 ```py
@@ -177,8 +173,9 @@ headers = {}
 response = requests.request("POST", url, headers=headers, data=payload, files=files)
 
 print(response.text)
-``` 
-</TabItem>  
+```
+
+</TabItem>
 <TabItem value="js" label="JavaScript">
 
 ```js
@@ -196,6 +193,7 @@ fetch("https://app-dev.botlhale.xyz/generateAuthToken", requestOptions)
 .then(result => console.log(result))
 .catch(error => console.log('error', error));   
 ```
+
 </TabItem>
 <TabItem value="js" label="Node JS - Native">
 
@@ -237,11 +235,12 @@ req.write(postData);
 
 req.end();  
 ```
-</TabItem> 
-<TabItem value="js" label="cURL">
+
+</TabItem>
+<TabItem value="js" label="Node JS - Native">
 
 ```js
- curl --location --request POST 'https://app-dev.botlhale.xyz/generateAuthToken' \ --form 'REFRESH_TOKEN=REFRESH_TOKEN'
+curl --location --request POST 'https://app-dev.botlhale.xyz/generateAuthToken' \ --form 'REFRESH_TOKEN=REFRESH_TOKEN'
 ```
-</TabItem
-</Tabs>
+</TabItem>
+</Tabs
