@@ -171,8 +171,7 @@ or
 
     response = requests.request("POST", url, headers=headers, data=payload, files=files)
 
-    print(response.text)
-   ```
+    print(response.text)```
  </TabItem> 
  <TabItem value="2" label="2">2nd tab
  </TabItem>   
