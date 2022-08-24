@@ -162,25 +162,25 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="Python" label="Python" default>
-    ```python 
-    import requests
+   python 
+   import requests
 
-    url = "https://dev-botlhale.io/generateAuthToken"
+   url = "https://dev-botlhale.io/generateAuthToken"
 
-    payload={'REFRESH_TOKEN': <REFRESH_TOKEN>,}
-    files=[
+   payload={'REFRESH_TOKEN': <REFRESH_TOKEN>,}
+   files=[
 
-    ]
-    headers = {}
+   ]
+   headers = {}
 
-    response = requests.request("POST", url, headers=headers, data=payload, files=files)
+   response = requests.request("POST", url, headers=headers, data=payload, files=files)
 
-    print(response.text)
-    ```
+   print(response.text)
+   
   </TabItem>
   <TabItem value="cURL" label="cURL">
     ```xyzsh 
-    curl --location --request POST 'https://dev-botlhale.io/generateAuthToken' \
+    curl --location --request POST 'https://app-dev.botlhale.xyz/generateAuthToken' \
     --form 'REFRESH_TOKEN=REFRESH_TOKEN'
     ```
   </TabItem>
@@ -195,7 +195,7 @@ import TabItem from '@theme/TabItem';
     redirect: 'follow'
     };
 
-    fetch("https://dev-botlhale.io/generateAuthToken", requestOptions)
+    fetch("https://app-dev.botlhale.xyz/generateAuthToken", requestOptions)
     .then(response => response.text())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
@@ -208,7 +208,7 @@ import TabItem from '@theme/TabItem';
 
     var options = {
     'method': 'POST',
-    'hostname': 'https://dev-botlhale.io',
+    'hostname': 'https://app-dev.botlhale.xyz',
     'path': '/generateAuthToken',
     'headers': {
     },
