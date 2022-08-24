@@ -29,131 +29,6 @@ Request Params |
 
 <br />
 
-### Request Example
-
-<!--
-type: tab
-title: Python
--->
-
-```python 
-import requests
-
-url = "https://app-dev.botlhale.xyz/generateAuthToken"
-
-payload={'REFRESH_TOKEN': <REFRESH_TOKEN>,}
-files=[
-
-]
-headers = {}
-
-response = requests.request("POST", url, headers=headers, data=payload, files=files)
-
-print(response.text)
-```
-
-<!--
-type: tab
-title: cURL
--->
-
-```xyzsh 
-curl --location --request POST 'https://app-dev.botlhale.xyz/generateAuthToken' \
---form 'REFRESH_TOKEN=<REFRESH_TOKEN>'
-```
-<!--
-type: tab
-title: Javascipt
--->
-
-```javascript 
-var formdata = new FormData();
-formdata.append("REFRESH_TOKEN", <REFRESH_TOKEN>);
-
-var requestOptions = {
-  method: 'POST',
-  body: formdata,
-  redirect: 'follow'
-};
-
-fetch("https://app-dev.botlhale.xyz/generateAuthToken", requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
-```
-
-<!--
-type: tab
-title: NODEJS - NATIVE
--->
-
-```js
-var https = require('follow-redirects').https;
-var fsxyz require('fs');
-
-var options = {
-  'method': 'POST',
-  'hostname': 'https://app-dev.botlhale.xyz',
-  'path': '/generateAuthToken',
-  'headers': {
-  },
-  'maxRedirects': 20
-};
-
-var req = https.request(options, function (res) {
-  var chunks = [];
-
-  res.on("data", function (chunk) {
-    chunks.push(chunk);
-  });
-
-  res.on("end", function (chunk) {
-    var body = Buffer.concat(chunks);
-    console.log(body.toString());
-  });
-
-  res.on("error", function (error) {
-    console.error(error);
-  });
-});
-
-var postData = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"REFRESH_TOKEN\"\r\n\r\n<REFRESH_TOKEN>.ai\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW";
-
-req.setHeader('content-type', 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW');
-
-req.write(postData);
-
-req.end();
-```
-<!-- type: tab-end -->
-
-### Response
-
-```json
-{
-    "AuthenticationResult": {
-        "AccessToken": "YOUR_ACCESS_TOKEN",
-        "ExpiresIn": 3600,
-        "IdToken": "YOUR_ID_TOKEN",
-        "RefreshToken": "YOUR_REFRESH_TOKEN",
-        "TokenType": "Bearer"
-    }
- }
-```
-
-## API Auth
-
-Include `IdToken` as Bearer Token in headers for Authorization on other API endpoints. All API endpoints require a Bearer Token in header for example: 
-
-```python
-headers = {"Authorization": "Bearer <IdToken>"}
-```
-
-or
-
-```bash
--H "Authorization: Bearer <IdToken>"
-```
 
 ### Request Example
 
@@ -162,7 +37,7 @@ import TabItem from '@theme/TabItem';
 
 
 <Tabs>
-<TabItem value="py" label="Python">
+<TabItem value="py" label="Python" default>
 
 ```py
 import requests
@@ -251,3 +126,18 @@ curl --location --request POST 'https://dev-botlhale.io/generateAuthToken' \
  
 
 </Tabs>
+
+
+## API Auth
+
+Include `IdToken` as Bearer Token in headers for Authorization on other API endpoints. All API endpoints require a Bearer Token in header for example: 
+
+```python
+headers = {"Authorization": "Bearer <IdToken>"}
+```
+
+or
+
+```bash
+-H "Authorization: Bearer <IdToken>"
+```
