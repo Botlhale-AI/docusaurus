@@ -34,7 +34,7 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="py" label="Python">
 
-```python 
+```py
 import requests
 
 url = "https://app-dev.botlhale.xyz/asr"
@@ -61,7 +61,7 @@ curl --location --request POST 'https://app-dev.botlhale.xyz/asr' \
 </TabItem>
 <TabItem value="js" label="JavaScript">
 
-```javascript 
+```js 
 var formdata = new FormData();
 formdata.append("SpeechFile", fileInput.files[0], "[PROXY]");
 formdata.append("LanguageCode", "zu-ZA");
