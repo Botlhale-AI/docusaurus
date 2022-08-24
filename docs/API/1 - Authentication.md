@@ -161,7 +161,7 @@ or
 
 <Tabs>
   <TabItem value="Python" label="Python" default>
-    ```python 
+    ```python
     import requests
 
     url = "https://app-dev.botlhale.xyz/generateAuthToken"
@@ -174,17 +174,12 @@ or
 
     response = requests.request("POST", url, headers=headers, data=payload, files=files)
 
-    print(response.text)```   
+    print(response.text)
+   ```
   </TabItem>
-  <TabItem value="cURL" label="cURL">
-   xyzsh 
-    curl --location --request POST 'https://app-dev.botlhale.xyz/generateAuthToken' \
-    --form 'REFRESH_TOKEN=REFRESH_TOKEN'   
-  </TabItem>
-
 
   <TabItem value="JavaScript" label="JavaScript">
-   javascript 
+   ```js
     var formdata = new FormData();
     formdata.append("REFRESH_TOKEN", REFRESH_TOKEN);
 
@@ -198,48 +193,6 @@ or
     .then(response => response.text())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
-    
+   ``` 
   </TabItem>
-  
-  <TabItem value="nodejs" label="Node JS - Native"> 
-    js
-    var https = require('follow-redirects').https;
-    var fsxyz require('fs');
-
-    var options = {
-    'method': 'POST',
-    'hostname': 'https://app-dev.botlhale.xyz',
-    'path': '/generateAuthToken',
-    'headers': {
-    },
-    'maxRedirects': 20
-    };
-
-    var req = https.request(options, function (res) {
-    var chunks = [];
-
-    res.on("data", function (chunk) {
-        chunks.push(chunk);
-    });
-
-    res.on("end", function (chunk) {
-        var body = Buffer.concat(chunks);
-        console.log(body.toString());
-    });
-
-    res.on("error", function (error) {
-        console.error(error);
-    });
-    });
-
-    var postData = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"REFRESH_TOKEN\"\r\n\r\n<REFRESH_TOKEN>.ai\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW";
-
-    req.setHeader('content-type', 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW');
-
-    req.write(postData);
-
-    req.end();
-      
-   </TabItem>
-  
 </Tabs>
