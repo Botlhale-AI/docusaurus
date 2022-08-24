@@ -162,21 +162,22 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="Python" label="Python" default>
-```python 
-import requests
+   <code>
+    python 
+     import requests
 
-url = "https://app-dev.botlhale.xyz/generateAuthToken"
+     url = "https://app-dev.botlhale.xyz/generateAuthToken"
 
-payload={'REFRESH_TOKEN': <REFRESH_TOKEN>,}
-files=[
+     payload={'REFRESH_TOKEN': <REFRESH_TOKEN>,}
+     files=[
 
-]
-headers = {}
+     ]
+     headers = {}
 
-response = requests.request("POST", url, headers=headers, data=payload, files=files)
+     response = requests.request("POST", url, headers=headers, data=payload, files=files)
 
-print(response.text)
-```
+     print(response.text)
+   </code>
   </TabItem>
   <TabItem value="cURL" label="cURL">
     
