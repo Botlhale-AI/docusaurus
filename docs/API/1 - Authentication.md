@@ -240,5 +240,14 @@ req.end();
 ```
 
 </TabItem>
+<TabItem value="js2" label="cURL">
+
+```js
+curl --location --request POST 'https://dev-botlhale.io/generateAuthToken' \
+--form 'REFRESH_TOKEN=<REFRESH_TOKEN>'
+```
+
+ </TabItem>
+ 
 
 </Tabs>
