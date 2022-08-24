@@ -159,8 +159,8 @@ or
 
 ### Request Example 0
 
-<Tabs>
-  <TabItem value="Python" label="Python" default>
+<Tabs className="unique-tabs">
+ <TabItem value="Python" label="Python" default>
     ```python
     import requests
 
@@ -176,23 +176,7 @@ or
 
     print(response.text)
    ```
-  </TabItem>
-
-  <TabItem value="JavaScript" label="JavaScript">
-   ```js
-    var formdata = new FormData();
-    formdata.append("REFRESH_TOKEN", REFRESH_TOKEN);
-
-    var requestOptions = {
-    method: 'POST',
-    body: formdata,
-    redirect: 'follow'
-    };
-
-    fetch("https://app-dev.botlhale.xyz/generateAuthToken", requestOptions)
-    .then(response => response.text())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
-   ``` 
-  </TabItem>
+ </TabItem> 
+  <TabItem value="2" label="2">2nd tab</TabItem>
+   
 </Tabs>
