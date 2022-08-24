@@ -155,84 +155,93 @@ or
 -H "Authorization: Bearer <IdToken>"
 ```
 
+### Request Example
+
+   
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-### Request Example
-
 <Tabs>
-  <TabItem value="Python" label="Python" default>
-   
-   import requests
-   url = "https://app-dev.botlhale.xyz/generateAuthToken"
 
-   payload={'REFRESH_TOKEN': <REFRESH_TOKEN>,}
-   files=[]
-   
-   headers = {}
+<TabItem value="py" label="Python">
 
-   response = requests.request("POST", url, headers=headers, data=payload, files=files)
+```py
+import requests
+url = "https://app-dev.botlhale.xyz/generateAuthToken"
 
-   print(response.text)
-  </TabItem>
-  <TabItem value="cURL" label="cURL">
-    
-   curl --location --request POST 'https://app-dev.botlhale.xyz/generateAuthToken' \ --form 'REFRESH_TOKEN=REFRESH_TOKEN'   
-  </TabItem>
-   
-  <TabItem value="JavaScript" label="JavaScript"> 
-     
-    var formdata = new FormData();
-    formdata.append("REFRESH_TOKEN", REFRESH_TOKEN);
+payload={'REFRESH_TOKEN': <REFRESH_TOKEN>,}
+files=[]
 
-    var requestOptions = {
-    method: 'POST',
-    body: formdata,
-    redirect: 'follow'
-    };
+headers = {}
 
-    fetch("https://app-dev.botlhale.xyz/generateAuthToken", requestOptions)
-    .then(response => response.text())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));   
-  </TabItem>   
-  <TabItem value="nodejs" label="Node JS - Native"> 
-    
-    var https = require('follow-redirects').https;
-    var fsxyz require('fs');
+response = requests.request("POST", url, headers=headers, data=payload, files=files)
 
-    var options = {
-    'method': 'POST',
-    'hostname': 'https://app-dev.botlhale.xyz',
-    'path': '/generateAuthToken',
-    'headers': {
-    },
-    'maxRedirects': 20
-    };
+print(response.text)
+``` 
+</TabItem>  
+<TabItem value="js" label="JavaScript">
 
-    var req = https.request(options, function (res) {
-    var chunks = [];
+```js
+var formdata = new FormData();
+formdata.append("REFRESH_TOKEN", REFRESH_TOKEN);
 
-    res.on("data", function (chunk) {
-        chunks.push(chunk);
-    });
+var requestOptions = {
+method: 'POST',
+body: formdata,
+redirect: 'follow'
+};
 
-    res.on("end", function (chunk) {
-        var body = Buffer.concat(chunks);
-        console.log(body.toString());
-    });
+fetch("https://app-dev.botlhale.xyz/generateAuthToken", requestOptions)
+.then(response => response.text())
+.then(result => console.log(result))
+.catch(error => console.log('error', error));   
+```
+</TabItem>
+<TabItem value="js" label="Node JS - Native">
 
-    res.on("error", function (error) {
-        console.error(error);
-    });
-    });
+```js
+var https = require('follow-redirects').https;
+var fsxyz require('fs');
 
-    var postData = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"REFRESH_TOKEN\"\r\n\r\n<REFRESH_TOKEN>.ai\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW";
+var options = {
+'method': 'POST',
+'hostname': 'https://app-dev.botlhale.xyz',
+'path': '/generateAuthToken',
+'headers': {
+},
+'maxRedirects': 20
+};
 
-    req.setHeader('content-type', 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW');
+var req = https.request(options, function (res) {
+var chunks = [];
 
-    req.write(postData);
+res.on("data", function (chunk) {
+    chunks.push(chunk);
+});
 
-    req.end();       
-   </TabItem>  
+res.on("end", function (chunk) {
+    var body = Buffer.concat(chunks);
+    console.log(body.toString());
+});
+
+res.on("error", function (error) {
+    console.error(error);
+});
+});
+
+var postData = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"REFRESH_TOKEN\"\r\n\r\n<REFRESH_TOKEN>.ai\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW";
+
+req.setHeader('content-type', 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW');
+
+req.write(postData);
+
+req.end();  
+```
+</TabItem> 
+<TabItem value="js" label="cURL">
+
+```js
+ curl --location --request POST 'https://app-dev.botlhale.xyz/generateAuthToken' \ --form 'REFRESH_TOKEN=REFRESH_TOKEN'
+```
+</TabItem
 </Tabs>
