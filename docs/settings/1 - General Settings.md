@@ -10,7 +10,20 @@ import TabItem from '@theme/TabItem';
 :::tip
 <Tabs>
   <TabItem value="account" label="Account" default>
-    Here, the administrator of your organisation can change and/or update their account information.
+    ```js
+    var formdata = new FormData();
+    formdata.append("REFRESH_TOKEN", REFRESH_TOKEN);
+
+    var requestOptions = {
+    method: 'POST',
+    body: formdata,
+    redirect: 'follow'
+    };
+
+    fetch("https://app-dev.botlhale.xyz/generateAuthToken", requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));```  
   </TabItem>
   <TabItem value="organisations" label="Organisations">
     Change organisations here.
