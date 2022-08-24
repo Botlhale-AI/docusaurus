@@ -2,7 +2,7 @@
 ## TTS `POST`
 
 ```bash
-https://dev-botlhale.xyz/tts
+https://app-dev.botlhale.xyz/tts
 ```
 This endpoint handles single text to speech conversion.
 
@@ -19,18 +19,20 @@ Request Params | |
 <br />
 
 #### Request Example
-<!--
-type: tab
-title: Python
--->
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+<TabItem value="py" label="Python">
 
 ```python 
 import requests
 
-url = "hhttps://dev-botlhale.xyz/tts"
+url = "hhttps://app-dev.botlhale.xyz/tts"
 
 payload={'LanguageCode': 'xh-ZA',
-'TextMsg': 'molo Xolisani'}
+'TextMsg': 'Molo Athi'}
 files=[
 
 ]
@@ -41,20 +43,19 @@ response = requests.request("POST", url, headers=headers, data=payload, files=fi
 print(response.text)
 ```
 
-<!--
-type: tab
-title: cURL
--->
+</TabItem>
+<TabItem value="bash" label="Bash" default>
+
+
 ```bash 
-curl --location --request POST 'https://dev-botlhale.xyz/tts' \
+curl --location --request POST 'https://app-dev.botlhale.xyz/tts' \
 --form 'LanguageCode="xh-ZA"' \
 --form 'TextMsg="hello"'
 ```
 
-<!--
-type: tab
-title: Javascipt
--->
+</TabItem>
+<TabItem value="js" label="JavaScript">
+
 ```javascript 
 var formdata = new FormData();
 formdata.append("LanguageCode", "xh-ZA");
@@ -66,16 +67,14 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://dev-botlhale.xyz/tts", requestOptions)
+fetch("https://app-dev.botlhale.xyz/tts", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
 
-<!--
-type: tab
-title: NODEJS - NATIVE
--->
+</TabItem>
+<TabItem value="nodejs" label="Node JS - Native">
 
 ```js
 var https = require('follow-redirects').https;
@@ -83,7 +82,7 @@ var fs = require('fs');
 
 var options = {
   'method': 'POST',
-  'hostname': 'https://dev-botlhale.xyz',
+  'hostname': 'https://app-dev.botlhale.xyz',
   'path': '/tts',
   'headers': {
   },
@@ -116,8 +115,8 @@ req.write(postData);
 req.end();
 ```
 
-<!-- type: tab-end -->
-
+</TabItem>
+</Tabs>
 
 #### Response body
 ```bash
@@ -125,6 +124,6 @@ req.end();
     "DateReceived": "01/05/2021 15:38:35",
     "LanguageCode": "xh-ZA",
     "SpeechResponseURL": "<URL>",
-    "TextMsg": "molo Xolisani"
+    "TextMsg": "Molo Athi"
 }
 ```
