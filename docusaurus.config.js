@@ -9,7 +9,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   title: 'Botlhale NLP Toolkit Documentation',
   tagline: "Let's get started! 🚀",
   url: 'https://docs.botlhale.xyz',
-  baseUrl: '/documentation/',
+  baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.svg',
