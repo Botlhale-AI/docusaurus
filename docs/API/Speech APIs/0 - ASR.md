@@ -20,7 +20,7 @@ Request Params | |
 You need to Include `Authentication Token` in request headers. See how to 
 [Generate Auth Token](../1%20-%20Authentication.md#generate-a-bearer-token-post)
  codes.
- :::
+:::
 
 
 <br />
@@ -29,7 +29,6 @@ You need to Include `Authentication Token` in request headers. See how to
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-
 
 <Tabs>
 <TabItem value="py" label="Python">
@@ -53,7 +52,7 @@ print(response.text)
 </TabItem>
 <TabItem value="bash" label="Bash" default>
 
-```bash 
+```js 
 curl --location --request POST 'https://app-dev.botlhale.xyz/asr' \
 --form 'SpeechFile=@"mPMBv3Y3c/bot_YPBDDDGASKSEVTHT_English_V5v5DS992s.wav"' \
 --form 'LanguageCode="zu-ZA"'
@@ -61,7 +60,7 @@ curl --location --request POST 'https://app-dev.botlhale.xyz/asr' \
 </TabItem>
 <TabItem value="js" label="JavaScript">
 
-```js 
+```js
 var formdata = new FormData();
 formdata.append("SpeechFile", fileInput.files[0], "[PROXY]");
 formdata.append("LanguageCode", "zu-ZA");
@@ -79,7 +78,7 @@ fetch("https://app-dev.botlhale.xyz/asr", requestOptions)
 ```
 
 </TabItem>
-<TabItem value="node-js" label="Node JS - Native">
+<TabItem value="nodejs" label="Node JS - Native">
 
 ```js
 var https = require('follow-redirects').https;
@@ -119,6 +118,7 @@ req.write(postData);
 
 req.end();
 ```
+
 </TabItem>
 </Tabs>
 
