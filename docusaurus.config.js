@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 (module.exports = {
   title: 'Botlhale NLP Toolkit Documentation',
   tagline: "Let's get started! 🚀",
-  url: 'https://botlhale-ai.github.io',
+  url: 'https://docs.botlhale.xyz',
   baseUrl: '/documentation/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -24,13 +24,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://botlhale-ai.github.io/documentation/',
+          editUrl: 'https://docs.botlhale.xyz/documentation/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://botlhale-ai.github.io/documentation/',
+            'https://docs.botlhale.xyz/documentation/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -146,7 +146,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               },
               {
                 label: 'Facebook',
-                href: 'https://facebook.com/athi',
+                href: 'https://facebook.com/botlhaleAI',
               },
               {
                 label: 'Twitter',
