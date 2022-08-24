@@ -2,7 +2,7 @@
 ## ASR `POST`
 
 ```bash
-https://dev-botlhale.xyz/asr
+https://app-dev.botlhale.xyz/asr
 ```
 This endpoint handles single speech to text conversion. This API returns a text transcript of the audio file provided. This API supports audio clips of up to 5 minutes.
 
@@ -26,15 +26,18 @@ You need to Include `Authentication Token` in request headers. See how to
 <br />
 
 #### Request Example
-<!--
-type: tab
-title: Python
--->
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+<Tabs>
+<TabItem value="py" label="Python">
 
 ```python 
 import requests
 
-url = "https://dev-botlhale.xyz/asr"
+url = "https://app-dev.botlhale.xyz/asr"
 
 payload={'LanguageCode': 'zu-ZA'}
 files=[
@@ -47,20 +50,17 @@ response = requests.request("POST", url, headers=headers, data=payload, files=fi
 print(response.text)
 ```
 
-<!--
-type: tab
-title: cURL
--->
+</TabItem>
+<TabItem value="bash" label="Bash" default>
+
 ```bash 
-curl --location --request POST 'https://dev-botlhale.xyz/asr' \
+curl --location --request POST 'https://app-dev.botlhale.xyz/asr' \
 --form 'SpeechFile=@"mPMBv3Y3c/bot_YPBDDDGASKSEVTHT_English_V5v5DS992s.wav"' \
 --form 'LanguageCode="zu-ZA"'
 ```
+</TabItem>
+<TabItem value="js" label="JavaScript">
 
-<!--
-type: tab
-title: Javascipt
--->
 ```javascript 
 var formdata = new FormData();
 formdata.append("SpeechFile", fileInput.files[0], "[PROXY]");
@@ -72,16 +72,14 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://dev-botlhale.xyz/asr", requestOptions)
+fetch("https://app-dev.botlhale.xyz/asr", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
 
-<!--
-type: tab
-title: NODEJS - NATIVE
--->
+</TabItem>
+<TabItem value="node-js" label="Node JS - Native">
 
 ```js
 var https = require('follow-redirects').https;
@@ -89,7 +87,7 @@ var fs = require('fs');
 
 var options = {
   'method': 'POST',
-  'hostname': 'https://dev-botlhale.xyz',
+  'hostname': 'https://app-dev.botlhale.xyz',
   'path': '/asr',
   'headers': {
   },
@@ -121,8 +119,8 @@ req.write(postData);
 
 req.end();
 ```
-
-<!-- type: tab-end -->
+</TabItem>
+</Tabs>
 
 
 #### Response body
