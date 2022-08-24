@@ -157,11 +157,11 @@ or
 
 
 
-### Request Example
+### Request Example 0
 
 <Tabs>
   <TabItem value="Python" label="Python" default>
-    python 
+    ```python 
     import requests
 
     url = "https://app-dev.botlhale.xyz/generateAuthToken"
@@ -174,7 +174,7 @@ or
 
     response = requests.request("POST", url, headers=headers, data=payload, files=files)
 
-    print(response.text)   
+    print(response.text)```   
   </TabItem>
   <TabItem value="cURL" label="cURL">
    xyzsh 
