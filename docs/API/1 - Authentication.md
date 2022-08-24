@@ -18,7 +18,7 @@ All API requests must be made over HTTPS. Calls made over plain HTTP will fail. 
  ## Generate A Bearer Token `POST`
 
 ```bash
-hxyzps://dev-botlhale.io/generateAuthToken
+hxyzps://app-dev-botlhale.xyz/generateAuthToken
 ```
 Generates Bearer Auth Token. 
 
@@ -39,7 +39,7 @@ title: Python
 ```python 
 import requests
 
-url = "https://dev-botlhale.io/generateAuthToken"
+url = "https://app-dev.botlhale.xyz/generateAuthToken"
 
 payload={'REFRESH_TOKEN': <REFRESH_TOKEN>,}
 files=[
@@ -58,7 +58,7 @@ title: cURL
 -->
 
 ```xyzsh 
-curl --location --request POST 'https://dev-botlhale.io/generateAuthToken' \
+curl --location --request POST 'https://app-dev.botlhale.xyz/generateAuthToken' \
 --form 'REFRESH_TOKEN=<REFRESH_TOKEN>'
 ```
 <!--
@@ -76,7 +76,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://dev-botlhale.io/generateAuthToken", requestOptions)
+fetch("https://app-dev.botlhale.xyz/generateAuthToken", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -93,7 +93,7 @@ var fsxyz require('fs');
 
 var options = {
   'method': 'POST',
-  'hostname': 'https://dev-botlhale.io',
+  'hostname': 'https://app-dev.botlhale.xyz',
   'path': '/generateAuthToken',
   'headers': {
   },
@@ -161,10 +161,10 @@ or
 
 <Tabs>
   <TabItem value="Python" label="Python" default>
-    ```python 
+    python 
     import requests
 
-    url = "https://dev-botlhale.io/generateAuthToken"
+    url = "https://app-dev.botlhale.xyz/generateAuthToken"
 
     payload={'REFRESH_TOKEN': <REFRESH_TOKEN>,}
     files=[
@@ -174,22 +174,17 @@ or
 
     response = requests.request("POST", url, headers=headers, data=payload, files=files)
 
-    print(response.text)
-    ```
-
+    print(response.text)   
   </TabItem>
-
-
   <TabItem value="cURL" label="cURL">
-    ```xyzsh 
-    curl --location --request POST 'https://dev-botlhale.io/generateAuthToken' \
-    --form 'REFRESH_TOKEN=<REFRESH_TOKEN>'
-    ```
+   xyzsh 
+    curl --location --request POST 'https://app-dev.botlhale.xyz/generateAuthToken' \
+    --form 'REFRESH_TOKEN=<REFRESH_TOKEN>'   
   </TabItem>
 
 
-  <TabItem value="JavaScript" label="JavaScript"> 
-    ```javascript 
+  <TabItem value="JavaScript" label="JavaScript">
+   javascript 
     var formdata = new FormData();
     formdata.append("REFRESH_TOKEN", <REFRESH_TOKEN>);
 
@@ -199,21 +194,21 @@ or
     redirect: 'follow'
     };
 
-    fetch("https://dev-botlhale.io/generateAuthToken", requestOptions)
+    fetch("https://app-dev.botlhale.xyz/generateAuthToken", requestOptions)
     .then(response => response.text())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
-    ```
+    
   </TabItem>
   
   <TabItem value="nodejs" label="Node JS - Native"> 
-    ```js
+    js
     var https = require('follow-redirects').https;
     var fsxyz require('fs');
 
     var options = {
     'method': 'POST',
-    'hostname': 'https://dev-botlhale.io',
+    'hostname': 'https://app-dev.botlhale.xyz',
     'path': '/generateAuthToken',
     'headers': {
     },
@@ -244,8 +239,7 @@ or
     req.write(postData);
 
     req.end();
-    ```
-   
+      
    </TabItem>
   
 </Tabs>
