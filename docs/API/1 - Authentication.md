@@ -156,9 +156,6 @@ or
 ```
 
 
-
-### Request Example 0
-
 <Tabs className="unique-tabs">
  <TabItem value="Python" label="Python" default>
     ```python
@@ -177,6 +174,6 @@ or
     print(response.text)
    ```
  </TabItem> 
- <TabItem value="2" label="2">2nd tab</TabItem>
-   
+ <TabItem value="2" label="2">2nd tab
+ </TabItem>   
 </Tabs>
