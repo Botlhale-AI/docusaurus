@@ -24,13 +24,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://docs.botlhale.xyz/documentation/',
+          editUrl: 'https://botlhale-ai.github.io/documentation/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://docs.botlhale.xyz/documentation/',
+            'https://botlhale-ai.github.io/documentation/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
