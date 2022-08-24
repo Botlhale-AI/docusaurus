@@ -162,10 +162,11 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="Python" label="Python" default>
-   ```python 
+   
+   python 
    import requests
 
-   url = "https://dev-botlhale.io/generateAuthToken"
+   url = "https://app-dev.botlhale.xyz/generateAuthToken"
 
    payload={'REFRESH_TOKEN': <REFRESH_TOKEN>,}
    files=[
@@ -175,16 +176,17 @@ import TabItem from '@theme/TabItem';
 
    response = requests.request("POST", url, headers=headers, data=payload, files=files)
 
-   print(response.text)```
+   print(response.text)
   </TabItem>
   <TabItem value="cURL" label="cURL">
-    ```xyzsh 
-    curl --location --request POST 'https://app-dev.botlhale.xyz/generateAuthToken' \
-    --form 'REFRESH_TOKEN=REFRESH_TOKEN'
-    ```
+    
+   xyzsh 
+   curl --location --request POST 'https://app-dev.botlhale.xyz/generateAuthToken' \ --form 'REFRESH_TOKEN=REFRESH_TOKEN'   
   </TabItem>
+   
   <TabItem value="JavaScript" label="JavaScript"> 
-    ```js 
+    js 
+   
     var formdata = new FormData();
     formdata.append("REFRESH_TOKEN", REFRESH_TOKEN);
 
