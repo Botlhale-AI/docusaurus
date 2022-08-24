@@ -157,6 +157,9 @@ or
 
 ### Request Example
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 
 <Tabs>
 <TabItem value="py" label="Python">
