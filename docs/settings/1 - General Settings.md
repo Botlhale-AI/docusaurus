@@ -10,20 +10,7 @@ import TabItem from '@theme/TabItem';
 :::tip
 <Tabs>
   <TabItem value="account" label="Account" default>
-    ```js
-    var formdata = new FormData();
-    formdata.append("REFRESH_TOKEN", REFRESH_TOKEN);
-
-    var requestOptions = {
-    method: 'POST',
-    body: formdata,
-    redirect: 'follow'
-    };
-
-    fetch("https://app-dev.botlhale.xyz/generateAuthToken", requestOptions)
-    .then(response => response.text())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));```  
+    Add, edit, delete and update your account details here.
   </TabItem>
   <TabItem value="organisations" label="Organisations">
     Change organisations here.
