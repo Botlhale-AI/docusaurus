@@ -162,32 +162,26 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="Python" label="Python" default>
-   <code>
-    python 
-     import requests
+   
+   import requests
+   url = "https://app-dev.botlhale.xyz/generateAuthToken"
 
-     url = "https://app-dev.botlhale.xyz/generateAuthToken"
+   payload={'REFRESH_TOKEN': <REFRESH_TOKEN>,}
+   files=[]
+   
+   headers = {}
 
-     payload={'REFRESH_TOKEN': <REFRESH_TOKEN>,}
-     files=[
+   response = requests.request("POST", url, headers=headers, data=payload, files=files)
 
-     ]
-     headers = {}
-
-     response = requests.request("POST", url, headers=headers, data=payload, files=files)
-
-     print(response.text)
-   </code>
+   print(response.text)
   </TabItem>
   <TabItem value="cURL" label="cURL">
     
-   xyzsh 
    curl --location --request POST 'https://app-dev.botlhale.xyz/generateAuthToken' \ --form 'REFRESH_TOKEN=REFRESH_TOKEN'   
   </TabItem>
    
   <TabItem value="JavaScript" label="JavaScript"> 
-    js 
-   
+     
     var formdata = new FormData();
     formdata.append("REFRESH_TOKEN", REFRESH_TOKEN);
 
@@ -200,11 +194,10 @@ import TabItem from '@theme/TabItem';
     fetch("https://app-dev.botlhale.xyz/generateAuthToken", requestOptions)
     .then(response => response.text())
     .then(result => console.log(result))
-    .catch(error => console.log('error', error));
-    ```
-  </TabItem>  
+    .catch(error => console.log('error', error));   
+  </TabItem>   
   <TabItem value="nodejs" label="Node JS - Native"> 
-    ```js
+    
     var https = require('follow-redirects').https;
     var fsxyz require('fs');
 
@@ -240,7 +233,6 @@ import TabItem from '@theme/TabItem';
 
     req.write(postData);
 
-    req.end();
-    ```   
+    req.end();       
    </TabItem>  
 </Tabs>
