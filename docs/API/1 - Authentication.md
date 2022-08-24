@@ -154,25 +154,3 @@ or
 ```bash
 -H "Authorization: Bearer <IdToken>"
 ```
-
-
-<Tabs className="unique-tabs">
- <TabItem value="Python" label="Python" default>
-    ```python
-    import requests
-
-    url = "https://app-dev.botlhale.xyz/generateAuthToken"
-
-    payload={'REFRESH_TOKEN': <REFRESH_TOKEN>,}
-    files=[
-
-    ]
-    headers = {}
-
-    response = requests.request("POST", url, headers=headers, data=payload, files=files)
-
-    print(response.text)```
- </TabItem> 
- <TabItem value="2" label="2">2nd tab
- </TabItem>   
-</Tabs>
