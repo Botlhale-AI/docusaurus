@@ -155,3 +155,118 @@ or
 -H "Authorization: Bearer <IdToken>"
 ```
 
+
+
+### Request Example
+
+<Tabs>
+  <TabItem value="Python" label="Python" default>
+    <!--
+    type: tab
+    title: Python
+    -->
+
+    ```python 
+    import requests
+
+    url = "https://dev-botlhale.io/generateAuthToken"
+
+    payload={'REFRESH_TOKEN': <REFRESH_TOKEN>,}
+    files=[
+
+    ]
+    headers = {}
+
+    response = requests.request("POST", url, headers=headers, data=payload, files=files)
+
+    print(response.text)
+    ```
+
+  </TabItem>
+
+
+  <TabItem value="cURL" label="cURL">
+    <!--
+    type: tab
+    title: cURL
+    -->
+
+    ```xyzsh 
+    curl --location --request POST 'https://dev-botlhale.io/generateAuthToken' \
+    --form 'REFRESH_TOKEN=<REFRESH_TOKEN>'
+    ```
+  </TabItem>
+
+
+  <TabItem value="JavaScript" label="JavaScript">    
+    <!--
+    type: tab
+    title: Javascipt
+    -->
+
+    ```javascript 
+    var formdata = new FormData();
+    formdata.append("REFRESH_TOKEN", <REFRESH_TOKEN>);
+
+    var requestOptions = {
+    method: 'POST',
+    body: formdata,
+    redirect: 'follow'
+    };
+
+    fetch("https://dev-botlhale.io/generateAuthToken", requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+    ```
+  </TabItem>
+  
+  <TabItem value="nodejs" label="Node JS - Native"> 
+    <!--
+    type: tab
+    title: NODEJS - NATIVE
+    -->
+
+    ```js
+    var https = require('follow-redirects').https;
+    var fsxyz require('fs');
+
+    var options = {
+    'method': 'POST',
+    'hostname': 'https://dev-botlhale.io',
+    'path': '/generateAuthToken',
+    'headers': {
+    },
+    'maxRedirects': 20
+    };
+
+    var req = https.request(options, function (res) {
+    var chunks = [];
+
+    res.on("data", function (chunk) {
+        chunks.push(chunk);
+    });
+
+    res.on("end", function (chunk) {
+        var body = Buffer.concat(chunks);
+        console.log(body.toString());
+    });
+
+    res.on("error", function (error) {
+        console.error(error);
+    });
+    });
+
+    var postData = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"REFRESH_TOKEN\"\r\n\r\n<REFRESH_TOKEN>.ai\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW";
+
+    req.setHeader('content-type', 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW');
+
+    req.write(postData);
+
+    req.end();
+    ```
+    <!-- type: tab-end -->
+   </TabItem>
+  
+</Tabs>
+
