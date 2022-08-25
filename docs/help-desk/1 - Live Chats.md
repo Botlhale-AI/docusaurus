@@ -7,10 +7,7 @@ This tab enables your end-users to communicate with a LIVE human agent.
 
 This section covers the interaction between the human (and agent from Client) and the customer (end-user). This is triggered after the human hand-over function is activated on the chatbot by the customer.
 
-The figure below shows the pre-defined dialogue option shows the interface that the agent will be interacting with
 
-
-![live-chats.png](https://stoplight.io/api/v1/projects/cHJqOjU4NzU5/images/J6foAuEc14E)
 
 
 ## Human Handoff Integration
