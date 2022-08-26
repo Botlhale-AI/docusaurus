@@ -18,7 +18,7 @@ To view and test deployed bots, you need to be on the `Deployed Bots` tab. On th
 
 On the `Try it out!` tab your can send requests to test you deployed bot. 
 
-![deploy](https://botlhale-docs.s3.amazonaws.com/deployed-try.PNG)
+![deploy](https://botlhale-docs1-new.s3.amazonaws.com/deployed-try.PNG)
 
 ## Update Deployment
 
