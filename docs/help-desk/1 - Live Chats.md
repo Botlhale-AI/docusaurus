@@ -13,11 +13,11 @@ This section covers the interaction between the human (and agent from Client) an
 ## Human Handoff Integration
 To hand over the conversation between a user and a bot to a human agent, the bot builder has a pre-defined dialogue that can be selected to enable the feature. The figure below shows the pre-defined dialogue option.
 
-![deploy][(https://botlhale-docs1-new.s3.amazonaws.com/create-live.PNG)]
+![deploy](https://botlhale-docs1-new.s3.amazonaws.com/create-live.PNG)
 
 The human handoff dialogue contains two dialogue streams 1) provide_handoff_options and 2) execute_handoff as can be seen in the figure below. These 2 dialogues work off the shell and do not require any modifications. 
 
-![deploy](https://botlhale-docs.s3.amazonaws.com/create-live-show.PNG)
+![deploy](https://botlhale-docs1-new.s3.amazonaws.com/create-live-show.PNG)
 
 The human handoff capability uses Socket.IO (https://socket.io/docs/v3/) which is a library that allows message passing between a server and multiple clients. All chatbots with human handoff setup will need to connect to our socketIO server: https://app.botlhale.xyz/live_server
 
