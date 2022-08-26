@@ -10,7 +10,7 @@ To create variables, click on the `New variable` button. You will be have the op
 
 Once a variable has been created, click on the edit variable button to add variable examples. To add a new variable example, click on `New variable example`. You will be prompted to enter a variable example for the newly created variable, then click create variable example, as shown in Figure 8.
 
-![add entity examples](https://botlhale-docs1-new.s3.amazonaws.com/add-intent-examples.PNG)
+![add entity examples](https://botlhale-docs1-new.s3.amazonaws.com/add-entity-examples.PNG)
 
 Once you have added a new variable example, you can add synonyms of the example by clicking on the edit variable example button. Click on the `Save` button to save the added synonyms.
 
