@@ -139,7 +139,7 @@ https://dev-botlhale.io/message
 ```
 This endpoint handles the messages. It receives messages from the user and returns the bot response in JSON format.
 
-Request Params | <>
+Request Params | 
 | ------------- | ------------- |
 | BotID  | `string` <br />Required. Specifies which bot the message should be sent to.| 
 | LanguageCode  | `string` <br /> Required. This is the language the user is using to interact with the bot. See **list of supported languages** to get the language codes.| 
