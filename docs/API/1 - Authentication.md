@@ -1,8 +1,9 @@
 # Authentication
 The Botlhale API uses API keys to authenticate requests. Your API keys carry many privileges, so be sure to keep them secure! Do not share your secret API keys in publicly accessible areas such as GitHub, client-side code, and so forth. You can get your API keys by going to `Profile > API` on the platform.
 
-<!-- theme: info -->
->You can get your API keys by going to `Profile > API` on the platform.
+:::tip Note
+You can get your API keys by going to `Profile > API` on the platform.
+:::
 
 Authentication to the all API endpoints is performed via Bearer Authentication. To perform Bearer Authentication you first need to provide your API key as the basic auth username value and password to `generateAuthToken` endpoint and use `IdToken` in the response as Bearer token for all other endpoints. 
 
@@ -126,10 +127,21 @@ curl --location --request POST 'https://api.botlhale.io/generateAuthToken' \
 ```
 
  </TabItem>
- 
 
 </Tabs>
 
+#### Response body
+```json
+{
+    "AuthenticationResult": {
+        "AccessToken": "YOUR_ACCESS_TOKEN",
+        "ExpiresIn": 3600,
+        "IdToken": "YOUR_ID_TOKEN",
+        "RefreshToken": "YOUR_REFRESH_TOKEN",
+        "TokenType": "Bearer"
+    }
+ }
+```
 
 ## API Auth
 

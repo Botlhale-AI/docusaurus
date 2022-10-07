@@ -1,4 +1,4 @@
-# Chatbot
+# Chatbot APIs
 ## startConversation `POST`
 Generate a ConversationID valid for 24 hours. This is a unique ID that you have to provide to keep track of different conversations.
 
@@ -12,7 +12,7 @@ Request Params |
 | LanguageCode  | `string` <br /> Required. This is the language the user is using to interact with the bot. See **list of supported languages** to get the language |
 
 
-:::note
+:::tip Note
 
 You need to Include `Authentication Token` in request headers. See how to 
 [Generate Auth Token](../1%20-%20Authentication.md#generate-a-bearer-token-post)
@@ -21,10 +21,11 @@ You need to Include `Authentication Token` in request headers. See how to
 
 
 #### Request Example
-<!--
-type: tab
-title: Python
--->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+<TabItem value="py" label="Python">
 
 ```python 
 import requests
@@ -43,10 +44,10 @@ response = requests.request("POST", url, headers=headers, data=payload, files=fi
 print(response.text)
 ```
 
-<!--
-type: tab
-title: cURL
--->
+
+</TabItem>
+<TabItem value="bash" label="Bash" default>
+
 ```bash 
 curl --location --request POST 'https://api.botlhale.xyz/startConversation' \
 -H 'Authorization: Bearer <IdToken>' \
@@ -54,10 +55,10 @@ curl --location --request POST 'https://api.botlhale.xyz/startConversation' \
 --form 'LanguageCode="English"'
 ```
 
-<!--
-type: tab
-title: Javascipt
--->
+
+</TabItem>
+<TabItem value="js" label="JavaScript" default>
+
 ```javascript 
 var formdata = new FormData();
 formdata.append("BotID", "YPBDDDGASKSEVTHT");
@@ -76,10 +77,9 @@ fetch("https://dev-botlhale.io/startConversation", requestOptions)
   .catch(error => console.log('error', error));
 ```
 
-<!--
-type: tab
-title: NODEJS - NATIVE
--->
+
+</TabItem>
+<TabItem value="nodejs" label="Node JS - Native">
 
 ```js
 var https = require('follow-redirects').https;
@@ -121,7 +121,8 @@ req.write(postData);
 req.end();
 ```
 
-<!-- type: tab-end -->
+</TabItem>
+</Tabs>
 
 
 #### Response body
@@ -147,21 +148,26 @@ Request Params |
 | MessageType  | `string` <br />Required. Specifies whether the user message is speech or text.| 
 | ResponseType  | `string` <br />Required. Specifies whether the response should be speech or text.|
 | TextMsg  | `string` <br />Required if MessageType = 'text'. Text Message from the 
-| SpeechFile  | `file` <br /> Required if MessageType = 'speech'. Binary audio file of the user's message.| <!-- theme: info -->
+| SpeechFile  | `file` <br /> Required if MessageType = 'speech'. Binary audio file of the user's message.|
 
->  Note\! You need to Include `Authentication Token` in request headers. See how to 
+:::tip Note
+
+You need to Include `Authentication Token` in request headers. See how to 
 [Generate Auth Token](../1%20-%20Authentication.md#generate-a-bearer-token-post)
-user to the bot. 
+ codes.
+:::
  
 
 <br />
 
 
 ### Text - Text  `example request`
-<!--
-type: tab
-title: Python
--->
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+<TabItem value="py" label="Python">
 
 ```python 
 import requests
@@ -184,10 +190,9 @@ response = requests.request("POST", url, headers=headers, data=payload, files=fi
 print(response.text)
 ```
 
-<!--
-type: tab
-title: cURL
--->
+</TabItem>
+<TabItem value="bash" label="Bash" default>
+
 ```bash 
 curl --location --request POST 'https://dev-botlhale.io/message' \
 -H "Authorization: Bearer <IdToken>" \
@@ -199,10 +204,9 @@ curl --location --request POST 'https://dev-botlhale.io/message' \
 --form 'TextMsg="hello"'
 ```
 
-<!--
-type: tab
-title: Javascipt
--->
+</TabItem>
+<TabItem value="js" label="JavaScript">
+
 ```javascript 
 var formdata = new FormData();
 formdata.append("BotID", "YPBDDDGASKSEVTHT");
@@ -226,10 +230,9 @@ fetch("https://dev-botlhale.io/message", requestOptions)
   .catch(error => console.log('error', error));
 ```
 
-<!--
-type: tab
-title: NODEJS - NATIVE
--->
+
+</TabItem>
+<TabItem value="nodejs" label="Node JS - Native">
 
 ```js
 var https = require('follow-redirects').https;
@@ -270,8 +273,8 @@ req.write(postData);
 
 req.end();
 ```
-
-<!-- type: tab-end -->
+</TabItem>
+</Tabs>
 
 #### Response body
 ```json
@@ -309,10 +312,12 @@ req.end();
 ```
 
 ### Text - Speech  `example request`
-<!--
-type: tab
-title: Python
--->
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+<TabItem value="py" label="Python">
 
 ```python 
 import requests
@@ -335,10 +340,9 @@ response = requests.request("POST", url, headers=headers, data=payload, files=fi
 print(response.text)
 ```
 
-<!--
-type: tab
-title: cURL
--->
+</TabItem>
+<TabItem value="bash" label="Bash" default>
+
 ```bash 
 curl --location --request POST 'https://dev-botlhale.io/message' \
 -H "Authorization: Bearer <IdToken>"
@@ -350,10 +354,9 @@ curl --location --request POST 'https://dev-botlhale.io/message' \
 --form 'TextMsg="hello"'
 ```
 
-<!--
-type: tab
-title: Javascipt
--->
+</TabItem>
+<TabItem value="js" label="JavaScript">
+
 ```javascript 
 var formdata = new FormData();
 formdata.append("BotID", "YPBDDDGASKSEVTHT");
@@ -376,10 +379,8 @@ fetch("https://dev-botlhale.io/message", requestOptions)
   .catch(error => console.log('error', error));
 ```
 
-<!--
-type: tab
-title: NODEJS - NATIVE
--->
+</TabItem>
+<TabItem value="nodejs" label="Node JS - Native">
 
 ```js
 var https = require('follow-redirects').https;
@@ -420,8 +421,8 @@ req.write(postData);
 
 req.end();
 ```
-
-<!-- type: tab-end -->
+</TabItem>
+</Tabs>
 
 #### Response body
 ```json
@@ -461,10 +462,12 @@ req.end();
 
 
 ### Speech - Text  `example request`
-<!--
-type: tab
-title: Python
--->
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+<TabItem value="py" label="Python">
 
 ```python 
 import requests
@@ -486,10 +489,9 @@ response = requests.request("POST", url, headers=headers, data=payload, files=fi
 print(response.text)
 ```
 
-<!--
-type: tab
-title: cURL
--->
+</TabItem>
+<TabItem value="bash" label="Bash" default>
+
 ```bash 
 curl --location --request POST 'https://dev-botlhale.io/message' \
 -H "Authorization: Bearer <IdToken>" \
@@ -501,10 +503,9 @@ curl --location --request POST 'https://dev-botlhale.io/message' \
 --form 'SpeechFile=@"6d97n7nJf/bot_YPBDDDGASKSEVTHT_English_V5v5DS992s.wav"'
 ```
 
-<!--
-type: tab
-title: Javascipt
--->
+</TabItem>
+<TabItem value="js" label="JavaScript">
+
 ```javascript 
 var formdata = new FormData();
 formdata.append("BotID", "dshfgjdsgfd");
@@ -527,10 +528,8 @@ fetch("https://dev-botlhale.io/message", requestOptions)
   .catch(error => console.log('error', error));
 ```
 
-<!--
-type: tab
-title: NODEJS - NATIVE
--->
+</TabItem>
+<TabItem value="nodejs" label="Node JS - Native">
 
 ```js
 var https = require('follow-redirects').https;
@@ -572,7 +571,8 @@ req.write(postData);
 req.end();
 ```
 
-<!-- type: tab-end -->
+</TabItem>
+</Tabs>
 
 #### Response body
 ```json
@@ -611,10 +611,12 @@ req.end();
 
 
 ### Speech - Speech  `example request`
-<!--
-type: tab
-title: Python
--->
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+<TabItem value="py" label="Python">
 
 ```python 
 import requests
@@ -636,10 +638,10 @@ response = requests.request("POST", url, headers=headers, data=payload, files=fi
 print(response.text)
 ```
 
-<!--
-type: tab
-title: cURL
--->
+
+</TabItem>
+<TabItem value="bash" label="Bash" default>
+
 ```bash 
 curl --location --request POST 'https://dev-botlhale.io/message' \
 -H "Authorization: Bearer <IdToken>" \
@@ -651,10 +653,9 @@ curl --location --request POST 'https://dev-botlhale.io/message' \
 --form 'SpeechFile=@"jD-GB99E5/bot_YPBDDDGASKSEVTHT_English_V5v5DS992s.wav"'
 ```
 
-<!--
-type: tab
-title: Javascipt
--->
+</TabItem>
+<TabItem value="js" label="JavaScript">
+
 ```javascript 
 var formdata = new FormData();
 formdata.append("BotID", "dshfgjdsgfd");
@@ -677,10 +678,8 @@ fetch("https://dev-botlhale.io/message", requestOptions)
   .catch(error => console.log('error', error));
 ```
 
-<!--
-type: tab
-title: NODEJS - NATIVE
--->
+</TabItem>
+<TabItem value="nodejs" label="Node JS - Native">
 
 ```js
 var https = require('follow-redirects').https;
@@ -721,8 +720,8 @@ req.write(postData);
 
 req.end();
 ```
-
-<!-- type: tab-end -->
+</TabItem>
+</Tabs>
 
 
 #### Response body

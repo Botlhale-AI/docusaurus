@@ -23,7 +23,7 @@ Request Params | |
 
 <br />
 
-:::note
+:::tip Note
 
 You need to Include `Authentication Token` in request headers. See how to 
 [Generate Auth Token](../../1%20-%20Authentication.md#generate-a-bearer-token-post)
@@ -132,7 +132,7 @@ req.end();
 
 
 #### Response body
-```bash
+```json
 {
     "DateReceived": "01/05/2021 15:39:41",
     "LanguageCode": "zu-ZA",

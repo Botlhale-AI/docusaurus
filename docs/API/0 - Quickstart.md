@@ -16,9 +16,10 @@ Botlhale uses conventional `HTTP` response codes to indicate the success or fail
 
 See what you can do with our Chatbot APIs!
 
-<!-- theme: info -->
-> These are examples of how your can intergrate our APIs to different platforms: 
+:::tip Note
+These are examples of how your can intergrate our APIs to different platforms: 
 [flaskTemplate](https://github.com/Botlhale-AI/flaskTemplate), [facebookTemplate](https://github.com/Botlhale-AI/facebookTemplate), [WhatsAppTemplate](https://github.com/Botlhale-AI/WhatsAppTemplate). 
+:::
 
 1. [Start a Conversation]
 2. [Send Text Message]

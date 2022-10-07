@@ -10,9 +10,8 @@ Request Params | |
 | ------------- | ------------- |
 | TextMsg  | `string` <br />Required. Text Message from the user to the bot.| 
 | LanguageCode  | `string` <br /> Required. This is the language the user is using to interact with the bot. See [list of supported languages](2%20-%20Languages.md) for supported languages and codes. |
-<!-- theme: info -->
 
-:::note
+:::tip Note
 
 You need to Include `Authentication Token` in request headers. See how to 
 [Generate Auth Token](../../1%20-%20Authentication.md#generate-a-bearer-token-post)
@@ -123,7 +122,7 @@ req.end();
 </Tabs>
 
 #### Response body
-```bash
+```json
 {
     "DateReceived": "01/05/2021 15:38:35",
     "LanguageCode": "xh-ZA",
