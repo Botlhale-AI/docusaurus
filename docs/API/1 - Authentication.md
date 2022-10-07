@@ -18,11 +18,14 @@ All API requests must be made over HTTPS. Calls made over plain HTTP will fail. 
  ## Generate A Bearer Token `POST`
 
 ```bash
-hxyzps://app-dev-botlhale.xyz/generateAuthToken
-```
-Generates Bearer Auth Token. 
+https://api.botlhale.xyz/generateAuthToken
 
-Request Params |
+```
+
+This endpoint generates bearer auth token for secure access to our API.
+
+
+Request Params | <>
 | ------------- | ------------- |
 | Auth Token  | `string` <br />Required. Text Message from the user to the bot.| 
 
@@ -41,7 +44,7 @@ import TabItem from '@theme/TabItem';
 
 ```py
 import requests
-url = "https://app-dev.botlhale.xyz/generateAuthToken"
+url = "https://api.botlhale.xyz/generateAuthToken"
 
 payload={'REFRESH_TOKEN': <REFRESH_TOKEN>,}
 files=[]
@@ -66,7 +69,7 @@ body: formdata,
 redirect: 'follow'
 };
 
-fetch("https://app-dev.botlhale.xyz/generateAuthToken", requestOptions)
+fetch("https://api.botlhale.xyz/generateAuthToken", requestOptions)
 .then(response => response.text())
 .then(result => console.log(result))
 .catch(error => console.log('error', error));   
@@ -81,7 +84,7 @@ var fsxyz require('fs');
 
 var options = {
 'method': 'POST',
-'hostname': 'https://app-dev.botlhale.xyz',
+'hostname': 'https://api.botlhale.xyz',
 'path': '/generateAuthToken',
 'headers': {
 },
@@ -118,7 +121,7 @@ req.end();
 <TabItem value="js2" label="cURL">
 
 ```js
-curl --location --request POST 'https://dev-botlhale.io/generateAuthToken' \
+curl --location --request POST 'https://api.botlhale.io/generateAuthToken' \
 --form 'REFRESH_TOKEN=<REFRESH_TOKEN>'
 ```
 

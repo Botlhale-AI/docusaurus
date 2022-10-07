@@ -4,7 +4,7 @@
 The table below shows the languages we support as well as the speech task we support for the specific language. Our Speech team is always working to include new languages to the list.
 
 
-Language | Region | Tag | ASR | TTS | Diarization | Language ID |
+Language | Region | Code | ASR | TTS | Diarization | Language ID |
 | ------------- | ------------- |  ------------- |  ------------- |  ------------- | ------------- | ------------- |
 | English | South Africa |  en-ZA | √ |  √ | √ | √ |
 | IsiZulu | South Africa |  zu-ZA | √ |  √ | √ | √ |

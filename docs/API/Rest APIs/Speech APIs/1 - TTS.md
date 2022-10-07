@@ -2,7 +2,7 @@
 ## TTS `POST`
 
 ```bash
-https://app-dev.botlhale.xyz/tts
+https://api.botlhale.xyz/tts
 ```
 This endpoint handles single text to speech conversion.
 
@@ -12,8 +12,12 @@ Request Params | |
 | LanguageCode  | `string` <br /> Required. This is the language the user is using to interact with the bot. See [list of supported languages](2%20-%20Languages.md) for supported languages and codes. |
 <!-- theme: info -->
 
->  Note\! You need to Include `Authentication Token` in request headers. See how to 
-[Generate Auth Token]
+:::note
+
+You need to Include `Authentication Token` in request headers. See how to 
+[Generate Auth Token](../../1%20-%20Authentication.md#generate-a-bearer-token-post)
+ codes.
+:::
 
 
 <br />
@@ -29,7 +33,7 @@ import TabItem from '@theme/TabItem';
 ```python 
 import requests
 
-url = "hhttps://app-dev.botlhale.xyz/tts"
+url = "hhttps://api.botlhale.xyz/tts"
 
 payload={'LanguageCode': 'xh-ZA',
 'TextMsg': 'Molo Athi'}
@@ -48,7 +52,7 @@ print(response.text)
 
 
 ```bash 
-curl --location --request POST 'https://app-dev.botlhale.xyz/tts' \
+curl --location --request POST 'https://api.botlhale.xyz/tts' \
 --form 'LanguageCode="xh-ZA"' \
 --form 'TextMsg="hello"'
 ```
@@ -67,7 +71,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://app-dev.botlhale.xyz/tts", requestOptions)
+fetch("https://api.botlhale.xyz/tts", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -82,7 +86,7 @@ var fs = require('fs');
 
 var options = {
   'method': 'POST',
-  'hostname': 'https://app-dev.botlhale.xyz',
+  'hostname': 'https://api.botlhale.xyz',
   'path': '/tts',
   'headers': {
   },
