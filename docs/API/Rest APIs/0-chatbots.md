@@ -12,7 +12,7 @@ Request Params |
 | LanguageCode  | `string` <br /> Required. This is the language the user is using to interact with the bot. See **list of supported languages** to get the language |
 
 
-:::tip Note
+:::info
 
 You need to Include `Authentication Token` in request headers. See how to 
 [Generate Auth Token](../1%20-%20Authentication.md#generate-a-bearer-token-post)
@@ -150,7 +150,7 @@ Request Params |
 | TextMsg  | `string` <br />Required if MessageType = 'text'. Text Message from the 
 | SpeechFile  | `file` <br /> Required if MessageType = 'speech'. Binary audio file of the user's message.|
 
-:::tip Note
+:::info
 
 You need to Include `Authentication Token` in request headers. See how to 
 [Generate Auth Token](../1%20-%20Authentication.md#generate-a-bearer-token-post)

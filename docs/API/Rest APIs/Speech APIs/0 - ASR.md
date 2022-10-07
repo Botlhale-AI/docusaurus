@@ -23,7 +23,7 @@ Request Params | |
 
 <br />
 
-:::tip Note
+:::info
 
 You need to Include `Authentication Token` in request headers. See how to 
 [Generate Auth Token](../../1%20-%20Authentication.md#generate-a-bearer-token-post)
