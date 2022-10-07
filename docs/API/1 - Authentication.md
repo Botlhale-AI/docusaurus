@@ -25,7 +25,7 @@ https://api.botlhale.xyz/generateAuthToken
 This endpoint generates bearer auth token for secure access to our API.
 
 
-Request Params | <>
+Request Params | 
 | ------------- | ------------- |
 | Auth Token  | `string` <br />Required. Text Message from the user to the bot.| 
 
