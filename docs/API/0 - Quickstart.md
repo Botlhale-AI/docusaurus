@@ -9,8 +9,8 @@ Authentication to the all API endpoints is performed via Bearer Authentication. 
 Botlhale uses conventional `HTTP` response codes to indicate the success or failure of an API request. In general: Codes in the `2xx` range indicate success. Codes in the `4xx` range indicate an error that failed given the information provided (e.g., a required parameter was omitted, a charge failed, etc.). Codes in the `5xx` range indicate an error with Botlhale's servers (these are rare).
 
 
-1. [Authentication](/docs/API/1%20-%20Authentication.md)
-2. [ResponseCodes](/docs/API/2%20-%20Errors.md)
+1. [Authentication](1%20-%20Authentication.md)
+2. [ResponseCodes](2%20-%20Errors.md)
 
 ## Chatbot API
 
@@ -29,5 +29,5 @@ See what you can do with our Chatbot APIs!
 
 See what you can do with our Speech APIs!
 
-1. [Convert Speech to Text](/docs/API/Rest%20APIs/Speech%20APIs/0%20-%20ASR.md)
-2. [Convert Text to Speech](/docs/API/Rest%20APIs/Speech%20APIs/1%20-%20TTS.md)
+1. [Convert Speech to Text](Rest%20APIs/Speech%20APIs/0%20-%20ASR.md)
+2. [Convert Text to Speech](Rest%20APIs/Speech%20APIs/1%20-%20TTS.md)
