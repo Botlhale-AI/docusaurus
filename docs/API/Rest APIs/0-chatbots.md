@@ -163,8 +163,6 @@ You need to Include `Authentication Token` in request headers. See how to
 
 ### Text - Text  `example request`
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs>
 <TabItem value="py" label="Python">
@@ -313,8 +311,6 @@ req.end();
 
 ### Text - Speech  `example request`
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs>
 <TabItem value="py" label="Python">
@@ -463,8 +459,6 @@ req.end();
 
 ### Speech - Text  `example request`
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs>
 <TabItem value="py" label="Python">
@@ -611,9 +605,6 @@ req.end();
 
 
 ### Speech - Speech  `example request`
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs>
 <TabItem value="py" label="Python">
