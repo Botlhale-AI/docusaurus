@@ -51,13 +51,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         items: [          
           {
             type: 'doc',
-            docId: 'bot-builder/Bot Creation',
+            docId: 'Platform/bot-builder/Bot Creation',
             position: 'left',
             label: 'Platform',
           },
           {
             type: 'doc',
-            docId: 'API/Quickstart',
+            docId: 'APIs/Quickstart',
             position: 'left',
             label: 'API',
           },
@@ -84,29 +84,29 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             items: [
               {
                 label: 'Bot Builder',
-                to: 'docs/bot-builder/Bot%20Creation',
+                to: 'docs/Platform/bot-builder/Bot%20Creation',
               },    
               {
                 label: 'Live Bots',
-                to: '/docs/live-bots/Deployments',
+                to: '/docs/Platform/live-bots/Deployments',
               },                   
               {
                 label: 'Help Desk',
-                to: '/docs/help-desk/Live%20Chats',
+                to: '/docs/Platform/help-desk/Live%20Chats',
               },    
                  
               {
                 label: 'Settings',
-                to: '/docs/settings/General%20Settings',
+                to: '/docs/Platform/settings/General%20Settings',
               }, 
               {
                 label: 'Tutorials',
-                to: '/docs/Tutorials/Platform%20Tutorials',
+                to: '/docs/Platform/Tutorials/Platform%20Tutorials',
               },                   
             ],
           },
           {
-            title: 'API',
+            title: 'APIs',
             items: [
               {
                 label: 'Quickstart',
