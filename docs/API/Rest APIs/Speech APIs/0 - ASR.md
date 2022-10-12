@@ -9,7 +9,7 @@ This endpoint handles single speech to text conversion. This API returns a text 
 Request Params | |
 | ------------- | ------------- |
 | SpeechFile  | `File` **Required.** Binary audio file of the user's message.| 
-| SampleRate  | `Number` **Optional.** The sample rate of the supplied audio clip in hertz e.g 8000 for 8kHz|
+| SampleRate  | `Number` **Required.** The sample rate of the supplied audio clip in hertz e.g 8000 for 8kHz|
 | LanguageCode  | `String` **Required.** This is the language spoken in the supplied audio clip. We use BCP-47 language tags. See [list of supported languages](2%20-%20Languages.md) for supported languages and codes. |
 | Diarization  | `Boolean`  **Optional.** Speaker diarization is used to identify different speakers in the clip as well as when the different speakers are speaking  * **False** - Default, Speaker diarization is enabled.  * **True** - Speaker diarization is enabled. `Note! This will have an impact on the cost of the request` |
 | LanguageId  | `Boolean` **Optional.** This is used to automatically detect the language spoken on the audio clip. This is done at sentence level. When this is enabled, the provided LanguageCode will be ignored.* **False** - Default, Language identification is enabled. * **True** - Language identification is enabled. `Note! This will have an impact on the cost of the request`|
@@ -46,11 +46,16 @@ import requests
 
 url = "https://api.botlhale.xyz/asr"
 
-payload={'LanguageCode': 'zu-ZA'}
+payload={'LanguageCode': 'zu-ZA',
+'SampleRate': '16000'}
+
 files=[
-  ('SpeechFile',('bot_YPBDDDGASKSEVTHT_English_V5v5DS992s.wav',open('mPMBv3Y3c/bot_YPBDDDGASKSEVTHT_English_V5v5DS992s.wav','rb'),'audio/wav'))
+  ('SpeechFile',('bot_YPBDDDGASKSEVTHT_V5v5DS992s.wav',open('mPMBv3Y3c/bot_YPBDDDGASKSEVTHT__V5v5DS992s.wav','rb'),'audio/wav'))
 ]
-headers = {}
+
+headers = {
+  'Authorization': 'Bearer <IdToken>
+}
 
 response = requests.request("POST", url, headers=headers, data=payload, files=files)
 
@@ -62,13 +67,18 @@ print(response.text)
 
 ```js 
 curl --location --request POST 'https://api.botlhale.xyz/asr' \
---form 'SpeechFile=@"mPMBv3Y3c/bot_YPBDDDGASKSEVTHT_English_V5v5DS992s.wav"' \
+--header 'Authorization: Bearer <IdToken>' \
+--form 'SpeechFile=@"mPMBv3Y3c/bot_YPBDDDGASKSEVTHT__V5v5DS992s.wav"' \
 --form 'LanguageCode="zu-ZA"'
 ```
+
 </TabItem>
 <TabItem value="js" label="JavaScript">
 
 ```js
+var myHeaders = new Headers();
+myHeaders.append("Authorization", "Bearer <IdToken>");
+
 var formdata = new FormData();
 formdata.append("SpeechFile", fileInput.files[0], "[PROXY]");
 formdata.append("LanguageCode", "zu-ZA");
@@ -97,6 +107,7 @@ var options = {
   'hostname': 'https://api.botlhale.xyz',
   'path': '/asr',
   'headers': {
+    'Authorization': 'Bearer <IdToken>'
   },
   'maxRedirects': 20
 };
@@ -118,7 +129,7 @@ var req = https.request(options, function (res) {
   });
 });
 
-var postData = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"SpeechFile\"; filename=\"[PROXY]\"\r\nContent-Type: \"{Insert_File_Content_Type}\"\r\n\r\n" + fs.readFileSync('mPMBv3Y3c/bot_YPBDDDGASKSEVTHT_English_V5v5DS992s.wav') + "\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"LanguageCode\"\r\n\r\nIsiZulu\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--";
+var postData = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"SpeechFile\"; filename=\"[PROXY]\"\r\nContent-Type: \"{Insert_File_Content_Type}\"\r\n\r\n" + fs.readFileSync('mPMBv3Y3c/bot_YPBDDDGASKSEVTHT_V5v5DS992s.wav') + "\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"LanguageCode\"\r\n\r\nIsiZulu\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--";
 
 req.setHeader('content-type', 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW');
 
