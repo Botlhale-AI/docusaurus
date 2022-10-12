@@ -7,7 +7,7 @@
 The Chatbots page displays all the bots in the system. 
 So, to create a new bot, you first click on the `CREATE BOT` button as shown in Figure 1.
 
-![chatbots](../../static/img/create-chatbot.PNG)
+![chatbots](../../../static/img/create-chatbot.PNG)
 
 Once you have clicked the create bot button, you will be prompted to enter the Bot name and select the language(s) that the bot should support then click on the `Save bot` button to save the newly created bot.
 
@@ -16,7 +16,7 @@ Once you have clicked the create bot button, you will be prompted to enter the B
  
 The newly created bot will be added to the My Chatbots list on the dashboard. You can select between different bots by clicking the Chatbot drop down menu in the top right-hand  corner of the page.
 
-![create chatbot](../../static/img/chatbots-list.PNG)
+![create chatbot](../../../static/img/chatbots-list.PNG)
 
 Once the bot has been created, click on the edit icon to add the Bot builder parameters such as Intents, Entities and/or Dialogue. These are discussed in detail in the Bot Builder section.
 
