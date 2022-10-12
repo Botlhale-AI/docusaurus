@@ -39,7 +39,9 @@ payload={'LanguageCode': 'xh-ZA',
 files=[
 
 ]
-headers = {}
+headers = {
+  'Authorization': 'Bearer <IdToken>'
+}
 
 response = requests.request("POST", url, headers=headers, data=payload, files=files)
 
@@ -52,6 +54,7 @@ print(response.text)
 
 ```bash 
 curl --location --request POST 'https://api.botlhale.xyz/tts' \
+--header 'Authorization: Bearer <IdToken>' \
 --form 'LanguageCode="xh-ZA"' \
 --form 'TextMsg="hello"'
 ```
@@ -60,12 +63,16 @@ curl --location --request POST 'https://api.botlhale.xyz/tts' \
 <TabItem value="js" label="JavaScript">
 
 ```javascript 
+var myHeaders = new Headers();
+myHeaders.append("Authorization", "Bearer <IdToken>");
+
 var formdata = new FormData();
 formdata.append("LanguageCode", "xh-ZA");
 formdata.append("TextMsg", "hello");
 
 var requestOptions = {
   method: 'POST',
+  headers: myHeaders,
   body: formdata,
   redirect: 'follow'
 };
@@ -88,6 +95,7 @@ var options = {
   'hostname': 'https://api.botlhale.xyz',
   'path': '/tts',
   'headers': {
+    'Authorization': 'Bearer <IdToken>'
   },
   'maxRedirects': 20
 };

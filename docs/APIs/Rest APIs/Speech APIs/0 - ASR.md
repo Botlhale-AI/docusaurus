@@ -11,8 +11,8 @@ Request Params | |
 | SpeechFile  | `File` **Required.** Binary audio file of the user's message.| 
 | SampleRate  | `Number` **Required.** The sample rate of the supplied audio clip in hertz e.g 8000 for 8kHz|
 | LanguageCode  | `String` **Required.** This is the language spoken in the supplied audio clip. We use BCP-47 language tags. See [list of supported languages](2%20-%20Languages.md) for supported languages and codes. |
-| Diarization  | `Boolean`  **Optional.** Speaker diarization is used to identify different speakers in the clip as well as when the different speakers are speaking  * **False** - Default, Speaker diarization is enabled.  * **True** - Speaker diarization is enabled. `Note! This will have an impact on the cost of the request` |
-| LanguageId  | `Boolean` **Optional.** This is used to automatically detect the language spoken on the audio clip. This is done at sentence level. When this is enabled, the provided LanguageCode will be ignored.* **False** - Default, Language identification is enabled. * **True** - Language identification is enabled. `Note! This will have an impact on the cost of the request`|
+| Diarization `coming soon`  | `Boolean`  **Optional.** Speaker diarization is used to identify different speakers in the clip as well as when the different speakers are speaking  * **False** - Default, Speaker diarization is enabled.  * **True** - Speaker diarization is enabled. `Note! This will have an impact on the cost of the request` |
+| LanguageId  `coming soon` | `Boolean` **Optional.** This is used to automatically detect the language spoken on the audio clip. This is done at sentence level. When this is enabled, the provided LanguageCode will be ignored.* **False** - Default, Language identification is enabled. * **True** - Language identification is enabled. `Note! This will have an impact on the cost of the request`|
 
 <br />
 
@@ -69,7 +69,8 @@ print(response.text)
 curl --location --request POST 'https://api.botlhale.xyz/asr' \
 --header 'Authorization: Bearer <IdToken>' \
 --form 'SpeechFile=@"mPMBv3Y3c/bot_YPBDDDGASKSEVTHT__V5v5DS992s.wav"' \
---form 'LanguageCode="zu-ZA"'
+--form 'LanguageCode="zu-ZA"'\
+--form 'SampleRate="16000"'
 ```
 
 </TabItem>
@@ -82,9 +83,11 @@ myHeaders.append("Authorization", "Bearer <IdToken>");
 var formdata = new FormData();
 formdata.append("SpeechFile", fileInput.files[0], "[PROXY]");
 formdata.append("LanguageCode", "zu-ZA");
+formdata.append("SampleRate", "16000");
 
 var requestOptions = {
   method: 'POST',
+  headers: myHeaders,
   body: formdata,
   redirect: 'follow'
 };
@@ -129,7 +132,7 @@ var req = https.request(options, function (res) {
   });
 });
 
-var postData = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"SpeechFile\"; filename=\"[PROXY]\"\r\nContent-Type: \"{Insert_File_Content_Type}\"\r\n\r\n" + fs.readFileSync('mPMBv3Y3c/bot_YPBDDDGASKSEVTHT_V5v5DS992s.wav') + "\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"LanguageCode\"\r\n\r\nIsiZulu\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--";
+var postData = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"LanguageCode\"\r\n\r\nzu-ZA\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"SpeechFile\"; filename=\"[PROXY]\"\r\nContent-Type: \"{Insert_File_Content_Type}\"\r\n\r\n" + fs.readFileSync('VPIoG_uMJ/bot_YPBDDDGASKSEVTHT__V5v5DS992s.wav') + "\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"SampleRate\"\r\n\r\n16000\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--";
 
 req.setHeader('content-type', 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW');
 
