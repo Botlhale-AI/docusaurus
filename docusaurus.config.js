@@ -110,16 +110,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             items: [
               {
                 label: 'Quickstart',
-                to: 'docs/API/Quickstart',
+                to: 'docs/APIs/Quickstart',
               },                   
               {
                 label: 'Authentication',
-                to: 'docs/API/Authentication',
+                to: 'docs/APIs/Authentication',
               },    
                  
               {
                 label: 'Response Codes',
-                to: 'docs/API/Errors',
+                to: 'docs/APIs/Errors',
               },       
             ],
           },
@@ -128,12 +128,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             items: [                                
               {
                 label: 'ASR',
-                to: 'docs/API/Speech APIs/ASR',
+                to: 'docs/APIs/Rest APIs/Speech APIs/ASR',
               },    
                  
               {
                 label: 'TTS',
-                to: 'docs/API/Speech APIs/TTS',
+                to: 'docs/APIs/Rest APIs/Speech APIs/TTS',
               },   
             ]
           },
