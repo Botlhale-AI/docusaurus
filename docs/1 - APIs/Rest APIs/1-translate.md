@@ -1,6 +1,5 @@
 # Translate APIs
 ## translate `POST`
-Generate a ConversationID valid for 24 hours. This is a unique ID that you have to provide to keep track of different conversations.
 
 ```bash
 https://api.botlhale.xyz/translate
