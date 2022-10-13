@@ -51,19 +51,19 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         items: [          
           {
             type: 'doc',
-            docId: 'Platform/bot-builder/Bot Creation',
+            docId: '0 - Platform/bot-builder/Bot Creation',
             position: 'left',
             label: 'Platform',
           },
           {
             type: 'doc',
-            docId: 'APIs/Quickstart',
+            docId: '1 - APIs/Quickstart',
             position: 'left',
             label: 'APIs',
           },
           {
             type: 'doc',
-            docId: 'Tutorials/Platform Tutorials',
+            docId: '2 - Tutorials/Platform Tutorials',
             position: 'left',
             label: 'Tutorials',
           },
