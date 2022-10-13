@@ -43,7 +43,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Documentation',
+        title: 'Botlhale AI Documentation',
         logo: {
           alt: 'Botlhale AI Logo',
           src: 'img/logo.svg',
@@ -59,12 +59,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             type: 'doc',
             docId: 'APIs/Quickstart',
             position: 'left',
-            label: 'API',
+            label: 'APIs',
           },
           {
             type: 'doc',
             docId: 'Tutorials/Platform Tutorials',
-            position: 'right',
+            position: 'left',
             label: 'Tutorials',
           },
           {to: '/blog', label: 'Blog', position: 'right'},
