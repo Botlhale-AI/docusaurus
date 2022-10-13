@@ -71,7 +71,7 @@ var requestOptions = {
   headers: {"Authorization": "Bearer <IdToken>"}
 };
 
-fetch("https://dev-botlhale.io/startConversation", requestOptions)
+fetch("https://api.botlhale.xyz/startConversation", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -87,7 +87,7 @@ var fs = require('fs');
 
 var options = {
   'method': 'POST',
-  'hostname': 'https://dev-botlhale.io',
+  'hostname': 'https://api.botlhale.xyz',
   'path': '/startConversation',
   'headers': {
       "Authorization": "Bearer <IdToken>"
@@ -136,7 +136,7 @@ req.end();
 ## Message  `POST`
 
 ```bash
-https://dev-botlhale.io/message
+https://api.botlhale.xyz/message
 ```
 This endpoint handles the messages. It receives messages from the user and returns the bot response in JSON format.
 
@@ -170,7 +170,7 @@ You need to Include `Authentication Token` in request headers. See how to
 ```python 
 import requests
 
-url = "https://dev-botlhale.io/message"
+url = "https://api.botlhale.xyz/message"
 
 payload={'BotID': 'YPBDDDGASKSEVTHT',
 'LanguageCode': 'English',
@@ -192,7 +192,7 @@ print(response.text)
 <TabItem value="bash" label="Bash" default>
 
 ```bash 
-curl --location --request POST 'https://dev-botlhale.io/message' \
+curl --location --request POST 'https://api.botlhale.xyz/message' \
 -H "Authorization: Bearer <IdToken>" \
 --form 'BotID="YPBDDDGASKSEVTHT"' \
 --form 'LanguageCode="English"' \
@@ -222,7 +222,7 @@ var requestOptions = {
   
 };
 
-fetch("https://dev-botlhale.io/message", requestOptions)
+fetch("https://api.botlhale.xyz/message", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -238,7 +238,7 @@ var fs = require('fs');
 
 var options = {
   'method': 'POST',
-  'hostname': 'https://dev-botlhale.io',
+  'hostname': 'https://api.botlhale.xyz',
   'path': '/message',
   'headers': {
     "Authorization": "Bearer <IdToken>"
@@ -318,7 +318,7 @@ req.end();
 ```python 
 import requests
 
-url = "https://dev-botlhale.io/message"
+url = "https://api.botlhale.xyz/message"
 
 payload={'BotID': 'YPBDDDGASKSEVTHT',
 'LanguageCode': 'English',
@@ -340,7 +340,7 @@ print(response.text)
 <TabItem value="bash" label="Bash" default>
 
 ```bash 
-curl --location --request POST 'https://dev-botlhale.io/message' \
+curl --location --request POST 'https://api.botlhale.xyz/message' \
 -H "Authorization: Bearer <IdToken>"
 --form 'BotID="YPBDDDGASKSEVTHT"' \
 --form 'LanguageCode="English"' \
@@ -369,7 +369,7 @@ var requestOptions = {
   headers: {"Authorization": "Bearer <IdToken>"}
 };
 
-fetch("https://dev-botlhale.io/message", requestOptions)
+fetch("https://api.botlhale.xyz/message", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -384,7 +384,7 @@ var fs = require('fs');
 
 var options = {
   'method': 'POST',
-  'hostname': 'https://dev-botlhale.io',
+  'hostname': 'https://api.botlhale.xyz',
   'path': '/message',
   'headers': {
     "Authorization": "Bearer <IdToken>",
@@ -466,7 +466,7 @@ req.end();
 ```python 
 import requests
 
-url = "https://dev-botlhale.io/message"
+url = "https://api.botlhale.xyz/message"
 
 payload={'BotID': 'dshfgjdsgfd',
 'LanguageCode': 'English',
@@ -487,7 +487,7 @@ print(response.text)
 <TabItem value="bash" label="Bash" default>
 
 ```bash 
-curl --location --request POST 'https://dev-botlhale.io/message' \
+curl --location --request POST 'https://api.botlhale.xyz/message' \
 -H "Authorization: Bearer <IdToken>" \
 --form 'BotID="dshfgjdsgfd"' \
 --form 'LanguageCode="English"' \
@@ -516,7 +516,7 @@ var requestOptions = {
   headers: {"Authorization": "Bearer <IdToken>"}
 };
 
-fetch("https://dev-botlhale.io/message", requestOptions)
+fetch("https://api.botlhale.xyz/message", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -531,7 +531,7 @@ var fs = require('fs');
 
 var options = {
   'method': 'POST',
-  'hostname': 'https://dev-botlhale.io',
+  'hostname': 'https://api.botlhale.xyz',
   'path': '/message',
   'headers': {
    "Authorization": "Bearer <IdToken>"
@@ -612,7 +612,7 @@ req.end();
 ```python 
 import requests
 
-url = "https://dev-botlhale.io/message"
+url = "https://api.botlhale.xyz/message"
 
 payload={'BotID': 'dshfgjdsgfd',
 'LanguageCode': 'English',
@@ -634,7 +634,7 @@ print(response.text)
 <TabItem value="bash" label="Bash" default>
 
 ```bash 
-curl --location --request POST 'https://dev-botlhale.io/message' \
+curl --location --request POST 'https://api.botlhale.xyz/message' \
 -H "Authorization: Bearer <IdToken>" \
 --form 'BotID="dshfgjdsgfd"' \
 --form 'LanguageCode="English"' \
@@ -663,7 +663,7 @@ var requestOptions = {
   headers: {"Authorization": "Bearer <IdToken>"}
 };
 
-fetch("https://dev-botlhale.io/message", requestOptions)
+fetch("https://api.botlhale.xyz/message", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -678,7 +678,7 @@ var fs = require('fs');
 
 var options = {
   'method': 'POST',
-  'hostname': 'https://dev-botlhale.io',
+  'hostname': 'https://api.botlhale.xyz',
   'path': '/message',
   'headers': {
      "Authorization": "Bearer <IdToken>"
