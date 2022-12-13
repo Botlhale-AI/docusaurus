@@ -9,7 +9,7 @@ This endpoint handles single text to speech conversion.
 Request Params | |
 | ------------- | ------------- |
 | TextMsg  | `string` <br />Required. Text Message from the user to the bot.| 
-| LanguageCode  | `string` <br /> Required. This is the language the user is using to interact with the bot. See [list of supported languages](2%20-%20Languages.md) for supported languages and codes. |
+| LanguageCode  | `string` <br /> Required. This is the language the user is using to interact with the bot. See [list of supported languages](../2%20-%20Languages.md) for supported languages and codes. |
 
 :::info
 
