@@ -163,9 +163,6 @@ The generated presigned URL includes both a URL and additional fields that must 
 
 #### Request Example
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 <Tabs>
 <TabItem value="py" label="Python">
 
