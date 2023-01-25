@@ -32,7 +32,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="py" label="Python">
+<TabItem value="py" label="Python" default>
 
 ```py
 import requests
@@ -60,7 +60,7 @@ print(response.json())
 ```
 
 </TabItem>
-<TabItem value="bash" label="Bash" default>
+<TabItem value="bash" label="Bash" >
 
 ```js 
 curl --location --request POST 'https://api.botlhale.xyz/asr' \
@@ -156,6 +156,7 @@ req.end();
   "url": "https://botlhale-api-asr-async.s3.amazonaws.com/"
   }
 ```
+<br />
 
 The generated presigned URL includes both a URL and additional fields that must be passed as part of the subsequent HTTP POST request. The following code demonstrates how to use the requests package with a presigned POST URL to perform a POST request to upload a file.
 
@@ -164,11 +165,11 @@ The generated presigned URL includes both a URL and additional fields that must 
 #### Request Example
 
 <Tabs>
-<TabItem value="py" label="Python">
+<TabItem value="py" label="Python" default>
 
 ```py
 # Demonstrate how another Python program can use the presigned URL to upload a file
-with open('speechfile', 'rb') as f:
+with open('speechfile.wav', 'rb') as f:
     files = {
       'file': (response['fields']['key'], f)
       }
@@ -180,7 +181,7 @@ print(f'File upload HTTP status code: {http_response.status_code}')
 ```
 
 </TabItem>
-<TabItem value="bash" label="Bash" default>
+<TabItem value="bash" label="Bash">
 
 ```js 
 curl --location --request POST 'https://api.botlhale.xyz/asr' \
