@@ -2,7 +2,7 @@
 ## ASR `POST`
 
 ```bash
-https://api.botlhale.xyz/asr/upload
+https://api.botlhale.xyz/asr/longrunning
 ```
 This endpoint generates a presigned url that allows the user to upload a speech file for the `longrunning` async ASR. This endpoint returns a presigned url and the auto generated filename.
 
