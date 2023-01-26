@@ -26,7 +26,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="py" label="Python">
+<TabItem value="py" label="Python" default>
 
 ```python 
 import requests
@@ -47,7 +47,7 @@ print(response.text)
 
 
 </TabItem>
-<TabItem value="bash" label="Bash" default>
+<TabItem value="bash" label="Bash" >
 
 ```bash 
 curl --location --request POST 'https://api.botlhale.xyz/startConversation' \
@@ -58,7 +58,7 @@ curl --location --request POST 'https://api.botlhale.xyz/startConversation' \
 
 
 </TabItem>
-<TabItem value="js" label="JavaScript" default>
+<TabItem value="js" label="JavaScript" >
 
 ```javascript 
 var formdata = new FormData();

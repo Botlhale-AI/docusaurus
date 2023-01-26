@@ -25,7 +25,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="py" label="Python">
+<TabItem value="py" label="Python" default>
 
 ```python 
 import requests
@@ -46,7 +46,7 @@ print(response.text)
 
 
 </TabItem>
-<TabItem value="bash" label="Bash" default>
+<TabItem value="bash" label="Bash">
 
 ```bash 
 curl --location --request POST 'https://api.botlhale.xyz/translate' \
