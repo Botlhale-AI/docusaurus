@@ -4,7 +4,7 @@
 ```bash
 https://api.botlhale.xyz/tts
 ```
-This endpoint handles single text to speech conversion.
+This endpoint handles single text to speech conver sion.
 
 Request Params | |
 | ------------- | ------------- |
