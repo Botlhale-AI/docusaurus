@@ -1,30 +1,27 @@
-# Automatic Speech Recogniton
+# Speech to Text API
+
+A Speech to Text API synchronous recognition request is the simplest method for performing recognition on speech audio data. Speech-to-Text can process up to 1 minute of speech audio data sent in a synchronous request. After Speech to Text processes and recognizes all of the audio, it returns a response. A sample request is shown below:
+
 ## ASR `POST`
 
 ```bash
 https://api.botlhale.xyz/asr
 ```
-This endpoint handles single speech to text conversion. This API returns a text transcript of the audio file provided. This API supports audio clips of up to 5 minutes.
+
+This endpoint handles single speech to text conversion. This API returns a text transcript of the audio file provided. This API supports audio clips of up to 1 minutes.
 
 Request Params | |
 | ------------- | ------------- |
 | SpeechFile  | `File` **Required.** Binary audio file of the user's message.| 
 | SampleRate  | `Number` **Required.** The sample rate of the supplied audio clip in hertz e.g 8000 for 8kHz|
-| LanguageCode  | `String` **Required.** This is the language spoken in the supplied audio clip. We use BCP-47 language tags. See [list of supported languages](../2%20-%20Languages.md) for supported languages and codes. |
-
-<br />
-
-#### Supported formats
-* `File Type` - We currently only support **wav, amr, flac and ogg.**
-
-* `Sample Rate` - We support all sample rates between 8000Hz and 48000 Hz. If you can choose the sample rate of the source, record the audio at 16000 Hz. This is because sample rates below that may impair the accuracy of our models and sample rates above 16000 Hz have no significant impact on the accuracy of our models.  
+| LanguageCode  | `String` **Required.** This is the language spoken in the supplied audio clip. We use BCP-47 language tags. See [list of supported languages](../../2%20-%20Languages.md) for supported languages and codes. |
 
 <br />
 
 :::info
 
 You need to Include `Authentication Token` in request headers. See how to 
-[Generate Auth Token](../../1%20-%20Authentication.md#generate-a-bearer-token-post)
+[Generate Auth Token](../../../1%20-%20Authentication.md#generate-a-bearer-token-post)
  codes.
 :::
 

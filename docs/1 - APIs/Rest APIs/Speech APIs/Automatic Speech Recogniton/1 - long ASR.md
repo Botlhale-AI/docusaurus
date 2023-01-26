@@ -1,25 +1,28 @@
-# Automatic Speech Recogniton `longrunning`
-## ASR `POST`
+# Speech to Text API Async
+
+An asynchronous Speech to Text API recognition request requires you to first upload the file to our server for the asyncromous prosess to start. The asynchronous request will initiate a asynchronous Operation  and return this operation immediately. You can use asynchronous speech recognition with audio of any length up to 400 minutes.
+
+## ASR Async `POST`
 
 ```bash
-https://api.botlhale.xyz/asr/longrunning
+https://api.botlhale.xyz/asr/upload
 ```
-This endpoint generates a presigned url that allows the user to upload a speech file for the `longrunning` async ASR. This endpoint returns a presigned url and the auto generated filename.
+
+This endpoint generates a presigned url that allows the user to upload a speech file for the async ASR. This endpoint returns a presigned url and the auto generated filename.
 
 Request Params | |
 | ------------- | ------------- |
 | SampleRate  | `Number` **Required.** The sample rate of the supplied audio clip in hertz e.g 8000 for 8kHz|
-| LanguageCode  | `String` **Required.** This is the language spoken in the supplied audio clip. We use BCP-47 language tags. See [list of supported languages](../2%20-%20Languages.md) for supported languages and codes. |
+| LanguageCode  | `String` **Required.** This is the language spoken in the supplied audio clip. We use BCP-47 language tags. See [list of supported languages](../../2%20-%20Languages.md) for supported languages and codes. |
 | Diarization | `Boolean`  **Optional.** Speaker diarization is used to identify different speakers in the clip as well as when the different speakers are speaking  * **False** - Default, Speaker diarization is enabled.  * **True** - Speaker diarization is enabled. `Note! This will have an impact on the cost of the request` |
 | LanguageID | `Boolean` **Optional.** This is used to automatically detect the language spoken on the audio clip. This is done at sentence level. When this is enabled, the provided LanguageCode will be ignored.* **False** - Default, Language identification is enabled. * **True** - Language identification is enabled. `Note! This will have an impact on the cost of the request`|
 
 <br />
 
-
 :::info
 
 You need to Include `Authentication Token` in request headers. See how to 
-[Generate Auth Token](../../1%20-%20Authentication.md#generate-a-bearer-token-post)
+[Generate Auth Token](../../../1%20-%20Authentication.md#generate-a-bearer-token-post)
  codes.
 :::
 
@@ -37,7 +40,7 @@ import TabItem from '@theme/TabItem';
 ```py
 import requests
 
-url = "https://api.botlhale.xyz/asr/longrunning"
+url = "https://api.botlhale.xyz/asr/upload"
 
 payload={
   'LanguageCode': 'zu-ZA',

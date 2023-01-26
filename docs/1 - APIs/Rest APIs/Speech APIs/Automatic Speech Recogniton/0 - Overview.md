@@ -1,22 +1,29 @@
-# Speech to Text API 
-Converts speech to text using Botlhale AI's deep learning models.
+# Speech to Text API Overview
+This document is a guide to the basics of using Speech to Text. This conceptual guide covers the types of requests you can make to Speech to Text, how to construct those requests, and how to handle their responses. We recommend that all users of Speech to Text read this guide before diving into the API itself.
 
-<br/>
+## Speech requests
 
-Botlhale AI's Speech to text has two types of API requests based on audio content.
+Speech-to-Text has two main methods to perform speech recognition. These are listed below:
+
+#### [Synchronous Requests](1%20-%20ASR.md) 
+
+Synchronous requests (REST) sends audio data to the Speech to Text API, performs recognition on that data, and returns results after all audio has been processed. Synchronous recognition requests are limited to audio data of 1 minute or less in duration.
+
+#### [Asynchronous Requests](1%20-%20long%20ASR.md)
+
+Asynchronous Recognition (REST) sends audio data to the Speech to Text API and initiates a Long Running Operation. Using this operation, you can periodically poll for recognition results. Use asynchronous requests for audio data of any duration up to 400 minutes.
+
+<br />
 
 Content Limit | Audio Length |
 | ------------- | ------------- |
 | Synchronous Request  | `~ 60 seconds` | 
 | Asynchronous Request  | `~ 400 minutes` |
 
-<br />
 
-#### [Synchronous Requests](1%20-%20ASR.md) 
+## Supported formats
 
-The audio file content should be approximately 1 minute to make a synchronous request. In this type of request, the user does not have to upload the data to Botlhale AI's API. This provides the flexibility to users to store the audio file in their local computer or server and reference the API to get the text.
+* `File Type` - We currently only support **wav, amr, flac and ogg.**
 
-#### [Asynchronous Requests](1%20-%20long%20ASR.md)
-
-The audio file content should be approximately 400 minutes(7 hours). In this type of request, the user have to upload their data to Botlhale AI's API.
+* `Sample Rate` - We support all sample rates between 8000Hz and 48000 Hz. If you can choose the sample rate of the source, record the audio at 16000 Hz. This is because sample rates below that may impair the accuracy of our models and sample rates above 16000 Hz have no significant impact on the accuracy of our models.  
 
