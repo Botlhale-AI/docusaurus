@@ -32,10 +32,12 @@ import TabItem from '@theme/TabItem';
 ```python 
 import requests
 
-url = "hhttps://api.botlhale.xyz/tts"
+url = "https://api.botlhale.xyz/tts"
 
-payload={'LanguageCode': 'xh-ZA',
-'TextMsg': 'Molo Athi'}
+payload={
+  'LanguageCode': 'xh-ZA',
+  'TextMsg': 'Molo Athi'
+  }
 files=[
 
 ]

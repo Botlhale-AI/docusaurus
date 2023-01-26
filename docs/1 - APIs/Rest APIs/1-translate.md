@@ -32,8 +32,11 @@ import requests
 
 url = "https://api.botlhale.xyz/translate"
 
-payload={'Text': 'Xa ufuna ukuthenga imoto cofa iqhosha lokuqala.',
-'LanguageCode': 'xh-ZA'}
+payload={
+  'Text': 'Xa ufuna ukuthenga imoto cofa iqhosha lokuqala.',
+  'LanguageCode': 'xh-ZA'
+  }
+  
 files=[
 
 ]

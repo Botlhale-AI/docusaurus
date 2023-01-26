@@ -41,8 +41,10 @@ import requests
 
 url = "https://api.botlhale.xyz/asr"
 
-payload={'LanguageCode': 'zu-ZA',
-'SampleRate': '16000'}
+payload={
+  'LanguageCode': 'zu-ZA',
+  'SampleRate': '16000'
+  }
 
 files=[
   ('SpeechFile',('bot_YPBDDDGASKSEVTHT_V5v5DS992s.wav',open('mPMBv3Y3c/bot_YPBDDDGASKSEVTHT__V5v5DS992s.wav','rb'),'audio/wav'))
