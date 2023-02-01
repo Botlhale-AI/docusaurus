@@ -150,9 +150,3 @@ Include `IdToken` as Bearer Token in headers for Authorization on other API endp
 ```python
 headers = {"Authorization": "Bearer <IdToken>"}
 ```
-
-or
-
-```bash
--H "Authorization: Bearer <IdToken>"
-```
