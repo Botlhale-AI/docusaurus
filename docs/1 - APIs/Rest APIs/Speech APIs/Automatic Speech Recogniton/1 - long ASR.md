@@ -5,7 +5,7 @@ An asynchronous Speech to Text API recognition request requires you to first upl
 ## ASR Async upload `POST`
 
 ```bash
-https://api.botlhale.xyz/asr/upload
+https://api.botlhale.xyz/asr/async/upload
 ```
 
 This endpoint generates a presigned url that allows the user to upload a speech file for the async ASR. This endpoint returns a presigned url and the auto generated filename.
@@ -39,7 +39,7 @@ import TabItem from '@theme/TabItem';
 ```py
 import requests
 
-url = "https://api.botlhale.xyz/asr/upload"
+url = "https://api.botlhale.xyz/asr/async/upload"
 
 payload={
   'LanguageCode': 'zu-ZA',
