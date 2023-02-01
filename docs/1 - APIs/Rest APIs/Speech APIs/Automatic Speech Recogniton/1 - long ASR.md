@@ -397,15 +397,81 @@ req.end();
 #### Response body
 ```json
 {
-  "fields": 
-  {
-    "AWSAccessKeyId": "<>", 
-    "key": "asr_a7ki4qpZ0635_zu-ZA_16000_19y3NDgP76m4.wav", 
-    "policy": "<>", 
-    "signature": "<>", 
-    "x-amz-security-token": "<>"
-    }, 
-  "url": "https://botlhale-api-asr-async.s3.amazonaws.com/"
-  }
+    "audio_length": "40.40275 seconds",
+    "filename": "audios/asr_x95mC54S71nD_zu-ZA_16000_6Y9uBRn9x395.wav",
+    "status": "done",
+    "timestamps": [
+        {
+            "end": 10199.999999999987,
+            "filename": "1_speaker_0_3929.999999999989_10199.999999999987_zu-ZA.wav",
+            "speaker": "speaker_0",
+            "start": 3929.999999999989,
+            "transcription": "molo igama lami kumnandi wabahlali calculation"
+        },
+        {
+            "end": 12119.99999999995,
+            "filename": "2_speaker_1_11279.99999999995_12119.99999999995_en-ZA.wav",
+            "speaker": "speaker_1",
+            "start": 11279.99999999995,
+            "transcription": "mall"
+        },
+        {
+            "end": 15929.999999999918,
+            "filename": "3_speaker_1_12509.999999999925_15929.999999999918_zu-ZA.wav",
+            "speaker": "speaker_1",
+            "start": 12509.999999999925,
+            "transcription": "ngifuna ukuba nengxenye ukubona imali ebhange"
+        },
+        {
+            "end": 19829.999999999873,
+            "filename": "4_speaker_0_16679.999999999876_19829.999999999873_zu-ZA.wav",
+            "speaker": "speaker_0",
+            "start": 16679.999999999876,
+            "transcription": "ngicela ungi ne akhawunti yakho"
+        },
+        {
+            "end": 25020.00000000003,
+            "filename": "5_speaker_1_20640.000000000025_25020.00000000003_zu-ZA.wav",
+            "speaker": "speaker_1",
+            "start": 20640.000000000025,
+            "transcription": "ngubani u barry"
+        },
+        {
+            "end": 26580.00000000021,
+            "filename": "6_speaker_0_25530.00000000021_26580.00000000021_zu-ZA.wav",
+            "speaker": "speaker_0",
+            "start": 25530.00000000021,
+            "transcription": "<!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n"
+        },
+        {
+            "end": 30840.00000000028,
+            "filename": "7_speaker_0_27360.00000000028_30840.00000000028_zu-ZA.wav",
+            "speaker": "speaker_0",
+            "start": 27360.00000000028,
+            "transcription": "25"
+        },
+        {
+            "end": 34830.00000000044,
+            "filename": "8_speaker_0_31620.00000000044_34830.00000000044_zu-ZA.wav",
+            "speaker": "speaker_0",
+            "start": 31620.00000000044,
+            "transcription": "igama coronavirus ncamane"
+        },
+        {
+            "end": 36570.00000000056,
+            "filename": "9_speaker_1_34830.00000000056_36570.00000000056_af-ZA.wav",
+            "speaker": "speaker_1",
+            "start": 34830.00000000056,
+            "transcription": "mos"
+        },
+        {
+            "end": 39600.00000000066,
+            "filename": "10_speaker_0_37560.00000000066_39600.00000000066_zu-ZA.wav",
+            "speaker": "speaker_0",
+            "start": 37560.00000000066,
+            "transcription": "inkosi obesolwa"
+        }
+    ]
+}
 ```
 <br />
