@@ -4,7 +4,8 @@
 
 
 :::info
-> *We are here to help! For any questions and queries about this feature, please email support@botlhale.ai*
+> *Update your list of clients and/or customers with ease on our platform. Keep track and records of the customers that reach out to speak to a Live Agents from within your organisation.
+*
 :::
 
 
