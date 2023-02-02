@@ -1,11 +1,12 @@
 ## Queue Management
 
-Understanding the nature of traffic and queries ...
+Understanding the nature of traffic and queries, this section of the platform allows you to set how the queue of your incoming customers and manage how the workload is distributed among your organisation's agents. 
+
 
 ![qm.PNG](https://stoplight.io/api/v1/projects/cHJqOjg4ODkz/images/zKTNKex6ikY)
 
 :::info
-> *We are here to help! For any questions and queries about this feature, please email support@botlhale.ai*
+> *Please note that this section is only visible to users with Admin permissions on the platform*
 :::
 
 
