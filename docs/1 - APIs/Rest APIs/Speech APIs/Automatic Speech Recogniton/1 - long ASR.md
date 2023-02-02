@@ -14,7 +14,7 @@ Request Params | |
 | ------------- | ------------- |
 | SampleRate  | `Number` **Required.** The sample rate of the supplied audio clip in hertz e.g 8000 for 8kHz|
 | LanguageCode  | `String` **Optional.** This is the language spoken in the supplied audio clip. We use BCP-47 language tags. See [list of supported languages](../../2%20-%20Languages.md) for supported languages and codes. If not provided we automatically detect the language spoken on the audio clip. This is done at sentence level.|
-| Diarization | `Boolean`  **Optional.** Speaker diarization is used to identify different speakers in the clip as well as when the different speakers are speaking  * **False** - Default, Speaker diarization is enabled.  * **True** - Speaker diarization is enabled. `Note! This will have an impact on the cost of the request` |
+| Diarization | `Boolean`  **Optional.** Speaker diarization is used to identify different speakers in the clip as well as when the different speakers are speaking. * **False** - Default, Speaker diarization is enabled.  **True** - Speaker diarization is enabled. * |
 
 <br />
 
@@ -64,11 +64,11 @@ print(response.json())
 <TabItem value="bash" label="Bash" >
 
 ```js 
-curl --location --request POST 'https://api.botlhale.xyz/asr' \
+curl --location --request POST 'https://api.botlhale.xyz/asr/async/upload' \
 --header 'Authorization: Bearer <IdToken>' \
---form 'SpeechFile=@"mPMBv3Y3c/bot_YPBDDDGASKSEVTHT__V5v5DS992s.wav"' \
---form 'LanguageCode="zu-ZA"'\
---form 'SampleRate="16000"'
+--form 'LanguageCode="zu-ZA"' \
+--form 'SampleRate="16000"' \
+--form 'Diarization="True"'
 ```
 
 </TabItem>
@@ -79,9 +79,9 @@ var myHeaders = new Headers();
 myHeaders.append("Authorization", "Bearer <IdToken>");
 
 var formdata = new FormData();
-formdata.append("SpeechFile", fileInput.files[0], "[PROXY]");
 formdata.append("LanguageCode", "zu-ZA");
 formdata.append("SampleRate", "16000");
+formdata.append("Diarization", "True");
 
 var requestOptions = {
   method: 'POST',
@@ -90,7 +90,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://api.botlhale.xyz/asr", requestOptions)
+fetch("https://api.botlhale.xyz/asr/async/upload", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -105,8 +105,8 @@ var fs = require('fs');
 
 var options = {
   'method': 'POST',
-  'hostname': 'https://api.botlhale.xyz',
-  'path': '/asr',
+  'hostname': 'api.botlhale.xyz',
+  'path': '/asr/async/upload',
   'headers': {
     'Authorization': 'Bearer <IdToken>'
   },
@@ -130,7 +130,7 @@ var req = https.request(options, function (res) {
   });
 });
 
-var postData = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"LanguageCode\"\r\n\r\nzu-ZA\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"SpeechFile\"; filename=\"[PROXY]\"\r\nContent-Type: \"{Insert_File_Content_Type}\"\r\n\r\n" + fs.readFileSync('VPIoG_uMJ/bot_YPBDDDGASKSEVTHT__V5v5DS992s.wav') + "\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"SampleRate\"\r\n\r\n16000\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--";
+var postData = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"LanguageCode\"\r\n\r\nzu-ZA\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"SampleRate\"\r\n\r\n16000\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"Diarization\"\r\n\r\nTrue\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--";
 
 req.setHeader('content-type', 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW');
 
@@ -159,6 +159,8 @@ req.end();
 ```
 <br />
 
+### Upload via Presigned URL
+
 The generated presigned URL includes both a URL and additional fields that must be passed as part of the subsequent HTTP POST request. The following code demonstrates how to use the requests package with a presigned POST URL to perform a POST request to upload a file.
 
 #### Request Example
@@ -180,88 +182,7 @@ print(f'File upload HTTP status code: {http_response.status_code}')
 ```
 
 </TabItem>
-<TabItem value="bash" label="Bash">
-
-```js 
-curl --location --request POST 'https://api.botlhale.xyz/asr' \
---header 'Authorization: Bearer <IdToken>' \
---form 'SpeechFile=@"mPMBv3Y3c/bot_YPBDDDGASKSEVTHT__V5v5DS992s.wav"' \
---form 'LanguageCode="zu-ZA"'\
---form 'SampleRate="16000"'
-```
-
-</TabItem>
-<TabItem value="js" label="JavaScript">
-
-```js
-var myHeaders = new Headers();
-myHeaders.append("Authorization", "Bearer <IdToken>");
-
-var formdata = new FormData();
-formdata.append("SpeechFile", fileInput.files[0], "[PROXY]");
-formdata.append("LanguageCode", "zu-ZA");
-formdata.append("SampleRate", "16000");
-
-var requestOptions = {
-  method: 'POST',
-  headers: myHeaders,
-  body: formdata,
-  redirect: 'follow'
-};
-
-fetch("https://api.botlhale.xyz/asr", requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
-```
-
-</TabItem>
-<TabItem value="nodejs" label="Node JS - Native">
-
-```js
-var https = require('follow-redirects').https;
-var fs = require('fs');
-
-var options = {
-  'method': 'POST',
-  'hostname': 'https://api.botlhale.xyz',
-  'path': '/asr',
-  'headers': {
-    'Authorization': 'Bearer <IdToken>'
-  },
-  'maxRedirects': 20
-};
-
-var req = https.request(options, function (res) {
-  var chunks = [];
-
-  res.on("data", function (chunk) {
-    chunks.push(chunk);
-  });
-
-  res.on("end", function (chunk) {
-    var body = Buffer.concat(chunks);
-    console.log(body.toString());
-  });
-
-  res.on("error", function (error) {
-    console.error(error);
-  });
-});
-
-var postData = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"LanguageCode\"\r\n\r\nzu-ZA\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"SpeechFile\"; filename=\"[PROXY]\"\r\nContent-Type: \"{Insert_File_Content_Type}\"\r\n\r\n" + fs.readFileSync('VPIoG_uMJ/bot_YPBDDDGASKSEVTHT__V5v5DS992s.wav') + "\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"SampleRate\"\r\n\r\n16000\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--";
-
-req.setHeader('content-type', 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW');
-
-req.write(postData);
-
-req.end();
-```
-
-</TabItem>
 </Tabs>
-
-
 
 
 ## ASR Async get status `POST`
@@ -298,10 +219,14 @@ import requests
 
 url = "https://api.botlhale.xyz/asr/async/status"
 
-payload={'FileName': 'asr_x95mC54S71nD_zu-ZA_16000_6Y9uBRn9x395'}
+payload={
+  'FileName': 'asr_x95mC54S71nD_zu-ZA_16000_6Y9uBRn9x395'
+  }
+
 files=[
 
 ]
+
 headers = {
   'Authorization': 'Bearer <IdToken>'
 }
@@ -315,11 +240,9 @@ print(response.json())
 <TabItem value="bash" label="Bash" >
 
 ```js 
-curl --location --request POST 'https://api.botlhale.xyz/asr' \
+curl --location --request POST 'https://api.botlhale.xyz/asr/async/status' \
 --header 'Authorization: Bearer <IdToken>' \
---form 'SpeechFile=@"mPMBv3Y3c/bot_YPBDDDGASKSEVTHT__V5v5DS992s.wav"' \
---form 'LanguageCode="zu-ZA"'\
---form 'SampleRate="16000"'
+--form 'FileName="asr_76Gw113Dt8Ds_zu-ZA_16000_1_m47dm1DG1e29.wav"'
 ```
 
 </TabItem>
@@ -330,9 +253,7 @@ var myHeaders = new Headers();
 myHeaders.append("Authorization", "Bearer <IdToken>");
 
 var formdata = new FormData();
-formdata.append("SpeechFile", fileInput.files[0], "[PROXY]");
-formdata.append("LanguageCode", "zu-ZA");
-formdata.append("SampleRate", "16000");
+formdata.append("FileName", "asr_76Gw113Dt8Ds_zu-ZA_16000_1_m47dm1DG1e29.wav");
 
 var requestOptions = {
   method: 'POST',
@@ -341,7 +262,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://api.botlhale.xyz/asr", requestOptions)
+fetch("https://api.botlhale.xyz/asr/async/status", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -356,8 +277,8 @@ var fs = require('fs');
 
 var options = {
   'method': 'POST',
-  'hostname': 'https://api.botlhale.xyz',
-  'path': '/asr',
+  'hostname': 'api.botlhale.xyz',
+  'path': '/asr/async/status',
   'headers': {
     'Authorization': 'Bearer <IdToken>'
   },
@@ -381,7 +302,7 @@ var req = https.request(options, function (res) {
   });
 });
 
-var postData = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"LanguageCode\"\r\n\r\nzu-ZA\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"SpeechFile\"; filename=\"[PROXY]\"\r\nContent-Type: \"{Insert_File_Content_Type}\"\r\n\r\n" + fs.readFileSync('VPIoG_uMJ/bot_YPBDDDGASKSEVTHT__V5v5DS992s.wav') + "\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"SampleRate\"\r\n\r\n16000\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--";
+var postData = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"FileName\"\r\n\r\nasr_76Gw113Dt8Ds_zu-ZA_16000_1_m47dm1DG1e29.wav\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--";
 
 req.setHeader('content-type', 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW');
 
