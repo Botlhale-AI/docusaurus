@@ -143,11 +143,14 @@ req.end();
 
 
 #### Response body
+
 ```json
 {
-    "DateReceived": "01/05/2021 15:39:41",
+    "DateReceived": "02/02/2023 10:29:55",
     "LanguageCode": "zu-ZA",
-    "Transcription": "Siyabonga"
+    "NewSampleRate": "16000",
+    "SpeechFile": "asr_3mi1GR26M72f_zu-ZA__LLR3781Zc20b.wav",
+    "Transcription": "izithombe zakhe umzimba zokuxhumana"
 }
 ```
 

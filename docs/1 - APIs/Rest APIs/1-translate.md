@@ -133,6 +133,7 @@ req.end();
 {
     "DateReceived": "01/05/2021 15:38:35",
     "LanguageCode": "xh-ZA",
-    "Translation": "When you want to buy a car, click the first button."
+    "Translation": "When you want to buy a car, click the first button.",
+    "characters": "39"
 }
 ```
