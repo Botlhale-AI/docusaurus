@@ -185,6 +185,7 @@ print(f'File upload HTTP status code: {http_response.status_code}')
 <TabItem value="bash" label="Node - Request" >
 
 ```js 
+// Demonstrate how another program can use the presigned URL to upload a file
 var request = require('request');
 var fs = require('fs');
 
@@ -203,6 +204,8 @@ var options = {
 },
   formData:data
 };
+
+// If successful, returns HTTP status code 204
 request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.statusCode);
