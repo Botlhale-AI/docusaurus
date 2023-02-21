@@ -182,6 +182,35 @@ print(f'File upload HTTP status code: {http_response.status_code}')
 ```
 
 </TabItem>
+<TabItem value="bash" label="Node - Request" >
+
+```js 
+var request = require('request');
+var fs = require('fs');
+
+var data = response['fields']
+data['file'] = {
+    'value': fs.createReadStream(filepath),
+    'options': {
+        'filename': '',
+        'contentType': ''
+    }
+}
+var options = {
+  'method': 'POST',
+  'url': response['url'],
+  'headers': {
+},
+  formData:data
+};
+request(options, function (error, response) {
+  if (error) throw new Error(error);
+  console.log(response.statusCode);
+});
+
+```
+
+</TabItem>
 </Tabs>
 
 
