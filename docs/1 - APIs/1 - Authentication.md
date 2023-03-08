@@ -77,45 +77,24 @@ fetch("https://api.botlhale.xyz/generateAuthToken", requestOptions)
 ```
 
 </TabItem>
-<TabItem value="js1" label="Node JS - Native">
+<TabItem value="nodejs" label="NodeJs - Request">
 
 ```js
-var https = require('follow-redirects').https;
-var fsxyz require('fs');
-
+var request = require('request');
 var options = {
-'method': 'POST',
-'hostname': 'https://api.botlhale.xyz',
-'path': '/generateAuthToken',
-'headers': {
-},
-'maxRedirects': 20
+  'method': 'POST',
+  'url': 'https://api.botlhale.xyz/generateAuthToken',
+  'headers': {
+
+  },
+  formData: {
+    'REFRESH_TOKEN': '<IdToken>'
+  }
 };
-
-var req = https.request(options, function (res) {
-var chunks = [];
-
-res.on("data", function (chunk) {
-    chunks.push(chunk);
+request(options, function (error, response) {
+  if (error) throw new Error(error);
+  console.log(response.body);
 });
-
-res.on("end", function (chunk) {
-    var body = Buffer.concat(chunks);
-    console.log(body.toString());
-});
-
-res.on("error", function (error) {
-    console.error(error);
-});
-});
-
-var postData = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"REFRESH_TOKEN\"\r\n\r\n<REFRESH_TOKEN>.ai\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW";
-
-req.setHeader('content-type', 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW');
-
-req.write(postData);
-
-req.end();  
 ```
 
 </TabItem>

@@ -96,46 +96,33 @@ fetch("https://api.botlhale.xyz/asr", requestOptions)
 ```
 
 </TabItem>
-<TabItem value="nodejs" label="Node JS - Native">
+<TabItem value="nodejs" label="NodeJs - Request">
 
 ```js
-var https = require('follow-redirects').https;
+var request = require('request');
 var fs = require('fs');
-
 var options = {
   'method': 'POST',
-  'hostname': 'https://api.botlhale.xyz',
-  'path': '/asr',
+  'url': 'https://api.botlhale.xyz/asr',
   'headers': {
     'Authorization': 'Bearer <IdToken>'
   },
-  'maxRedirects': 20
+  formData: {
+    'LanguageCode': 'zu-ZA',
+    'SpeechFile': {
+      'value': fs.createReadStream('mPMBv3Y3c/bot_YPBDDDGASKSEVTHT__V5v5DS992s.wav'),
+      'options': {
+        'filename': '',
+        'contentType': null
+      }
+    },
+    'SampleRate': '16000'
+  }
 };
-
-var req = https.request(options, function (res) {
-  var chunks = [];
-
-  res.on("data", function (chunk) {
-    chunks.push(chunk);
-  });
-
-  res.on("end", function (chunk) {
-    var body = Buffer.concat(chunks);
-    console.log(body.toString());
-  });
-
-  res.on("error", function (error) {
-    console.error(error);
-  });
+request(options, function (error, response) {
+  if (error) throw new Error(error);
+  console.log(response.body);
 });
-
-var postData = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"LanguageCode\"\r\n\r\nzu-ZA\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"SpeechFile\"; filename=\"[PROXY]\"\r\nContent-Type: \"{Insert_File_Content_Type}\"\r\n\r\n" + fs.readFileSync('VPIoG_uMJ/bot_YPBDDDGASKSEVTHT__V5v5DS992s.wav') + "\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"SampleRate\"\r\n\r\n16000\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--";
-
-req.setHeader('content-type', 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW');
-
-req.write(postData);
-
-req.end();
 ```
 
 </TabItem>

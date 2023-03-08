@@ -36,7 +36,7 @@ url = "https://api.botlhale.xyz/tts"
 
 payload={
   'LanguageCode': 'xh-ZA',
-  'TextMsg': 'Molo Athi'
+  'TextMsg': 'Xa ufuna ukuthenga imoto cofa iqhosha lokuqala.'
   }
 files=[
 
@@ -58,7 +58,7 @@ print(response.text)
 curl --location --request POST 'https://api.botlhale.xyz/tts' \
 --header 'Authorization: Bearer <IdToken>' \
 --form 'LanguageCode="xh-ZA"' \
---form 'TextMsg="hello"'
+--form 'TextMsg="Xa ufuna ukuthenga imoto cofa iqhosha lokuqala."'
 ```
 
 </TabItem>
@@ -70,7 +70,7 @@ myHeaders.append("Authorization", "Bearer <IdToken>");
 
 var formdata = new FormData();
 formdata.append("LanguageCode", "xh-ZA");
-formdata.append("TextMsg", "hello");
+formdata.append("TextMsg", "Xa ufuna ukuthenga imoto cofa iqhosha lokuqala.");
 
 var requestOptions = {
   method: 'POST',
@@ -86,46 +86,25 @@ fetch("https://api.botlhale.xyz/tts", requestOptions)
 ```
 
 </TabItem>
-<TabItem value="nodejs" label="Node JS - Native">
+<TabItem value="nodejs" label="NodeJs - Request">
 
 ```js
-var https = require('follow-redirects').https;
-var fs = require('fs');
-
+var request = require('request');
 var options = {
   'method': 'POST',
-  'hostname': 'https://api.botlhale.xyz',
-  'path': '/tts',
+  'url': 'https://api.botlhale.xyz/tts',
   'headers': {
     'Authorization': 'Bearer <IdToken>'
   },
-  'maxRedirects': 20
+  formData: {
+    'LanguageCode': 'xh-ZA',
+    'TextMsg': 'Xa ufuna ukuthenga imoto cofa iqhosha lokuqala.'
+  }
 };
-
-var req = https.request(options, function (res) {
-  var chunks = [];
-
-  res.on("data", function (chunk) {
-    chunks.push(chunk);
-  });
-
-  res.on("end", function (chunk) {
-    var body = Buffer.concat(chunks);
-    console.log(body.toString());
-  });
-
-  res.on("error", function (error) {
-    console.error(error);
-  });
+request(options, function (error, response) {
+  if (error) throw new Error(error);
+  console.log(response.body);
 });
-
-var postData = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"LanguageCode\"\r\n\r\nIsiXhosa\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"TextMsg\"\r\n\r\nhello\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--";
-
-req.setHeader('content-type', 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW');
-
-req.write(postData);
-
-req.end();
 ```
 
 </TabItem>
@@ -137,6 +116,6 @@ req.end();
     "DateReceived": "01/05/2021 15:38:35",
     "LanguageCode": "xh-ZA",
     "SpeechResponseURL": "<URL>",
-    "TextMsg": "Molo Athi"
+    "TextMsg": "Xa ufuna ukuthenga imoto cofa iqhosha lokuqala."
 }
 ```

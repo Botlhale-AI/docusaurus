@@ -97,46 +97,26 @@ fetch("https://api.botlhale.xyz/asr/async/upload", requestOptions)
 ```
 
 </TabItem>
-<TabItem value="nodejs" label="Node JS - Native">
+<TabItem value="nodejs" label="Node JS - Request">
 
 ```js
-var https = require('follow-redirects').https;
-var fs = require('fs');
-
+var request = require('request');
 var options = {
   'method': 'POST',
-  'hostname': 'api.botlhale.xyz',
-  'path': '/asr/async/upload',
+  'url': 'https://api.botlhale.xyz/asr/async/upload',
   'headers': {
     'Authorization': 'Bearer <IdToken>'
   },
-  'maxRedirects': 20
+  formData: {
+    'LanguageCode': 'zu-ZA',
+    'SampleRate': '16000',
+    'Diarization': 'True'
+  }
 };
-
-var req = https.request(options, function (res) {
-  var chunks = [];
-
-  res.on("data", function (chunk) {
-    chunks.push(chunk);
-  });
-
-  res.on("end", function (chunk) {
-    var body = Buffer.concat(chunks);
-    console.log(body.toString());
-  });
-
-  res.on("error", function (error) {
-    console.error(error);
-  });
+request(options, function (error, response) {
+  if (error) throw new Error(error);
+  console.log(response.body);
 });
-
-var postData = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"LanguageCode\"\r\n\r\nzu-ZA\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"SampleRate\"\r\n\r\n16000\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"Diarization\"\r\n\r\nTrue\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--";
-
-req.setHeader('content-type', 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW');
-
-req.write(postData);
-
-req.end();
 ```
 
 </TabItem>
@@ -182,7 +162,7 @@ print(f'File upload HTTP status code: {http_response.status_code}')
 ```
 
 </TabItem>
-<TabItem value="bash" label="Node - Request" >
+<TabItem value="nodejs" label="NodeJs - Request" >
 
 ```js 
 // Demonstrate how another program can use the presigned URL to upload a file
