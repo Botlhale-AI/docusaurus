@@ -12,9 +12,9 @@ This endpoint handles single speech to text conversion. This API returns a text 
 
 Request Params | |
 | ------------- | ------------- |
-| SpeechFile  | `File` **Required.** Binary audio file of the user's message.| 
-| SampleRate  | `Number` **Required.** The sample rate of the supplied audio clip in hertz e.g 8000 for 8kHz|
-| LanguageCode  | `String` **Required.** This is the language spoken in the supplied audio clip. We use BCP-47 language tags. See [list of supported languages](../../2%20-%20Languages.md) for supported languages and codes. |
+| SpeechFile  | `File`  <br />**Required.** Binary audio file of the user's message.| 
+| SampleRate  | `Number`  <br />**Required.** The sample rate of the supplied audio clip in hertz e.g 8000 for 8kHz|
+| LanguageCode  | `String`  <br />**Required.** This is the language spoken in the supplied audio clip. We use BCP-47 language tags. See [list of supported languages](../../2%20-%20Languages.md) for supported languages and codes. |
 
 <br />
 

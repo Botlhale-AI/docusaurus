@@ -8,8 +8,8 @@ This endpoint handles translate from specified language to English.
 
 Request Params | 
 | ------------- | ------------- |
-| Text  | `string` <br />Required. Text to be translate. | 
-| LanguageCode  | `string` <br /> Required. Source language of text to be translated. See [list of supported languages](2%20-%20Languages.md) for supported languages and codes. |
+| Text  | `string` <br />**Required**. Text to be translate. | 
+| LanguageCode  | `string` <br />**Required**. Source language of text to be translated. See [list of supported languages](2%20-%20Languages.md) for supported languages and codes. |
 
 
 :::info

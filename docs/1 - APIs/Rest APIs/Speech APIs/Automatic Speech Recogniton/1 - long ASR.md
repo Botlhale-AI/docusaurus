@@ -12,9 +12,9 @@ This endpoint generates a presigned url that allows the user to upload a speech 
 
 Request Params | |
 | ------------- | ------------- |
-| SampleRate  | `Number` **Required.** The sample rate of the supplied audio clip in hertz e.g 8000 for 8kHz|
-| LanguageCode  | `String` **Optional.** This is the language spoken in the supplied audio clip. We use BCP-47 language tags. See [list of supported languages](../../2%20-%20Languages.md) for supported languages and codes. If not provided we automatically detect the language spoken on the audio clip. This is done at sentence level.|
-| Diarization | `Boolean`  **Optional.** Speaker diarization is used to identify different speakers in the clip as well as when the different speakers are speaking. * **False** - Default, Speaker diarization is enabled.  **True** - Speaker diarization is enabled. * |
+| SampleRate  | `Number`  <br />**Required.** The sample rate of the supplied audio clip in hertz e.g 8000 for 8kHz|
+| LanguageCode  | `String`  <br />**Optional.** This is the language spoken in the supplied audio clip. We use BCP-47 language tags. See [list of supported languages](../../2%20-%20Languages.md) for supported languages and codes. If not provided we automatically detect the language spoken on the audio clip. This is done at sentence level.|
+| Diarization | `Boolean`  <br />**Optional.** Speaker diarization is used to identify different speakers in the clip as well as when the different speakers are speaking. * **False** - Default, Speaker diarization is enabled.  **True** - Speaker diarization is enabled. * |
 
 <br />
 

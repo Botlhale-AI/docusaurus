@@ -9,8 +9,8 @@ Generate a ConversationID valid for 24 hours. This is a unique ID that you have 
 
 Request Params | 
 | ------------- | ------------- |
-| BotID  | `string` <br />Required. Specifies which bot the message should be sent to.| 
-| LanguageCode  | `string` <br /> Required. This is the language the user is using to interact with the bot. See **list of supported languages** to get the language |
+| BotID  | `string` <br />**Required**. Specifies which bot the message should be sent to.| 
+| LanguageCode  | `string` <br /> **Required**. This is the language the user is using to interact with the bot. See **list of supported languages** to get the language |
 
 
 :::info
