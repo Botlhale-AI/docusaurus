@@ -327,10 +327,10 @@ request(options, function (error, response) {
 
 
 
-## ASR Async get status `GET`
+## ASR Async get data `GET`
 
 ```bash
-https://api.botlhale.xyz/asr/async/status
+https://api.botlhale.xyz/asr/async/getdata
 ```
 
 This endpoint returns the status of the async process.
@@ -360,7 +360,7 @@ You need to Include `Authentication Token` in request headers. See how to
 ```py
 import requests
 
-url = "https://api.botlhale.xyz/asr/async/status?OrgID=<OrgID>&FileName=<filename>"
+url = "https://api.botlhale.xyz/asr/async/getdata?OrgID=<OrgID>&FileName=<filename>"
 
 payload={
 
