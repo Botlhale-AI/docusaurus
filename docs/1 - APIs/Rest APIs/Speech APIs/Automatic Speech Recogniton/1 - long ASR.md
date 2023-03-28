@@ -12,6 +12,7 @@ This endpoint generates a presigned url that allows the user to upload a speech 
 
 Request Params | |
 | ------------- | ------------- |
+| OrgID  | `String`  <br />**Required.** Organisation ID. |
 | SampleRate  | `Number`  <br />**Required.** The sample rate of the supplied audio clip in hertz e.g 8000 for 8kHz|
 | LanguageCode  | `String`  <br />**Optional.** This is the language spoken in the supplied audio clip. We use BCP-47 language tags. See [list of supported languages](../../2%20-%20Languages.md) for supported languages and codes. If not provided we automatically detect the language spoken on the audio clip. This is done at sentence level.|
 | Diarization | `Boolean`  <br />**Optional.** Speaker diarization is used to identify different speakers in the clip as well as when the different speakers are speaking. * **False** - Default, Speaker diarization is enabled.  **True** - Speaker diarization is enabled. * |
@@ -42,6 +43,7 @@ import requests
 url = "https://api.botlhale.xyz/asr/async/upload"
 
 payload={
+  'OrgID': '<OrgID>',
   'LanguageCode': 'zu-ZA',
   'SampleRate': '16000', 
   'Diarization': True,
@@ -66,6 +68,7 @@ print(response.json())
 ```js 
 curl --location --request POST 'https://api.botlhale.xyz/asr/async/upload' \
 --header 'Authorization: Bearer <IdToken>' \
+--form 'OrgID="<OrgID>"' \
 --form 'LanguageCode="zu-ZA"' \
 --form 'SampleRate="16000"' \
 --form 'Diarization="True"'
@@ -79,6 +82,7 @@ var myHeaders = new Headers();
 myHeaders.append("Authorization", "Bearer <IdToken>");
 
 var formdata = new FormData();
+formdata.append("OrgID", "<OrgID>");
 formdata.append("LanguageCode", "zu-ZA");
 formdata.append("SampleRate", "16000");
 formdata.append("Diarization", "True");
@@ -108,6 +112,7 @@ var options = {
     'Authorization': 'Bearer <IdToken>'
   },
   formData: {
+    'OrgID': '<OrgID>',
     'LanguageCode': 'zu-ZA',
     'SampleRate': '16000',
     'Diarization': 'True'
@@ -197,16 +202,17 @@ request(options, function (error, response) {
 </Tabs>
 
 
-## ASR Async get status `POST`
+## ASR Async get status `GET`
 
 ```bash
 https://api.botlhale.xyz/asr/async/status
 ```
 
-This endpoint returns the status of the async process and results if the process is done.
+This endpoint returns the status of the async process.
 
 Request Params | |
 | ------------- | ------------- |
+| OrgID  | `String`  <br />**Required.** Organisation ID. |
 | FileName  | `Text` **Required.** The filename generated from the async upload process. |
 
 <br />
@@ -229,10 +235,10 @@ You need to Include `Authentication Token` in request headers. See how to
 ```py
 import requests
 
-url = "https://api.botlhale.xyz/asr/async/status"
+url = "https://api.botlhale.xyz/asr/async/status?OrgID=<OrgID>&FileName=<filename>"
 
 payload={
-  'FileName': 'asr_x95mC54S71nD_zu-ZA_16000_6Y9uBRn9x395'
+
   }
 
 files=[
@@ -243,7 +249,7 @@ headers = {
   'Authorization': 'Bearer <IdToken>'
 }
 
-response = requests.request("POST", url, headers=headers, data=payload, files=files)
+response = requests.request("GET", url, headers=headers, data=payload, files=files)
 
 print(response.json())
 ```
@@ -252,9 +258,8 @@ print(response.json())
 <TabItem value="bash" label="Bash" >
 
 ```js 
-curl --location --request POST 'https://api.botlhale.xyz/asr/async/status' \
---header 'Authorization: Bearer <IdToken>' \
---form 'FileName="asr_76Gw113Dt8Ds_zu-ZA_16000_1_m47dm1DG1e29.wav"'
+curl --location --request GET 'https://api.botlhale.xyz/asr/async/status?OrgID=<OrgID>&FileName=<filename>' \
+--header 'Authorization: Bearer <IdToken>' 
 ```
 
 </TabItem>
@@ -265,62 +270,39 @@ var myHeaders = new Headers();
 myHeaders.append("Authorization", "Bearer <IdToken>");
 
 var formdata = new FormData();
-formdata.append("FileName", "asr_76Gw113Dt8Ds_zu-ZA_16000_1_m47dm1DG1e29.wav");
 
 var requestOptions = {
-  method: 'POST',
+  method: 'GET',
   headers: myHeaders,
   body: formdata,
   redirect: 'follow'
 };
 
-fetch("https://api.botlhale.xyz/asr/async/status", requestOptions)
+fetch("https://api.botlhale.xyz/asr/async/status?OrgID=<OrgID>&FileName=<filename>", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
 
 </TabItem>
-<TabItem value="nodejs" label="Node JS - Native">
+<TabItem value="nodejs" label="Node JS - Request">
 
 ```js
-var https = require('follow-redirects').https;
-var fs = require('fs');
-
+var request = require('request');
 var options = {
-  'method': 'POST',
-  'hostname': 'api.botlhale.xyz',
-  'path': '/asr/async/status',
+  'method': 'GET',
+  'url': 'https://api.botlhale.xyz/asr/async/status?OrgID=<OrgID>&FileName=<filename>',
   'headers': {
     'Authorization': 'Bearer <IdToken>'
   },
-  'maxRedirects': 20
+  formData: {
+
+  }
 };
-
-var req = https.request(options, function (res) {
-  var chunks = [];
-
-  res.on("data", function (chunk) {
-    chunks.push(chunk);
-  });
-
-  res.on("end", function (chunk) {
-    var body = Buffer.concat(chunks);
-    console.log(body.toString());
-  });
-
-  res.on("error", function (error) {
-    console.error(error);
-  });
+request(options, function (error, response) {
+  if (error) throw new Error(error);
+  console.log(response.body);
 });
-
-var postData = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"FileName\"\r\n\r\nasr_76Gw113Dt8Ds_zu-ZA_16000_1_m47dm1DG1e29.wav\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--";
-
-req.setHeader('content-type', 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW');
-
-req.write(postData);
-
-req.end();
 ```
 
 </TabItem>
@@ -330,88 +312,297 @@ req.end();
 #### Response body
 ```json
 {
-    "audio_length": "40.40275 seconds",
-    "filename": "audios/asr_x95mC54S71nD_zu-ZA_16000_6Y9uBRn9x395.wav",
-    "status": "done",
+    "data": [
+        {
+            "OrgID": "<>",
+            "id": 207891841473145364,
+            "process": "<>.wav",
+            "processTime": "",
+            "status": "running"
+        }
+    ]
+}
+```
+<br />
+
+
+
+## ASR Async get status `GET`
+
+```bash
+https://api.botlhale.xyz/asr/async/status
+```
+
+This endpoint returns the status of the async process.
+
+Request Params | |
+| ------------- | ------------- |
+| OrgID  | `String`  <br />**Required.** Organisation ID. |
+| FileName  | `Text` **Required.** The filename generated from the async upload process. |
+
+<br />
+
+:::info
+
+You need to Include `Authentication Token` in request headers. See how to 
+[Generate Auth Token](../../../1%20-%20Authentication.md#generate-a-bearer-token-post)
+ codes.
+:::
+
+
+<br />
+
+#### Request Example
+
+<Tabs>
+<TabItem value="py" label="Python" default>
+
+```py
+import requests
+
+url = "https://api.botlhale.xyz/asr/async/status?OrgID=<OrgID>&FileName=<filename>"
+
+payload={
+
+  }
+
+files=[
+
+]
+
+headers = {
+  'Authorization': 'Bearer <IdToken>'
+}
+
+response = requests.request("GET", url, headers=headers, data=payload, files=files)
+
+print(response.json())
+```
+
+</TabItem>
+<TabItem value="bash" label="Bash" >
+
+```js 
+curl --location --request GET 'https://api.botlhale.xyz/asr/async/getdata?OrgID=<OrgID>&FileName=<filename>' \
+--header 'Authorization: Bearer <IdToken>' 
+```
+
+</TabItem>
+<TabItem value="js" label="JavaScript">
+
+```js
+var myHeaders = new Headers();
+myHeaders.append("Authorization", "Bearer <IdToken>");
+
+var formdata = new FormData();
+
+var requestOptions = {
+  method: 'GET',
+  headers: myHeaders,
+  body: formdata,
+  redirect: 'follow'
+};
+
+fetch("https://api.botlhale.xyz/asr/async/getdata?OrgID=<OrgID>&FileName=<filename>", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+
+</TabItem>
+<TabItem value="nodejs" label="Node JS - Request">
+
+```js
+var request = require('request');
+var options = {
+  'method': 'GET',
+  'url': 'https://api.botlhale.xyz/asr/async/getdata?OrgID=<OrgID>&FileName=<filename>',
+  'headers': {
+    'Authorization': 'Bearer <IdToken>'
+  },
+  formData: {
+
+  }
+};
+request(options, function (error, response) {
+  if (error) throw new Error(error);
+  console.log(response.body);
+});
+```
+
+</TabItem>
+</Tabs>
+
+
+#### Response body
+```json
+{
+    "audio_length": "30.0",
+    "filename": "/<filename>.wav",
+    "status": "complete",
+    "time": {
+        "diarization": 6.815945625305176,
+        "recognition": 4.098539113998413
+    },
     "timestamps": [
         {
-            "end": 10199.999999999987,
-            "filename": "1_speaker_0_3929.999999999989_10199.999999999987_zu-ZA.wav",
+            "end": 1260.0000000000005,
+            "filename": "1_speaker_0_660.0000000000003_1260.0000000000005_nso-ZA.wav",
+            "language": "nso-ZA",
             "speaker": "speaker_0",
-            "start": 3929.999999999989,
-            "language": "zu-ZA",
+            "start": 660.0000000000003,
             "transcription": "<transcription>"
         },
         {
-            "end": 12119.99999999995,
-            "filename": "2_speaker_1_11279.99999999995_12119.99999999995_en-ZA.wav",
+            "end": 2310.0000000000014,
+            "filename": "2_speaker_1_1260.000000000001_2310.0000000000014_nso-ZA.wav",
+            "language": "nso-ZA",
             "speaker": "speaker_1",
-            "start": 11279.99999999995,
-            "language": "zu-ZA",
+            "start": 1260.000000000001,
             "transcription": "<transcription>"
         },
         {
-            "end": 15929.999999999918,
-            "filename": "3_speaker_1_12509.999999999925_15929.999999999918_zu-ZA.wav",
+            "end": 2699.9999999999995,
+            "filename": "3_speaker_0_2309.9999999999995_2699.9999999999995_nso-ZA.wav",
+            "language": "nso-ZA",
+            "speaker": "speaker_0",
+            "start": 2309.9999999999995,
+            "transcription": "<transcription>"
+        },
+        {
+            "end": 6359.999999999998,
+            "filename": "4_speaker_1_2699.9999999999973_6359.999999999998_nso-ZA.wav",
+            "language": "nso-ZA",
             "speaker": "speaker_1",
-            "start": 12509.999999999925,
-            "language": "zu-ZA",
+            "start": 2699.9999999999973,
             "transcription": "<transcription>"
         },
         {
-            "end": 19829.999999999873,
-            "filename": "4_speaker_0_16679.999999999876_19829.999999999873_zu-ZA.wav",
+            "end": 6780.000000000008,
+            "filename": "5_speaker_0_6360.000000000008_6780.000000000008_nso-ZA.wav",
+            "language": "nso-ZA",
             "speaker": "speaker_0",
-            "start": 16679.999999999876,
-            "language": "zu-ZA",
+            "start": 6360.000000000008,
             "transcription": "<transcription>"
         },
         {
-            "end": 25020.00000000003,
-            "filename": "5_speaker_1_20640.000000000025_25020.00000000003_zu-ZA.wav",
+            "end": 7860.000000000012,
+            "filename": "6_speaker_1_6780.000000000012_7860.000000000012_nso-ZA.wav",
+            "language": "nso-ZA",
             "speaker": "speaker_1",
-            "start": 20640.000000000025,
-            "language": "zu-ZA",
+            "start": 6780.000000000012,
             "transcription": "<transcription>"
         },
         {
-            "end": 26580.00000000021,
-            "filename": "6_speaker_0_25530.00000000021_26580.00000000021_zu-ZA.wav",
+            "end": 8580.000000000022,
+            "filename": "7_speaker_0_7860.000000000021_8580.000000000022_nso-ZA.wav",
+            "language": "nso-ZA",
             "speaker": "speaker_0",
-            "start": 25530.00000000021,
-            "language": "zu-ZA",
+            "start": 7860.000000000021,
             "transcription": "<transcription>"
         },
         {
-            "end": 30840.00000000028,
-            "filename": "7_speaker_0_27360.00000000028_30840.00000000028_zu-ZA.wav",
-            "speaker": "speaker_0",
-            "start": 27360.00000000028,
-            "language": "zu-ZA",
-            "transcription": "<transcription>"
-        },
-        {
-            "end": 34830.00000000044,
-            "filename": "8_speaker_0_31620.00000000044_34830.00000000044_zu-ZA.wav",
-            "speaker": "speaker_0",
-            "start": 31620.00000000044,
-            "language": "zu-ZA",
-            "transcription": "<transcription>"
-        },
-        {
-            "end": 36570.00000000056,
-            "filename": "9_speaker_1_34830.00000000056_36570.00000000056_af-ZA.wav",
+            "end": 13950.000000000011,
+            "filename": "8_speaker_1_8580.00000000001_13950.000000000011_nso-ZA.wav",
+            "language": "nso-ZA",
             "speaker": "speaker_1",
-            "start": 34830.00000000056,
-            "language": "zu-ZA",
+            "start": 8580.00000000001,
             "transcription": "<transcription>"
         },
         {
-            "end": 39600.00000000066,
-            "filename": "10_speaker_0_37560.00000000066_39600.00000000066_zu-ZA.wav",
+            "end": 15239.999999999889,
+            "filename": "9_speaker_1_14249.999999999887_15239.999999999889_nso-ZA.wav",
+            "language": "nso-ZA",
+            "speaker": "speaker_1",
+            "start": 14249.999999999887,
+            "transcription": "<transcription>"
+        },
+        {
+            "end": 15929.999999999867,
+            "filename": "10_speaker_0_15239.999999999867_15929.999999999867_nso-ZA.wav",
+            "language": "nso-ZA",
             "speaker": "speaker_0",
-            "start": 37560.00000000066,
-            "language": "zu-ZA",
+            "start": 15239.999999999867,
+            "transcription": "<transcription>"
+        },
+        {
+            "end": 18629.999999999854,
+            "filename": "11_speaker_1_15929.999999999853_18629.999999999854_nso-ZA.wav",
+            "language": "nso-ZA",
+            "speaker": "speaker_1",
+            "start": 15929.999999999853,
+            "transcription": "<transcription>"
+        },
+        {
+            "end": 19739.99999999995,
+            "filename": "12_speaker_0_18629.99999999995_19739.99999999995_nso-ZA.wav",
+            "language": "nso-ZA",
+            "speaker": "speaker_0",
+            "start": 18629.99999999995,
+            "transcription": "<transcription>"
+        },
+        {
+            "end": 21839.999999999993,
+            "filename": "13_speaker_1_19739.999999999993_21839.999999999993_nso-ZA.wav",
+            "language": "nso-ZA",
+            "speaker": "speaker_1",
+            "start": 19739.999999999993,
+            "transcription": "<transcription>"
+        },
+        {
+            "end": 22410.000000000073,
+            "filename": "14_speaker_0_21840.00000000007_22410.000000000073_nso-ZA.wav",
+            "language": "nso-ZA",
+            "speaker": "speaker_0",
+            "start": 21840.00000000007,
+            "transcription": "<transcription>"
+        },
+        {
+            "end": 24360.00000000009,
+            "filename": "15_speaker_1_22410.00000000009_24360.00000000009_nso-ZA.wav",
+            "language": "nso-ZA",
+            "speaker": "speaker_1",
+            "start": 22410.00000000009,
+            "transcription": "<transcription>"
+        },
+        {
+            "end": 25590.000000000167,
+            "filename": "16_speaker_0_24360.000000000167_25590.000000000167_nso-ZA.wav",
+            "language": "nso-ZA",
+            "speaker": "speaker_0",
+            "start": 24360.000000000167,
+            "transcription": "<transcription>"
+        },
+        {
+            "end": 26430.000000000215,
+            "filename": "17_speaker_1_25590.000000000215_26430.000000000215_nso-ZA.wav",
+            "language": "nso-ZA",
+            "speaker": "speaker_1",
+            "start": 25590.000000000215,
+            "transcription": "<transcription>"
+        },
+        {
+            "end": 28380.000000000244,
+            "filename": "18_speaker_0_26430.000000000244_28380.000000000244_nso-ZA.wav",
+            "language": "nso-ZA",
+            "speaker": "speaker_0",
+            "start": 26430.000000000244,
+            "transcription": "<transcription>"
+        },
+        {
+            "end": 29220.00000000032,
+            "filename": "19_speaker_1_28380.00000000032_29220.00000000032_nso-ZA.wav",
+            "language": "nso-ZA",
+            "speaker": "speaker_1",
+            "start": 28380.00000000032,
+            "transcription": "transcription"
+        },
+        {
+            "end": 30000.000000000353,
+            "filename": "20_speaker_0_29220.00000000035_30000.000000000353_nso-ZA.wav",
+            "language": "nso-ZA",
+            "speaker": "speaker_0",
+            "start": 29220.00000000035,
             "transcription": "<transcription>"
         }
     ]
