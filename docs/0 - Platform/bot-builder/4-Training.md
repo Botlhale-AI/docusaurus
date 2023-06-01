@@ -4,8 +4,8 @@ This section is for training a chatbot with the intents and user examples provid
 
 To train you need to select the Language (you can only train one language at a time), specify the number of Epochs (the number times that the learning algorithm will work through the entire training dataset), Batch size (the number of samples to work through before updating the internal model parameters), Training samples (single rows of data that contain inputs that are fed into the algorithm and an output that is used to compare to the prediction and calculate an error), and Fallback. We recommend that you leave the default values for all these parameters.
 
-![Training parameters](https://botlhale-docs1.s3.amazonaws.com/train.png)
+![Training parameters](https://botlhale-docs1-new.s3.amazonaws.com/train.png)
 
 After setting the parameters, click the `Train` button and your chatbot will start training. When your chatbot is training, the saved model section will show the model being trained with a status value of ‘In progress’ while the ones that have completed training will have the status of ‘Done’ as shown in Figure 18.
 
-![Training progress status](https://botlhale-docs1.s3.amazonaws.com/train-status.png)
+![Training progress status](https://botlhale-docs1-new.s3.amazonaws.com/train-status.png)
