@@ -8,4 +8,4 @@ To train you need to select the Language (you can only train one language at a t
 
 After setting the parameters, click the `Train` button and your chatbot will start training. When your chatbot is training, the saved model section will show the model being trained with a status value of ‘In progress’ while the ones that have completed training will have the status of ‘Done’ as shown in Figure 18.
 
-![Training progress status](https://botlhale-docs1-new.s3.amazonaws.com/train-status.png)
+![Training progress status](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/Screenshot+2023-06-02+at+12.24.10.png)
