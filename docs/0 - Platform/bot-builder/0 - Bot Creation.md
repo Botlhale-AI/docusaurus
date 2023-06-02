@@ -13,11 +13,11 @@ Use the following steps to create your chatbot.
 1. Click on the `CREATE BOT` button as shown in the following image.
 
 
-![chatbots](../../../static/img/create-chatbot.PNG)
+![chatbots](https://botlhale-ai-assets.s3.amazonaws.com/create-bot.png)
 
 2. A pop-up window appears, prompting you to name your new bot and select one or more languages the bot will support. Fill in the required fields and click `Create bot`.
 
-![chatbots]()
+![chatbots](https://botlhale-ai-assets.s3.amazonaws.com/bot-name-language.png)
 
 
 ## Chatbot list
