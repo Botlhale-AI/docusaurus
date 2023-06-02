@@ -10,7 +10,7 @@ const FeatureList = [
     Svg: require('../../static/img/start.svg').default,
     description: (
       <>
-        Our toolkit is designed in such a way that it is easy to enable you to build a multilingual, voice enabled, conversational without writing a line of code!
+        Our toolkit is designed with ease in mind, enabling you to build a multilingual, voice enabled, conversational assistant without writing a single line of code!
       </>
     ),
   },
@@ -19,7 +19,7 @@ const FeatureList = [
     Svg: require('../../static/img/launch.svg').default,
     description: (
       <>
-      The Botlhale NLP Toolkit makes it easy for you to build, test, and deploy your chatbot(s) onto platforms like WhatsApp, Facebook and Telegram with just one <code>click.</code>
+      The Botlhale NLP Toolkit makes it easy for you to build, test, and deploy one or more chatbots onto platforms like WhatsApp, Facebook, and Telegram with just one <code>click</code>.
       </>
     ),
   },
@@ -28,7 +28,7 @@ const FeatureList = [
     Svg: require('../../static/img/analytics.svg').default,
     description: (
       <>
-       Through AI, your chatbots will learn and improve as your end-users make use of them. The more usage, the better the learning, and thus the performance. Our platform provides you with the analytics and reports on both your chatbot and your human agent(s) enabling you to gather insights that not only improve CSAT but also generally improves your business. All this with just one click.
+       Through AI, your chatbots will learn and improve as your end-users engage with them. The more usage, the better the learning, and by extension, the performance. Our platform provides you with analytics and reporting on both your chatbots and human agents, enabling you to gather insights to improve your business and its CSAT score. All this with just one click.
       </>
     ),
   },
