@@ -6,10 +6,7 @@
 
 Once you have successfully logged in to the Botlhale NLP Toolkit site and selected your organisation, you can begin creating your chatbot.
 
-:::note
-
-Only users with admin and botbuilder permissions are able to create bots on this platform.
-:::
+:::info Only users with admin and botbuilder permissions are able to create bots on this platform. :::
 
 Use the following steps to create your chatbot.
 
