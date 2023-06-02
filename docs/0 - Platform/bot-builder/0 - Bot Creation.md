@@ -3,18 +3,29 @@
 # Bot Creation
 
 ## Create a Chatbot
- 
-The Chatbots page displays all the bots in the system. 
-So, to create a new bot, you first click on the `CREATE BOT` button as shown in Figure 1.
+
+Once you have successfully logged in to the Botlhale NLP Toolkit site and selected your organisation, you can begin creating your chatbot.
+
+:::note
+
+Only users with admin and botbuilder permissions are able to create bots on this platform.
+:::
+
+Use the following steps to create your chatbot.
+
+1. Click on the `CREATE BOT` button as shown in the following image.
+
 
 ![chatbots](../../../static/img/create-chatbot.PNG)
 
-Once you have clicked the create bot button, you will be prompted to enter the Bot name and select the language(s) that the bot should support then click on the `Save bot` button to save the newly created bot.
+2. A pop-up window appears, prompting you to name your new bot and select one or more languages the bot will support. Fill in the required fields and click `Create bot`.
+
+![chatbots]()
 
 
 ## Chatbot list
  
-The newly created bot will be added to the My Chatbots list on the dashboard. You can select between different bots by clicking the Chatbot drop down menu in the top right-hand  corner of the page.
+The newly created bot is added to the My Chatbots list on the dashboard. You can toggle between different bots by clicking the Chatbot dropdown menu in the top right-hand corner of the page.
 
 ![create chatbot](../../../static/img/chatbots-list.PNG)
 
