@@ -1,35 +1,50 @@
 # Intents
 
-Intent is all about the motive of a given chatbot user. It’s the intention behind each message that the chatbot receives from the user. Intents categorize text based on the intent, goal or purpose expressed in the user’s message. For example, the intent "greetings" enables your bot to understand when the user says Hi. This creates a simple question-answer dialogue that provides a response to messages categorised to the intent.
+Intent is all about the motive of a given chatbot user. It’s the goal behind each message the chatbot receives from the user. Intents categorize text based on the goal or purpose expressed in the user’s message. For example, the intent "greetings" enables your bot to understand when the user says "Hi". This creates a simple question-answer dialogue that provides a response to messages categorised to a specific intent.
 
-## Creating Intents
+## Create Intents
 
-To add intents to your selected chatbot, you click on the `New Intent` button. You will be prompted to enter an intent name, then click create intent, as shown in Figure 3. 
+Use the following steps to add intents to your selected chatbot.
+
+1. From the My Chatbots page, click on the Edit icon of the chatbot you wish to add intents to. You are directed to the Intents Manager page.
+2. Click the `New Intent` button.
+3. A pop-up window appears, prompting you to enter an intent name. Fill in the required field, and click `Create Intent`.
 
 ![create intent](../../../static/img/create-intent.PNG)
 
-Once an intent has been created, click on the edit intent button to provide example messages belonging to the intent under the "User Says.." tab, as well a list of possible responses that the bot should respond with under the "Agent Says.." tab. Figure 4 shows the user interface for providing example messages and responses.
+## Edit Intents
+
+Once an intent has been created, you can begin editing it to add various categories for text based on the purpose of the user's message. Use the following steps to edit intents.
+
+1. From the Intents Manager page, click on the Edit icon corresponding to the intent you wish to modify. 
+2. You are directed to a new page where you can provide example messages and reponses for each intent. This is illustrated in the following image.
+
 
 ![add intent examples and responses](../../../static/img/intent-examples.PNG)
 
-It is important to provide examples to the appropriate language; this is because on the backend, an intent classifier is trained for each language and a pre-trained language model for each intent classifier is used to create embeddings for the classifier to train accurately with fewer example messages. To change between predefined languages, you select the language from the drop-down list of language(s) that you defined when creating the bot.
+:::tip
+You need to provide example messages and responses for each language you selected when creating your chatbot. This is because on the backend, an intent classifier is trained for each language. A pre-trained language model for each intent classifier is used to create embeddings for the classifier to train accurately with fewer example messages. To toggle between predefined languages, select the desired language from the drop-down list of the language tab.
+:::
+
+3. Once you have provided a list of example messages and possible responses in your various predefined languages, click the `Save` button to save the created intents of your bot.
 
 ![change language](../../../static/img/intent-examples-change-language.PNG)
 
-Once you have provided a list of example messages and possible responses in different predefined languages, you click on the `Save` button to save the created intents of your bot.
 
-## Variable Tagging
-The intent manager allows you to tag entities in the example user messages that you provide for an intent. Simply highlight the variable example in your example text and a modal will pop up prompting you to select the variable that the example belongs to. Entities are discussed in more detail in the [Entities] section of the Bot Builder documentation.
+## Delete Intents
 
-![entity tagging](../../../static/img/variable-tagging.PNG)
+Before you delete an intent, ensure it is not in use in the Dialogue Manager. If the intent you wish to delete is in use, you must first delete the dialogue using the intent before you can delete the intent.
 
-## Deleting an Intent
-Before you delete an intent, ensure that it is not in use in the dialog manager. To delete an intent, you click on the Delete button. If you delete an intent, you also delete all of its related content and you can not restore it. You will be asked to confirm the action by clicking the `Delete Intent` button as shown in figure 6.
+Use the following steps to delete an intent.
 
-![delete intent](../../../static/img/delete-intent.PNG)
+1. From the Intents Manager page, click on the Delete icon corresponding to the intent you wish to remove. 
+2. A pop-up window appears, prompting you to confirm this action by clickling the `Delete Intent` button. 
+
 
 :::danger
 
-Please note that if you delete an intent, all the examples and responses also get permanently deleted.
+Deleting an intent deletes all of its related content. This cannot be restored.
+
+Deleting an intent also permanently deletes all the examples and responses also get permanently deleted. This also cannot be restored.
 
 :::
