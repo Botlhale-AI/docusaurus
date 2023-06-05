@@ -23,9 +23,9 @@ Use the following steps to create your chatbot.
 
 ## Chatbot list
  
-The newly created bot is added to the My Chatbots list on the dashboard. You can toggle between different bots by clicking the Chatbot dropdown menu in the top right-hand corner of the page.
+The newly created bot is added to the My Chatbots list on the dashboard. You can toggle between different bots by clicking the Chatbot dropdown menu in the top right-hand corner of the page as seen in the bordered portion of the following image.
 
-![create chatbot](../../../static/img/chatbots-list.PNG)
+![create chatbot](https://botlhale-ai-assets.s3.amazonaws.com/toggle-chatbot.png)
 
 Once the bot has been created, click on the Edit icon to add the Bot builder parameters such as Intents, Entities, and Dialogue. These are discussed in detail in the sections that follow.
 
