@@ -17,7 +17,7 @@ Use the following steps to add intents to your selected chatbot.
 Once an intent has been created, you can begin editing it to add various categories for text based on the purpose of the user's message. Use the following steps to edit intents.
 
 1. From the Intents Manager page, click on the Edit icon corresponding to the intent you wish to modify. 
-2. You are directed to a new page where you can provide example messages and reponses for each intent. This is illustrated in the following image.
+2. You are directed to a new page where you can provide example messages and responses for each intent. This is illustrated in the following image.
 
 
 ![add intent examples and responses](../../../static/img/intent-examples.PNG)
@@ -38,13 +38,9 @@ Before you delete an intent, ensure it is not in use in the Dialogue Manager. If
 Use the following steps to delete an intent.
 
 1. From the Intents Manager page, click on the Delete icon corresponding to the intent you wish to remove. 
-2. A pop-up window appears, prompting you to confirm this action by clickling the `Delete Intent` button. 
+2. A pop-up window appears, prompting you to confirm this action by clicking the `Delete Intent` button. 
 
 
 :::danger
-
-Deleting an intent deletes all of its related content. This cannot be restored.
-
-Deleting an intent also permanently deletes all the examples and responses also get permanently deleted. This also cannot be restored.
-
+Deleting an intent permanently deletes any example values associated with that intent. This cannot be restored.
 :::
