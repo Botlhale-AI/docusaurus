@@ -15,7 +15,7 @@ First select the bot for which you will be creating custom entities before you c
 ![create-entity](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/entities-manager-page.png)
 
 
-2. A pop-up window appears promting you to select the entity type and name your new entity. 
+2. A pop-up window appears prompting you to select the entity type and name your new entity. 
 
 ![new entity](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/new-entity.png)
 
@@ -49,7 +49,7 @@ Entity roles are classifications added to an entity to help your bot with disamb
 11. A pop-up window appears, prompting you to enter a role for your entity.
 
 ![create entity role](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/create-entity-role.png)
-12. Fill in the required informtion and click `Create entity role`. Repeat the process again to add as many roles as needed.
+12. Fill in the required information and click `Create entity role`. Repeat the process again to add as many roles as needed.
 
 13. Your entity roles are created and they appear in a list on the Entity roles tab. 
 
@@ -85,7 +85,7 @@ To tag an entity, use the following steps.
 5. Click `Save` to retain your changes.
 
 :::info
-For more detailed information on Intents, see the [Intents] section of the Botlhale AI NLP Toolkit Documentation.
+For detailed information on Intents, see the [Intents] section of the Botlhale AI NLP Toolkit Documentation.
 :::
 
 ## Delete Entities
