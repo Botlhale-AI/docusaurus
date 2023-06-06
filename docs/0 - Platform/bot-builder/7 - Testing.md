@@ -1,8 +1,10 @@
 # Test
 
-This section is for testing a chatbot that has already been trained. 
+This section outlines the procedures for testing your chatbot once it's been created and trained. 
 
-**NB: If you leave the Test page, you will have to reload the model. We advise that you open the Test page in a new Tab or Window  should you want to navigate the app while testing.**
+:::tip
+It's recommended that you open the Test page in a new Tab or Window should you want to browse through the app while you test your chatbot. Leaving the Test page while testing is ongoing will require you to reload the model.
+:::
 
 ## Quick Test
 To test, select the language and the model (chatbot) that you want to test, and specify the fallback accuracy and the fallback MSG (this is a message that the trained bot will trigger when it can’t intelligently respond to a message it received from the user). After selecting the chatbot you can click on the `Load Model` button.
