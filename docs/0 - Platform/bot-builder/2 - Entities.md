@@ -21,31 +21,82 @@ First select the bot for which you will be creating custom entities before you c
 
 4. Fill in the required fields and click the `Create Entity` button. Your new entity appears on the Entities Manager page upon creation.
 
-5. Click the Edit icon next to your newly created entity. You are directed to a page where you can add entity examples.
+5. Click the Edit icon next to your newly created entity. You are directed to a page where you can add entity examples and roles.
 
-![add entity examples](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/entity-examples.png)
+![add entity examples](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/entity-examples-and-roles.png)
 
-Once a variable has been created, click on the edit variable button to add variable examples. To add a new variable example, click on `New variable example`. You will be prompted to enter a variable example for the newly created variable, then click create variable example, as shown in Figure 8.
+6. To add an entity example, ensure the Entity examples tab is selected and click the `New entity example` button.
+7. A pop-up window appears, prompting you to enter an example for your entity.
 
-![add entity examples](https://botlhale-docs1-new.s3.amazonaws.com/add-entity-examples.PNG)
+![entity example](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/entity-example.png)
 
-Once you have added a new variable example, you can add synonyms of the example by clicking on the edit variable example button. Click on the `Save` button to save the added synonyms.
+8. Fill in the required information and click `Create entity example`.
 
-![entity synonyms](https://botlhale-docs1-new.s3.amazonaws.com/entity-syn.PNG)
+9. You entity example is created. You can add synonyms by clicking the Edit icon next to the newly created entity. 
 
+![entity synonyms](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/entity-synonyms.png)
+10. Add as many synonyms as you need. When you are done, click the `Save` button to retain your changes. 
 
-You should provide variable examples to the appropriate language. To change between defined languages, select the language from the drop-down list of the language(s) that you defined when creating the bot.
+:::tip
+Toggle between languages using the arrows on the language tab to add entity examples for each relevant language.
+:::
 
-![entity change lang](https://botlhale-docs1-new.s3.amazonaws.com/entity-lang.PNG)
+:::info
+Entity roles are classifications added to an entity to help your bot with disambiguation. Consider the entity "place" in an ecommerce chatbot. Here the chatbot may need to differentiate between the "place" for delivery, billing, or collection. Adding these roles (delivery, billing, collection) to the entity allows the bot to appropriately classify the information it receives in the forms it sends out.  
+:::
 
-You will be have the option of using a pre-trained variable or creating a custom one. Pre-trained variables do not require examples and the available ones can be selected from a dropdown list.
+11. To add an entity role, ensure the Entity roles tab is selected and click the `New entity role` button.
+12. A pop-up window appears, prompting you to enter a role for your entity.
 
-## Variable Tagging
-The intent manager allows you to tag variables in the example user messages that you provide for an intent. Simply highlight the variable example in your example text and a modal will pop up prompting you to select the variable that the example belongs to. Intents are discussed in more detail in the [Intents] section of the Bot Builder documentation.
+![create entity role](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/create-entity-role.png)
+13. Fill in the required informtion and click `Create entity role`. Repeat the process again to add as many roles as needed.
 
-![entity tagging](https://botlhale-docs1-new.s3.amazonaws.com/entity-tagging.png)
+14. Your entity roles are created and they appear in a list on the Entity roles tab. 
 
-## Deleting a Variable
-To delete a variable, click on the Delete button. If you delete an intent, you also delete all of its related content and you can not restore it. You will be asked to confirm the action by clicking the `Delete variable` button as shown on Figure 11.
+![entity roles](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/entity-role-list.png)
 
-![entity delete](https://botlhale-docs1-new.s3.amazonaws.com/entity-delete.PNG)
+:::tip
+You have the option of using a pre-trained entity instead of a custom one. Pre-trained variables do not require examples and the available ones can be selected from a dropdown list. The list of pre-trained variables is as follows:
+
+- Time
+- Duration
+- Email
+- Distance
+- Phone number
+- Volume
+- Url
+- Temperature
+- Quantity
+- Number
+:::
+
+## Tag Entities
+The Intent Manager allows you to tag entities to your example intent messages.
+
+To tag an entity, use the following steps.
+
+1. From the Intents Manager page, find the intent which you want to tag.
+2. Highlight that intent using your cursor.
+3. A pop-up window appears, prompting you to assign an entity to the intent as seen in the following image.
+
+![tag entity](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/tag-entity.png)
+
+4. Select the appropriate entity for your intent, and assign it a role, if necessary.
+5. Click `Save` to retain your changes.
+
+:::info
+For more detailed information on Intents, see the [Intents] section of the Botlhale AI NLP Toolkit Documentation.
+:::
+
+## Delete Entities
+
+Use the following steps to delete an entity.
+
+1. On the Entities Manager page, locate the entity you wish to delete.
+2. Click the Delete icon that corresponds to the entity you wish to delete.
+3. A pop-up window appears prompting you to confirm this action. Click the `Delete Entity` button to finalise the deletion. 
+
+:::warning
+Deleting an entity also deletes any example values associated with that entity. Deleted content cannot be restored.
+:::
+
