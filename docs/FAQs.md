@@ -12,7 +12,7 @@ Our platform requires little to no code to use. That being said, you will need a
 
 Yes. Our bot builder offers a wide variety of out-of-the-box integrations with applications such as Telegram and WhatsApp. The Professional plan also offers a little-to-no-code-friendly option to set up API webhooks with various tools or software.
 
-### How quickly can I get started with a free chatbot using these templates?
+### How quickly can I get started with a chatbot using these templates?
 
 Launching a bot with one of our templates can take as little as a few minutes. It depends on the amount of customization you plan to put into your chatbot.
 
