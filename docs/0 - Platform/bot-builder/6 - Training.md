@@ -1,11 +1,24 @@
 # Train
- 
-This section is for training a chatbot with the intents and user examples provided in the previous sections. A training dataset is composed of many sentences organised into intents that represent what users say to your chatbot. The training dataset is used to train the bot to understand the user’s needs and to trigger the right piece of conversation, to reply correctly, and to have a smooth conversation.
 
-To train you need to select the Language (you can only train one language at a time), specify the number of Epochs (the number times that the learning algorithm will work through the entire training dataset), Batch size (the number of samples to work through before updating the internal model parameters), Training samples (single rows of data that contain inputs that are fed into the algorithm and an output that is used to compare to the prediction and calculate an error), and Fallback. We recommend that you leave the default values for all these parameters.
+This section outlines the procedure for training a chatbot with the intents and user examples provided in the previous sections. Training is done with a dataset which comprises many sentences organised into intents. This represents what users say to a chatbot. The training dataset teaches the chatbot to understand a user's needs and trigger the right conversation sequence.
 
-![Training parameters](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/Screenshot+2023-06-02+at+12.24.10.png)
+Use the following steps to train your chatbot.
 
-After setting the parameters, click the `Train` button and your chatbot will start training. When your chatbot is training, the saved model section will show the model being trained with a status value of ‘In progress’ while the ones that have completed training will have the status of ‘Done’ as shown in Figure 18.
+1. Ensure the chatbot you wish to train is selected. Use the dropdown menu in the top-right corner of the Botlhale NLP Toolkit site to toggle between chatbots.
+2. Navigate to the Training Dashboard.
 
-![Training progress status](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/Screenshot+2023-06-02+at+12.24.10.png)
+![training dashboard](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/training-dashboard.png)
+
+3. Select the language you wish to use to train your chatbot.
+
+:::info
+You can only train your chatbot with one language at a time.
+:::
+
+4. Set the Training Cycle parameter. This parameter indicates the number of times you would like to train your chatbot.
+5. Click the `Train` button. Your chatbot training begins. You can monitor the status of your training in the Saved Models tab.
+
+![saved models](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/training-in-progress.png)
+
+6. Once training is completed, the status changes to "Done". You will also receive an email confirming this. 
+
