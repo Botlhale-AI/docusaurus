@@ -28,11 +28,11 @@ You can test your bot on the Test page of the Botlhale NLP Toolkit site. Please 
 
 See the [Deployments](https://docs.botlhale.xyz/docs/Platform/live-bots/Deployments) page for information on how to deploy your bot once it's been customized, trained, and tested.
 
-### What are intents all aboout?
+### What are intents all about?
 
 An Intent refers to the motive underpinning messages sent by a given chatbot user. It’s the **intention** behind each message that the chatbot receives from the user. For example, the intent "greetings" enables your bot to understand when the user says Hi. This creates a simple question-answer dialogue that provides a response to questions categorised to the intent.
 
-### What does TTS stand mean?
+### What does TTS mean?
 
 TTS is an abbreviation which stands for Text To Speech.
 
