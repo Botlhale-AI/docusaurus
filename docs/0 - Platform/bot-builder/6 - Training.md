@@ -21,4 +21,5 @@ You can only train your chatbot with one language at a time.
 ![saved models](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/training-in-progress.png)
 
 6. Once training is completed, the status changes to "Done". You will also receive an email confirming this. 
+7. Repeat this process until you have trained your chatbot in all your desired languages.
 
