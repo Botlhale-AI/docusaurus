@@ -1,31 +1,24 @@
 # Quickstart Guide
 
-Botlhale AI's API is organized around REST. Our API has predictable resource-oriented URLs, accepts form-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication.
-
-## Overview
-
-Authentication to the all API endpoints is performed via Bearer Authentication. To perform Bearer Authentication you first need to provide your API key as the basic auth username value and password to `generateAuthToken` endpoint and use `IdToken` in the response as Bearer token for all other endpoints. 
-
-Botlhale uses conventional `HTTP` response codes to indicate the success or failure of an API request. In general: Codes in the `2xx` range indicate success. Codes in the `4xx` range indicate an error that failed given the information provided (e.g., a required parameter was omitted, a charge failed, etc.). Codes in the `5xx` range indicate an error with Botlhale's servers (these are rare).
-
-
-1. [Authentication](1%20-%20Authentication.md)
-2. [ResponseCodes](2%20-%20Errors.md)
+Botlhale AI's APIs are organised around REST. Our APIs have predictable resource-oriented URLs; accept form-encoded request bodies; return JSON-encoded responses; and use standard HTTP response codes and authentication. See the [Response Codes](2%20-%20Errors.md) and [Authentication](1%20-%20Authentication.md) sections of this documentation for additional information.
 
 ## Chatbot API
 
-See what you can do with our Chatbot APIs!
-
-:::info
-These are examples of how your can intergrate our APIs to different platforms: 
-[flaskTemplate](https://github.com/Botlhale-AI/flaskTemplate), [facebookTemplate](https://github.com/Botlhale-AI/facebookTemplate), [WhatsAppTemplate](https://github.com/Botlhale-AI/WhatsAppTemplate). 
-:::
+See what you can do with our Chatbot API!
 
 1. [Start a Conversation with text or speech](Rest%20APIs/0-chatbots.md)
 
-## Speech APIs
+:::info
+Use the following links to view examples of how you can integrate our APIs on different platforms.
 
-See what you can do with our Speech APIs!
+- [Flask Template](https://github.com/Botlhale-AI/flaskTemplate)
+- [Facebook Template](https://github.com/Botlhale-AI/facebookTemplate) 
+- [WhatsApp Template](https://github.com/Botlhale-AI/WhatsAppTemplate) 
+:::
+
+## Speech API
+
+See what you can do with our Speech API!
 
 1. [Convert Speech to Text](Rest%20APIs/Speech%20APIs/Automatic%20Speech%20Recogniton/0%20-%20Overview.md)
 2. [Convert Text to Speech](Rest%20APIs/Speech%20APIs/1%20-%20TTS.md)
