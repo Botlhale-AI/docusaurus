@@ -1,14 +1,12 @@
-:::note
+# User Management
 
-> **Admin and Agents** have the option to set/update their activity status on the General Settings page or on the navigation bar at the top. as demonstrated above.  
-:::
+Users with admin permissions can use the User Management page to perform the following actions.
 
-:::tip Invite New Users
-
-Enables Admin to invite new users to their organisations, specifying the department to which they will be invited to, and the role they will be as displayed below
-:::
+* Invite new users to the organisation <br/>This action is performed by clicking the `Invite New Users` button.
+* Delete existing users from the organisation <br/>This action is performed by using the Delete icon.
+* Update the Department to which a user in your organisation belongs <br/>This action is performed using the Edit icon. 
 
 
-![Screenshot from 2021-11-16 10-36-53.png](https://stoplight.io/api/v1/projects/cHJqOjg4ODkz/images/Ui7uJYsIGYc)
+![user management](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/user-management.png)
 
 
