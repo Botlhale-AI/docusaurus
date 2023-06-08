@@ -4,9 +4,13 @@ This section covers interactions between the human (an agent) and the customer (
 
 ![live_chat.png](https://stoplight.io/api/v1/projects/cHJqOjU4NzU5/images/Qa56xllEezc)
 
+:::tip
+Agents can use the arrows next to the `Translate Conversations` tab to select their preferred language for the live chat. If the agent's interlocutor is conversing in a different language, the messages are translated in real-time.
+:::
+
 ## Human Handoff Integration
 
-Botbuilder has a predefined dialogue that can be selected to enable the human handoff feature. See the [Dialogue Manager](#create-preset-dialogues) section of this documentation for information on how to enable this preset dialogue.
+Botbuilder has a predefined dialogue that can be selected to enable the human handoff feature. See the [Dialogue Manager](%20-%20Dialogue%20Manager.md#create-preset-dialogues) section of this documentation for information on how to enable this preset dialogue.
 
 The human handoff dialogue contains the following two dialogue streams: 
 
