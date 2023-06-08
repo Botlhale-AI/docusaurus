@@ -4,19 +4,16 @@
 ```bash
 https://api.botlhale.xyz/tts
 ```
-This endpoint handles single text to speech conver sion.
-
-Request Params | |
-| ------------- | ------------- |
-| TextMsg  | `string` <br />**Required**. Text Message from the user to the bot.| 
-| LanguageCode  | `string` <br /> **Required**. This is the language the user is using to interact with the bot. See [list of supported languages](../2%20-%20Languages.md) for supported languages and codes. |
-
-:::info
-
-You need to Include `Authentication Token` in request headers. See how to 
-[Generate Auth Token](../../1%20-%20Authentication.md#generate-a-bearer-token-post)
- codes.
+:::tip
+You need to include an `Authentication Token` in request headers. See the [Authentication](../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
 :::
+
+This endpoint handles single text to speech conversion.
+
+Request Params |Data Type | |Description |
+| ------------- | ------------- | ------------- | ------------- |
+| TextMsg  | `string` |**Required** | Text Message from the user to the bot.| 
+| LanguageCode  | `string` | **Required** | This is the language in which the user interacts with the bot. <br/>See the [Supported Languages](2%20-%20Languages.md) page for a list of supported languages and codes. |
 
 
 <br />
