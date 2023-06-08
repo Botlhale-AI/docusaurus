@@ -4,17 +4,19 @@
 ```bash
 https://api.botlhale.xyz/translate
 ```
-This endpoint handles translations from the specified language to English.
-
-Request Params | Data Type | |Description
-| ------------- | ------------- | ------------- | ------------- |
-| Text  | `string` |**Required**. |Text to be translated. | 
-| LanguageCode  | `string` |**Required**. |Source language of text to be translated. See the [Supported Languages](2%20-%20Languages.md) page for a list of supported languages and codes. |
-
 
 :::tip
 You need to include an `Authentication Token` in request headers. See the [Authentication](../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
 :::
+
+This endpoint handles translations from the specified language to English.
+
+Request Params | Data Type | |Description
+| ------------- | ------------- | ------------- | ------------- |
+| Text  | `string` |**Required** |Text to be translated | 
+| LanguageCode  | `string` |**Required** |Source language of text to be translated 
+
+See the [Supported Languages](2%20-%20Languages.md) page for a list of supported languages and codes. |
 
 
 #### Request Example
