@@ -10,7 +10,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   tagline: "Let's get started! 🚀",
   url: 'https://docs.botlhale.xyz',
   baseUrl: '/',
-  editUrl: '/',
+  custom_edit_url: null,
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.svg',
