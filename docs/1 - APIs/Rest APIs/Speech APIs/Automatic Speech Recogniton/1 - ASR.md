@@ -1,6 +1,6 @@
-# Speech to Text API
+# Speech-to-Text API: Synchronous Request
 
-A Speech to Text API synchronous recognition request is the simplest method for performing recognition on speech audio data. Speech-to-Text can process up to 1 minute of speech audio data sent in a synchronous request. After Speech to Text processes and recognizes all of the audio, it returns a response. A sample request is shown below:
+Synchronous recognition requests are the simplest means of performing recognition on speech audio data. The Speech-to-Text API can process up to 1 minute of speech audio data sent in a synchronous request. After the Speech-to-Text API processes and recognizes all of the audio, it returns a response. A sample request is shown in the section that follows:
 
 ## ASR `POST`
 
@@ -8,22 +8,18 @@ A Speech to Text API synchronous recognition request is the simplest method for 
 https://api.botlhale.xyz/asr
 ```
 
-This endpoint handles single speech to text conversion. This API returns a text transcript of the audio file provided. This API supports audio clips of up to 1 minutes.
-
-Request Params | |
-| ------------- | ------------- |
-| SpeechFile  | `File`  <br />**Required.** Binary audio file of the user's message.| 
-| SampleRate  | `Number`  <br />**Required.** The sample rate of the supplied audio clip in hertz e.g 8000 for 8kHz|
-| LanguageCode  | `String`  <br />**Required.** This is the language spoken in the supplied audio clip. We use BCP-47 language tags. See [list of supported languages](../../2%20-%20Languages.md) for supported languages and codes. |
-
-<br />
-
-:::info
-
-You need to Include `Authentication Token` in request headers. See how to 
-[Generate Auth Token](../../../1%20-%20Authentication.md#generate-a-bearer-token-post)
- codes.
+:::tip
+You need to include an `Authentication Token` in request headers. See the [Authentication](../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
 :::
+
+
+This endpoint handles single speech to text conversion. This API endpoint returns a text transcript of the audio file provided and supports audio clips of up to 1 minutes.
+
+Request Params |File Type | | Description |
+| ------------- | ------------- | ------------- | ------------- |
+| SpeechFile  | `File`  | **Required** | This is the binary audio file of the user's message.| 
+| SampleRate  | `Number`  | **Required** | This is the sample rate of the supplied audio clip in hertz. <br/>For example, an 8kHz sample rate would be input as 8000.|
+| LanguageCode  | `String`  | **Required** | This is the language spoken in the supplied audio clip. We use BCP-47 language tags. <br/>See the [Supported Languages](2%20-%20Languages.md) page for a list of supported languages and codes. |
 
 
 <br />
