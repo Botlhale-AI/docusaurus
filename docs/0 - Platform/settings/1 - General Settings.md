@@ -32,5 +32,5 @@ import TabItem from '@theme/TabItem';
 
 
 :::note
-> Some settings require specific permissions.
+> The Departments, API, and Office Hours settings need admin privileges to be accessed.
 :::
