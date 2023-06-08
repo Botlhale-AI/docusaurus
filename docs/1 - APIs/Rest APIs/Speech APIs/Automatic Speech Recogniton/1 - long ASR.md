@@ -1,33 +1,24 @@
-# Speech to Text API Async
+# Speech-to-Text API: Asynchronous Request
 
-An asynchronous Speech to Text API recognition request requires you to first upload the file to our server for the asyncromous prosess to start. The asynchronous request will initiate a asynchronous Operation  and return this operation immediately. You can use asynchronous speech recognition with audio of any length up to 400 minutes.
+Asynchronous recognition requests are another means of performing recognition on speech audio data. This request type requires you to first upload the audio file to our server for the asynchronous process to start. The asynchronous request initiates an asynchronous operation  and returns this operation immediately. Asynchronous speech recognition can be used for audio data with a length of up to 400 minutes.
 
 ## ASR Async upload `POST`
 
 ```bash
 https://api.botlhale.xyz/asr/async/upload
 ```
-
-This endpoint generates a presigned url that allows the user to upload a speech file for the async ASR. This endpoint returns a presigned url and the auto generated filename.
-
-Request Params | |
-| ------------- | ------------- |
-| OrgID  | `String`  <br />**Required.** Organisation ID. |
-| SampleRate  | `Number`  <br />**Required.** The sample rate of the supplied audio clip in hertz e.g 8000 for 8kHz|
-| LanguageCode  | `String`  <br />**Optional.** This is the language spoken in the supplied audio clip. We use BCP-47 language tags. See [list of supported languages](../../2%20-%20Languages.md) for supported languages and codes. If not provided we automatically detect the language spoken on the audio clip. This is done at sentence level.|
-| Diarization | `Boolean`  <br />**Optional.** Speaker diarization is used to identify different speakers in the clip as well as when the different speakers are speaking. * **False** - Default, Speaker diarization is enabled.  **True** - Speaker diarization is enabled. * |
-
-<br />
-
-:::info
-
-You need to Include `Authentication Token` in request headers. See how to 
-[Generate Auth Token](../../../1%20-%20Authentication.md#generate-a-bearer-token-post)
- codes.
+:::tip
+You need to include an `Authentication Token` in request headers. See the [Authentication](../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
 :::
 
+This endpoint generates a presigned URL that allows the user to upload a speech file for the async ASR request. This endpoint returns a presigned URL and the auto-generated filename.
 
-<br />
+| Request Params | File Type | | Description |
+| ------------- | ------------- | ------------- | ------------- |
+| OrgID  | `String`  | **Required** |Organisation ID |
+| SampleRate  | `Number`  | **Required** |The sample rate of the supplied audio clip in hertz, for example, 8kHz rendered as 8 000|
+| LanguageCode  | `String`  | **Optional** |This is the language spoken in the supplied audio clip. We use BCP-47 language tags. <br/>See the [Supported Languages](2%20-%20Languages.md) page for a list of supported languages and codes. If this information is not provided, the language is automatically detected. This is done at sentence level.|
+| Diarization | `Boolean`  |**Optional** | Speaker diarization is used to identify the different speakers in an audio clip, as well as when the different speakers are speaking. Valid values are as follows: <br/>_**False** - Default, Speaker diarization is disabled._ <br/>_**True** - Speaker diarization is enabled._|
 
 #### Request Example
 
@@ -146,7 +137,7 @@ request(options, function (error, response) {
 
 ### Upload via Presigned URL
 
-The generated presigned URL includes both a URL and additional fields that must be passed as part of the subsequent HTTP POST request. The following code demonstrates how to use the requests package with a presigned POST URL to perform a POST request to upload a file.
+The generated presigned URL includes both a URL and additional fields that must be passed as part of the subsequent `HTTP POST` request. The following code demonstrates how to use the requests package with a presigned POST URL to perform a `POST` request for file upload.
 
 #### Request Example
 
@@ -207,25 +198,18 @@ request(options, function (error, response) {
 ```bash
 https://api.botlhale.xyz/asr/async/status
 ```
-
-This endpoint returns the status of the async process.
-
-Request Params | |
-| ------------- | ------------- |
-| OrgID  | `String`  <br />**Required.** Organisation ID. |
-| FileName  | `Text` **Required.** The filename generated from the async upload process. |
-
-<br />
-
-:::info
-
-You need to Include `Authentication Token` in request headers. See how to 
-[Generate Auth Token](../../../1%20-%20Authentication.md#generate-a-bearer-token-post)
- codes.
+ 
+ :::tip
+You need to include an `Authentication Token` in request headers. See the [Authentication](../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
 :::
 
+This endpoint returns the status of the asynchronous request process.
 
-<br />
+Request Params | Data Type | |Description
+| ------------- | ------------- | ------------- | ------------- |
+| OrgID  | `String`  | **Required** |Organisation ID |
+| FileName  | `Text` | **Required** |The filename generated from the async upload process. |
+
 
 #### Request Example
 
@@ -333,24 +317,17 @@ request(options, function (error, response) {
 https://api.botlhale.xyz/asr/async/getdata
 ```
 
-This endpoint returns the status of the async process.
-
-Request Params | |
-| ------------- | ------------- |
-| OrgID  | `String`  <br />**Required.** Organisation ID. |
-| FileName  | `Text` **Required.** The filename generated from the async upload process. |
-
-<br />
-
-:::info
-
-You need to Include `Authentication Token` in request headers. See how to 
-[Generate Auth Token](../../../1%20-%20Authentication.md#generate-a-bearer-token-post)
- codes.
+:::tip
+You need to include an `Authentication Token` in request headers. See the [Authentication](../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
 :::
 
+This endpoint returns the status of the async process.
 
-<br />
+| Request Params | Data Type | | Description |
+| ------------- | ------------- | ------------- | ------------- |
+| OrgID  | `String`  |**Required** |Organisation ID |
+| FileName  | `Text` |**Required** |The filename generated from the async upload process |
+
 
 #### Request Example
 
@@ -435,6 +412,7 @@ request(options, function (error, response) {
 
 
 #### Response body
+ 
 ```json
 {
     "audio_length": "30.0",
