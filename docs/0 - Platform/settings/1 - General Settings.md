@@ -2,6 +2,11 @@
 
 This section outlines the various configurations you can apply to your organisation and its users. 
 
+:::tip
+
+> Users with **Admin** and **Agent** permissions have the option to set and update their activity status on the General Settings page or using the drop-down menu in the top-right corner of the page. 
+:::
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
