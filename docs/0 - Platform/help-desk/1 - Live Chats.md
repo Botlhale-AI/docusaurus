@@ -10,7 +10,7 @@ Agents can use the arrows next to the `Translate Conversations` tab to select th
 
 ## Human Handoff Integration
 
-Botbuilder has a predefined dialogue that can be selected to enable the human handoff feature. See the [Dialogue Manager](%20-%20Dialogue%20Manager.md#create-preset-dialogues) section of this documentation for information on how to enable this preset dialogue.
+Botbuilder has a predefined dialogue that can be selected to enable the human handoff feature. See the [Dialogue Manager](0%20-%20Platform/bot-builder/3%20-%20Dialogue%20Manager.md#create-preset-dialogues) section of this documentation for information on how to enable this preset dialogue.
 
 The human handoff dialogue contains the following two dialogue streams: 
 
