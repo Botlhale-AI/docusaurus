@@ -1,24 +1,21 @@
-# Chatbot APIs
+# Chatbot API
+
 ## startConversation `POST`
 
 ```bash
 https://api.botlhale.xyz/startConversation
 ```
 
-Generate a ConversationID valid for 24 hours. This is a unique ID that you have to provide to keep track of different conversations.
-
-Request Params | 
-| ------------- | ------------- |
-| BotID  | `string` <br />**Required**. Specifies which bot the message should be sent to.| 
-| LanguageCode  | `string` <br /> **Required**. This is the language the user is using to interact with the bot. See **list of supported languages** to get the language |
-
-
-:::info
-
-You need to Include `Authentication Token` in request headers. See how to 
-[Generate Auth Token](../1%20-%20Authentication.md#generate-a-bearer-token-post)
- codes.
+:::tip
+You need to include an `Authentication Token` in request headers. See the [Authentication](../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
 :::
+
+This endpoint allows you to generate a `ConversationID` valid for 24 hours. This is a unique ID you need to provide to keep track of different conversations.
+
+Request Params |Data Type | |Description | 
+| ------------- | ------------- | ------------- | ------------- |
+| BotID  | `string` |**Required** |Specifies the bot to which the message should be sent| 
+| LanguageCode  | `string`  |**Required** |This is the language in which the user interacts with the bot. <br/>See the [Supported Languages](2%20-%20Languages.md) page for a list of supported languages and codes. |
 
 
 #### Request Example
@@ -142,27 +139,22 @@ req.end();
 ```bash
 https://api.botlhale.xyz/message
 ```
-This endpoint handles the messages. It receives messages from the user and returns the bot response in JSON format.
 
-Request Params | 
-| ------------- | ------------- |
-| BotID  | `string` <br />Required. Specifies which bot the message should be sent to.| 
-| LanguageCode  | `string` <br /> Required. This is the language the user is using to interact with the bot. See **list of supported languages** to get the language codes.| 
-| ConversationID  | `string` <br />Required. This is a unique Id that you have to provide to keep track of different conversations.| 
-| MessageType  | `string` <br />Required. Specifies whether the user message is speech or text.| 
-| ResponseType  | `string` <br />Required. Specifies whether the response should be speech or text.|
-| TextMsg  | `string` <br />Required if MessageType = 'text'. Text Message from the 
-| SpeechFile  | `file` <br /> Required if MessageType = 'speech'. Binary audio file of the user's message.|
-
-:::info
-
-You need to Include `Authentication Token` in request headers. See how to 
-[Generate Auth Token](../1%20-%20Authentication.md#generate-a-bearer-token-post)
- codes.
+:::tip
+You need to include an `Authentication Token` in request headers. See the [Authentication](../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
 :::
  
+This endpoint handles the messages. It receives messages from the user and returns the bot response in JSON format.
 
-<br />
+Request Params | Data Type | |Description |
+| ------------- | ------------- | ------------- | ------------- |
+| BotID  | `string` |Required | Specifies the bot to which the message should be sent.| 
+| LanguageCode  | `string` | Required | This is the language in which the user interacts with the bot. <br/>See the [Supported Languages](2%20-%20Languages.md) page for a list of supported languages and codes. |
+| ConversationID  | `string` | Required | This is a unique Id you need to provide to keep track of different conversations.| 
+| MessageType  | `string` | Required |Specifies whether the user message is speech or text.| 
+| ResponseType  | `string` | Required | Specifies whether the response should be speech or text.|
+| TextMsg  | `string` | Required if MessageType = 'text' |Text message from the user |
+| SpeechFile  | `file` | Required if MessageType = 'speech' | Binary audio file of the user's message|
 
 
 ### Text - Text  `example request`
@@ -632,7 +624,6 @@ response = requests.request("POST", url, headers=headers, data=payload, files=fi
 
 print(response.text)
 ```
-
 
 </TabItem>
 <TabItem value="bash" label="Bash" default>
