@@ -1,4 +1,4 @@
-# Text to Speech
+# Text-to-Speech API
 ## TTS `POST`
 
 ```bash
