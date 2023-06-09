@@ -9,7 +9,7 @@ See what you can do with our Chatbot API!
 1. [Start a Conversation with text or speech](Rest%20APIs/0-chatbots.md)
 
 :::info
-Use the following links to view examples of how you can integrate our APIs on different platforms.
+> Use the following links to view examples of how you can integrate our APIs on different platforms.
 
 - [Flask Template](https://github.com/Botlhale-AI/flaskTemplate)
 - [Facebook Template](https://github.com/Botlhale-AI/facebookTemplate) 

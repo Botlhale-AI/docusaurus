@@ -6,7 +6,7 @@ https://api.botlhale.xyz/translate
 ```
 
 :::tip
-You need to include an `Authentication Token` in request headers. See the [Authentication](../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
+> You need to include an `Authentication Token` in request headers. See the [Authentication](../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
 :::
 
 This endpoint handles translations from the specified language to English.

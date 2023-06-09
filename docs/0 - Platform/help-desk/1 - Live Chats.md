@@ -5,7 +5,7 @@ This section covers interactions between the human (an agent) and the customer (
 ![live_chat.png](https://stoplight.io/api/v1/projects/cHJqOjU4NzU5/images/Qa56xllEezc)
 
 :::tip
-Agents can use the arrows next to the `Translate Conversations` tab to select their preferred language for the live chat. If the agent's interlocutor is conversing in a different language, the messages are translated in real-time.
+> Agents can use the arrows next to the `Translate Conversations` tab to select their preferred language for the live chat. If the agent's interlocutor is conversing in a different language, the messages are translated in real-time.
 :::
 
 ## Human Handoff Integration
@@ -80,7 +80,7 @@ if (socket.connected) {
 
 
 :::info
-> *We are here to help! For any questions regarding this feature, please email support@botlhale.ai*
+> We are here to help! For any questions regarding this feature, please email support@botlhale.ai
 :::
 
 

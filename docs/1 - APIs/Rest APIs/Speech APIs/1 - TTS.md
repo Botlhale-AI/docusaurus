@@ -5,7 +5,7 @@
 https://api.botlhale.xyz/tts
 ```
 :::tip
-You need to include an `Authentication Token` in request headers. See the [Authentication](../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
+> You need to include an `Authentication Token` in request headers. See the [Authentication](../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
 :::
 
 This endpoint handles single text to speech conversion.

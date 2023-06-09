@@ -12,7 +12,7 @@ Use the following steps to train your chatbot.
 3. Select the language you wish to use to train your chatbot.
 
 :::info
-You can only train your chatbot with one language at a time.
+> You can only train your chatbot with one language at a time.
 :::
 
 4. Set the Training Cycle parameter. This parameter indicates the number of times you would like to train your chatbot.

@@ -4,7 +4,7 @@ For analytics and the reporting of your deployed bots, navigate to the Reporting
 
 
 :::info
-> *We are here to help! For any questions and queries about this feature, please email support@botlhale.ai*
+> We are here to help! For any questions and queries about this feature, please email support@botlhale.ai.
 :::
 
 

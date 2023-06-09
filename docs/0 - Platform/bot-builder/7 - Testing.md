@@ -3,7 +3,7 @@
 This section outlines the procedures for testing your chatbot once it's been created and trained. 
 
 :::tip
-It's recommended that you open the Test page in a new Tab or Window should you want to browse through the app while you test your chatbot. Leaving the Test page while testing is ongoing will require you to reload the model.
+> It's recommended that you open the Test page in a new Tab or Window should you want to browse through the app while you test your chatbot. Leaving the Test page while testing is ongoing will require you to reload the model.
 :::
 
 <!--You have the option of performing a Quick Test or a Telegram Test for your chatbot. Quick Tests happen within the Botlhale NLP Toolkit platform. With Telegram Tests, you need to have an existing Telegram portal to which to deploy the test. The following subsections outline the procedures for both tests.-->
@@ -17,7 +17,7 @@ Use the following steps to perform a Quick Test on your chatbot.
 ![testing dashboard](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/testing-dashboard.png)
 
 :::info
-Like with training, you can only test one model and language at a time.
+> Like with training, you can only test one model and language at a time.
 :::
 
 3. Click the `Load Model` button.
@@ -30,7 +30,7 @@ Like with training, you can only test one model and language at a time.
 ## Telegram Test
 
 :::tip
-You need a valid bot token to test a chatbot on Telegram
+> You need a valid bot token to test a chatbot on Telegram
 [Click here to learn how to create a bot on telegram.](https://sendpulse.com/knowledge-base/chatbot/create-telegram-chatbot)
 :::
 
@@ -42,7 +42,7 @@ Use the following steps to test your chatbot on Telegram.
 4. You can now begin testing your chatbot on Telegram.
 
 :::info
-Telegram testing sessions last for 15 minutes.
+> Telegram testing sessions last for 15 minutes.
 :::
 
 ![Testing on Telegram](https://botlhale-docs1-new.s3.amazonaws.com/telegramtest.PNG)

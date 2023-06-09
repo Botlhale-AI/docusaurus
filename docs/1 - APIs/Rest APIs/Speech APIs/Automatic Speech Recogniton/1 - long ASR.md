@@ -8,7 +8,7 @@ Asynchronous recognition requests are another means of performing recognition on
 https://api.botlhale.xyz/asr/async/upload
 ```
 :::tip
-You need to include an `Authentication Token` in request headers. See the [Authentication](../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
+> You need to include an `Authentication Token` in request headers. See the [Authentication](../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
 :::
 
 This endpoint generates a presigned URL that allows the user to upload a speech file for the async ASR request. This endpoint returns a presigned URL and the auto-generated filename.
@@ -200,7 +200,7 @@ https://api.botlhale.xyz/asr/async/status
 ```
  
  :::tip
-You need to include an `Authentication Token` in request headers. See the [Authentication](../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
+> You need to include an `Authentication Token` in request headers. See the [Authentication](../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
 :::
 
 This endpoint returns the status of the asynchronous request process.
@@ -318,7 +318,7 @@ https://api.botlhale.xyz/asr/async/getdata
 ```
 
 :::tip
-You need to include an `Authentication Token` in request headers. See the [Authentication](../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
+> You need to include an `Authentication Token` in request headers. See the [Authentication](../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
 :::
 
 This endpoint returns the status of the async process.

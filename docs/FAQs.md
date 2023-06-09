@@ -45,5 +45,5 @@ ASR is an abbreviation which stands for Automatic Speech Recognition.
 STT is an abbreviation which stands for Speech To Text.
 
 :::info
-You can contact us with any additional questions at support@botlhale.ai. Our team of in-house experts is on standby to assist you.
+> You can contact us with any additional questions at support@botlhale.ai. Our team of in-house experts is on standby to assist you.
 :::

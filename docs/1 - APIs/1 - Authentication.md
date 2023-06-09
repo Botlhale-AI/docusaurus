@@ -10,11 +10,11 @@ Authorization: Bearer <IdToken>
 ```
 
 :::tip
-You can get your API keys by going navigating to **Profile > API** on the platform.
+> You can get your API keys by going navigating to **Profile > API** on the platform.
 :::
 
 :::warning
-All API requests must be made over HTTPS. Calls made over plain HTTP will fail. API requests without authentication will also fail.
+> All API requests must be made over HTTPS. Calls made over plain HTTP will fail. API requests without authentication will also fail.
 :::
 
  ## Generate a Bearer Token `POST`

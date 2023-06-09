@@ -5,7 +5,7 @@ Proactive messaging is customer outreach before they've contacted the business. 
 <a href="https://docs.360dialog.com/360-client-hub/template-management-ui" target="_blank">Read more about this service </a>
 
 :::info
-> *We are here to help! For any questions and queries about this feature, please email support@botlhale.ai*
+> We are here to help! For any questions and queries about this feature, please email support@botlhale.ai.
 :::
 
 

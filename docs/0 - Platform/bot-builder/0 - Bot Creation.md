@@ -30,5 +30,5 @@ The newly created bot is added to the My Chatbots list on the dashboard. You can
 Once the bot has been created, click on the Edit icon to add the Bot builder parameters such as Intents, Entities, and Dialogue. These are discussed in detail in the sections that follow.
 
 :::info
-Contact Botlhale AI with any questions at support@botlhale.ai. Our team of in-house experts is on standby to assist you.
+> Contact Botlhale AI with any questions at support@botlhale.ai. Our team of in-house experts is on standby to assist you.
 :::

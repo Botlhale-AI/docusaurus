@@ -23,7 +23,7 @@ Once an intent has been created, you can begin editing it to add various categor
 ![add intent examples and responses](../../../static/img/intent-examples.PNG)
 
 :::tip
-You need to provide example messages and responses for each language you selected when creating your chatbot. This is because on the backend, an intent classifier is trained for each language. A pre-trained language model for each intent classifier is used to create embeddings for the classifier to train accurately with fewer example messages. To toggle between predefined languages, select the desired language from the drop-down list of the language tab.
+> You need to provide example messages and responses for each language you selected when creating your chatbot. This is because on the backend, an intent classifier is trained for each language. A pre-trained language model for each intent classifier is used to create embeddings for the classifier to train accurately with fewer example messages. To toggle between predefined languages, select the desired language from the drop-down list of the language tab.
 :::
 
 3. Once you have provided a list of example messages and possible responses in your various predefined languages, click the `Save` button to save the created intents of your bot.

@@ -7,7 +7,7 @@ https://api.botlhale.xyz/startConversation
 ```
 
 :::tip
-You need to include an `Authentication Token` in request headers. See the [Authentication](../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
+> You need to include an `Authentication Token` in request headers. See the [Authentication](../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
 :::
 
 This endpoint allows you to generate a `ConversationID` valid for 24 hours. This is a unique ID you need to provide to keep track of different conversations.
@@ -141,7 +141,7 @@ https://api.botlhale.xyz/message
 ```
 
 :::tip
-You need to include an `Authentication Token` in request headers. See the [Authentication](../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
+> You need to include an `Authentication Token` in request headers. See the [Authentication](../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
 :::
  
 This endpoint handles the messages. It receives messages from the user and returns the bot response in JSON format.

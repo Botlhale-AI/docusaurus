@@ -7,7 +7,7 @@ Create a new quick reply by clicking on the + and the pop below will appear
 Give your quick reply a name and enter it in all the respective languages
 
 :::info
-> *We are here to help! For any questions and queries about this feature, please email support@botlhale.ai*
+> We are here to help! For any questions and queries about this feature, please email support@botlhale.ai.
 :::
 
 

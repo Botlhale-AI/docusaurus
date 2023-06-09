@@ -11,7 +11,7 @@ These complex dialogues are capable of the following:
 - Generating rich responses in the form of images, PDFs, Word documents, and so on.
 
 :::info
-The rich response generation capabilities of the Dialogue Manager interface need to be configured to work. This configuration happens on the Custom Functions page. See the Custom Functions section of this documentation for additional information.
+> The rich response generation capabilities of the Dialogue Manager interface need to be configured to work. This configuration happens on the Custom Functions page. See the Custom Functions section of this documentation for additional information.
 :::
 
 The Dialogue Manager interface gives you the option of creating both custom and preset dialogues. These dialogues outline a sequence for your bot to follow during a conversation. The flow of the conversation sequence is determined by the intent put forward by the end user. Consider the example of an ecommerce bot presented with a greeting intent where the end user sends a message saying "Hello". This greeting intent could be configured to trigger a Bot button response where the ecommerce bot responds with a greeting and a series of buttons prompting the end user to select a product for purchase. 
@@ -35,7 +35,7 @@ Use the following steps to create a preset dialogue for your chatbot.
 4. Click the `Create dialogue` button. Your preset dialogue is created and listed on the Dialogue Manager page. 
 
 :::info
-Creating a preset dialogue triggers a code update to the Custom Functions page. All the code required to action that conversation sequence when it's triggered by an intent is then available in the script found on the Custom Functions page. See the [Custom Functions] section for additional information. 
+> Creating a preset dialogue triggers a code update to the Custom Functions page. All the code required to action that conversation sequence when it's triggered by an intent is then available in the script found on the Custom Functions page. See the [Custom Functions] section for additional information. 
 :::
 
 ## Create Custom Dialogues
