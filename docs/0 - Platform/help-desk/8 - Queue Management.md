@@ -14,7 +14,7 @@ The following description list takes you through the various setting options ava
 
 **Auto-assign to all online agents:** 
 
-Enabling this setting automatically assigns users in the queue to an agent after a human handoff is triggered by the chatbot. If this setting is disabled, agents must manually assign a user to themselves via the Live Chat interface. See the [Queues](https://github.com/Botlhale-AI/documentation/blob/master/docs/0%20-%20Platform/help-desk/8%20-%20Queue%20Management.md) section of this documentation for more information on manual assignments.
+Enabling this setting automatically assigns users in the queue to an agent after a human handoff is triggered by the chatbot. If this setting is disabled, agents must manually assign a user to themselves via the Live Chat interface. See the [Queues](https://docs.botlhale.xyz/docs/Platform/help-desk/Queue) section of this documentation for more information on manual assignments.
 
 **Routing by Department:**
 
