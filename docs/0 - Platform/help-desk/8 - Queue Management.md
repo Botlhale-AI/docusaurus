@@ -2,8 +2,6 @@
 
 Queue management is a crucial aspect of running a successful business, especially in the service industry. A queue management system allows you to effectively manage customer flow, minimize wait times, and provide an efficient service experience. This eliminates the need for manual queue management, providing a more enjoyable experience for your customers and improving the overall efficiency of your business.
 
-Understanding the nature of traffic and queries, this section of the platform allows you to set how the queue of your incoming customers and manage how the workload is distributed among your organisation's agents. 
-
 :::info NOTE
 > Users need admin permissions to view and configure queue management settings.
 :::
