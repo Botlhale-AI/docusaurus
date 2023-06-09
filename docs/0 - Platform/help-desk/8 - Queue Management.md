@@ -2,13 +2,15 @@
 
 Queue management is a crucial aspect of running a successful business, especially in the service industry. A queue management system allows you to effectively manage customer flow, minimize wait times, and provide an efficient service experience. This eliminates the need for manual queue management, providing a more enjoyable experience for your customers and improving the overall efficiency of your business.
 
-:::info NOTE
-> Users need admin permissions to view and configure queue management settings.
-:::
+The following image gives you a look at the Queue management interface.
 
 ![queue management](https://botlhale-ai-assets.s3.amazonaws.com/queue-management.png)
 
 The following description list takes you through the various setting options available on the Queue Management page.
+
+:::info NOTE
+> Users need admin permissions to view and configure queue management settings.
+:::
 
 Auto-assign to all online agents
 : Enabling this setting automatically assigns users in the queue to an agent after a human handoff is triggered by the chatbot. If this setting is disabled, agents must manually assign a user to themselves via the Live Chat interface. See the [Queues](3%20-%20Queue.md) section of this documentation for more information on manual assignments.
