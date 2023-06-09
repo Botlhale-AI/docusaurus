@@ -34,7 +34,6 @@ This setting configures the maximum amount of time an agent can remain in an Awa
 
 **Queue Auto-Replies:**
 
-This setting allows you to configure automatic replies which an agent can send to a user in their Live Chat.
-
+This setting allows you to configure automatic replies which get sent to the user as they wait in the queue. Messages configured here typically give the user periodic updates pertaining to the status of their handoff. 
 
 
