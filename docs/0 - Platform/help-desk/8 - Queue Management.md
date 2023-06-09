@@ -13,22 +13,27 @@ The following description list takes you through the various setting options ava
 :::
 
 **Auto-assign to all online agents:** 
-<br/>Enabling this setting automatically assigns users in the queue to an agent after a human handoff is triggered by the chatbot. If this setting is disabled, agents must manually assign a user to themselves via the Live Chat interface. See the [Queues](3%20-%20Queue.md) section of this documentation for more information on manual assignments.
+<b/>Enabling this setting automatically assigns users in the queue to an agent after a human handoff is triggered by the chatbot. If this setting is disabled, agents must manually assign a user to themselves via the Live Chat interface. See the [Queues](3%20-%20Queue.md) section of this documentation for more information on manual assignments.
 
 **Routing by Department:**
-<br/>Enabling this setting routes the users in the queue by the department selected during the chatbot's execution of the human handoff.  
+
+Enabling this setting routes the users in the queue by the department selected during the chatbot's execution of the human handoff.  
 
 **Maximum simultaneous chats per agent:**
-<br/>This setting allows you to configure the maximum number of users an agent can interact with via Live Chat at the same time. 
+
+This setting allows you to configure the maximum number of users an agent can interact with via Live Chat at the same time. 
 
 **SLA Time (minutes):**
-<br/>SLA is an acronym which stands for Service Level Agreement. In this context, SLA Time represents an agreed upon number of minutes an agent can let lapse before they must respond to a newly initiated Live Chat assigned to them. Configuring this setting sends periodic reminders to the agent which prompts them for a response.
+
+SLA is an acronym which stands for Service Level Agreement. In this context, SLA Time represents an agreed upon number of minutes an agent can let lapse before they must respond to a newly initiated Live Chat assigned to them. Configuring this setting sends periodic reminders to the agent which prompts them for a response.
 
 **Agent Away Time (minutes):**
-<br/>This setting configures the maximum amount of time an agent can remain in an Away status on the platform. Configuring this setting sends periodic reminders to the agent which prompt them to return to an Online status.
+
+This setting configures the maximum amount of time an agent can remain in an Away status on the platform. Configuring this setting sends periodic reminders to the agent which prompt them to return to an Online status.
 
 **Queue Auto-Replies:**
-<br/>This setting allows you to configure automatic replies which an agent can send to a user in their Live Chat.
+
+This setting allows you to configure automatic replies which an agent can send to a user in their Live Chat.
 
 
 
