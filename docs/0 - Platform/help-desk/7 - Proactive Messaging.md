@@ -25,7 +25,9 @@ Here, you have the option of creating a new message or selecting a preapproved T
 
 If you choose to create a new campaign message for your campaign, the message is only sent to users that have engaged with your number in the last 24 hours. 
 
-To send this message to all your users, select a preapproved Template Message. For more information on template messages, see the [Template Messages](https://docs.botlhale.xyz/docs/Platform/help-desk/Template%20Messages) section of this documentation.
+To send a proactive message to all your users, select a preapproved Template Message. For more information on template messages, see the [Template Messages](https://docs.botlhale.xyz/docs/Platform/help-desk/Template%20Messages) section of this documentation.
+
+Additionally, you have the option of selecting the date and time when you would like this message to be sent.
 :::
 
 4. Click `Send Campaign`. Your new campaign message is sent to your users. 
