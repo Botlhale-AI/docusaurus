@@ -2,7 +2,7 @@
 
 Queue management is a crucial aspect of running a successful business, especially in the service industry. A queue management system allows you to effectively manage customer flow, minimize wait times, and provide an efficient service experience. This eliminates the need for manual queue management, providing a more enjoyable experience for your customers and improving the overall efficiency of your business.
 
-The following image gives you a look at the Queue management interface.
+The following image gives you a look at the Queue Management interface.
 
 ![queue management](https://botlhale-ai-assets.s3.amazonaws.com/queue-management.png)
 
