@@ -1,30 +1,13 @@
-:::caution
+# Analytics
 
-Please ensure that you have selected a chat bot **bot** on the top-right _markdown_ `section of your screen`.
+Botlhale AI makes available to you analytics on your deployed chatbots. This information can be accessed on the Analytics page of the Botlhale NLP Toolkit Platform by navigating to **Live Bots > Analytics**. From here, you can view various performance metrics for your chatbot such as the completion rate, fallback rate, handoff rate, bot confidence, and so much more. 
+
+:::tip
+To view your reports, ensure you have selected the deployed chatbot whose performance you wish to see. You can do this via the dropdown menu on the top-right corner of your screen.
 :::
 
+The following image gives you a look at the analytics dashboard.
 
-## Analytics
-This section of the Botlhale NLP Toolkit is designed to retrieve the reports from your deployed chatbot(s). 
+![analytics.png](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/botbuilder-analytics.png)
 
-
-**Navigation**:  All you need to do it navigate to the top right of the platform, click on the speech bubble and select the **deployed chatbot** you want to analyse.
-Thereafter, a figure similar report to the one below will appear. From thereon, you and your team can draw insights from your deployed chatbot's progress.
-
-
-
-![analytics.png](https://stoplight.io/api/v1/projects/cHJqOjU4NzU5/images/oFxklAOvazs)
-
-
-To improve the performance of your deployed chatbot, have a look at the Knowledge Base.
-
-```mermaid
-journey
-    title Improve Your ChatBot
-    section Analytics
-      View Analysis: 5: ChatBot
-      Bot Performance: 1: ChatBot
-    section Knowledge Base
-      Update examples and intents: 5: ChatBot 
-      After Update in Knowledge Base: 6: ChatBot
-`````
+The Analytics page also gives you the option to download the full report as a CSV file. To do this, click the `Download CSV` button on the top-right corner of the page. 
