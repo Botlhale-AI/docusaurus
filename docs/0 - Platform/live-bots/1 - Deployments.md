@@ -1,22 +1,27 @@
-:::caution
+# Deploy a Bot
 
-Please ensure that you have selected a chat bot **bot** on the top-right _markdown_ `section of your screen`.
+Once you have set up, trained, and tested your chatbot, you can then deploy it across various channels such as Telegram, WhatsApp, or your website. Use the following steps to deploy your chatbot.
+
+:::tip
+Before you begin, ensure you have selected the chatbot you wish to deploy. You can do this via the dropdown menu on the top-right corner of your screen.
 :::
 
-## Deployments
- 
-This section is for chatbot deployment. It allows you to deploy your trained bot to your application. Once you have trained and tested your chatbot, you can now deploy it to an app such as Telegram, WhatsApp or Your Website.  To deploy, go to the `Deploy A Bot` tab and select the language[s] and the model[s] (chatbot) you want to deploy. After specifying all the deployment parameters you can click on the Deploy button. You will be notified via email once the deployment has been successful.
+1. On the Deployments page of Botlhale NLP Toolkit platform, navigate to the `Deploy A Bot` tab.
+2. A pop-up window, illustrated in the image that follows, appears, prompting you to select the languages and model you wish to deploy.
 
-![deploy-bot](../../../static/img/deploy-a-bot.PNG)
+![deploy a bot](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/deploy-a-bot.png)
+
+3. Enter the required information and click `Deploy`. You are notified by email once the deployment has been successful.  
+4. The successfully deployed bot is now listed on the Deployed Bots tab.
 
 
-## Deployed Bots
+## Deployed Chatbots
 
-To view and test deployed bots, you need to be on the `Deployed Bots` tab. On this tab you can see deployed bots along with their `BotID` and `Date Deployed`. This tab also provides a `API Docs: Quick Start` where you can see example requests to our API to interact with your deployed bot.
+Once you have successfully deployed one or more chatbots, you can view and test them on the Deployed Bots tab. On this tab, you can see information pertaining to your deployed bots such as the `BotID` and `Date Deployed`. This tab also provides a `API Docs: Quick Start` where you can see example requests to our API to interact with your deployed bot.
 
 ![deployments](../../../static/img/deployments.PNG)
 
-On the `Try it out!` tab your can send requests to test you deployed bot. 
+On the `Try it out!` tab your can send requests to test your deployed bot. 
 
 ![deploy](https://botlhale-docs1-new.s3.amazonaws.com/deployed-try.PNG)
 
