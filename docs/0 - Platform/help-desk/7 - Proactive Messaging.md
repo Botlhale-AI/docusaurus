@@ -16,7 +16,7 @@ To send a new campaign message:
 1. From the Proactive Messaging page of Botlhale NLP Toolkit platform, click the Send button next to the campaign you wish to launch.
 2. A pop-up window, illustrated in the image that follows, appears, prompting you to enter the message you wish to send for your campaign.
 
-![proactive message campaign](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/proactive-message-campaign.png)
+![proactive message campaign](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/proactive-message-campaign+copy.png)
 
 3. Enter the requested information.
 
