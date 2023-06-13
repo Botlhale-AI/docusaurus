@@ -14,7 +14,7 @@ To begin a live chat:
 > Agents can use the arrows next to the `Translate Conversations` tab to select their preferred language for the live chat. If the agent's interlocutor is conversing in a different language, the messages are translated in real-time.
 :::
 
-1. On the Live Chat page, click on the user with whom you would to converse.
+1. On the Live Chat page, click on the user with whom you would like to converse.
 2. Their chat history with the bot appears on the conversation pane to the right on the page.
 3. Here, you have the option of typing a free-form text message or using the Quick Reply feature.
    
