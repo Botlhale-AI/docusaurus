@@ -1,5 +1,10 @@
 # Custom Functions
 
+Introducing our state-of-the-art bot builder platform, designed to empower you with the capabilities of natural language processing (NLP) and enhance your conversational AI solutions. As part of our commitment to delivering a truly tailored experience, we are delighted to offer a range of custom functions (some preset/predefined, some customizable) that will revolutionize the way your bots interact with your end users and/or customer. Custom functions enable you to create personalized and dynamic conversational flows, allowing your bots to understand user intents, extract key information, and generate intelligent responses. With our platform, you can effortlessly integrate custom functions to perform tasks such as third party integrations, hitting end-points on a server, processing specific documents, and much more. These functions not only streamline the user experience but also provide you with invaluable insights and increased efficiency. We are excited to bring you this cutting-edge technology and invite you to explore the endless possibilities it offers.
+
+
+:::info Human HandOff Integration to External Parties
+:::
 
 ## Human Handoff Integration
 
