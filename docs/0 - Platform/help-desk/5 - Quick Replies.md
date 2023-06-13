@@ -13,7 +13,7 @@ To create a new Quick Reply:
 4. Your quick reply is created and can now be deployed from the Live Chat interface.
 
 :::info
-> We are here to help! For any questions and queries about this feature, please email support@botlhale.ai.
+> We are here to help! Please email support@botlhale.ai with any questions.
 :::
 
 

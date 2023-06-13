@@ -39,3 +39,7 @@ import TabItem from '@theme/TabItem';
 :::note
 > The Departments, API, and Office Hours settings need admin privileges to be accessed.
 :::
+
+:::info
+> We are here to help! Please email support@botlhale.ai with any questions.
+:::

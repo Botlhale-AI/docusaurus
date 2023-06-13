@@ -26,6 +26,10 @@ Use the following steps to perform a Quick Test on your chatbot.
 
 ![Chatbot interaction interface](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/chatbot-interface.png)
 
+:::info
+> We are here to help! Please email support@botlhale.ai with any questions.
+:::
+
 <!--
 ## Telegram Test
 

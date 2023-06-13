@@ -9,4 +9,8 @@ Users with admin permissions can use the User Management page to perform the fol
 
 ![user management](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/user-management.png)
 
+:::info
+> We are here to help! Please email support@botlhale.ai with any questions.
+:::
+
 

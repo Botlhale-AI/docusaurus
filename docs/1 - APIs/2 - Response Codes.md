@@ -30,3 +30,7 @@ In the case where a standard HTTP error is sufficiently descriptive, for example
 | `409 - Conflict` | The request conflicts with another request (perhaps due to using the same idempotent key).| 
 | `429 - Too Many Requests` | Too many requests hit the API too quickly. We recommend an exponential backoff of your requests.| 
 | `500, 502, 503, 504 - Server Errors` | Something went wrong on Botlhale's end (these are rare).
+
+:::info
+> We are here to help! Please email support@botlhale.ai with any questions.
+:::

@@ -32,6 +32,10 @@ To begin a live chat:
 > - Transfer the user to another agent
 > - Mark the conversation as resolved
 :::
+
+:::info
+> We are here to help! Please email support@botlhale.ai with any questions.
+:::
    
 
 

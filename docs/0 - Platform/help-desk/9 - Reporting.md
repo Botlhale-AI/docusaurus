@@ -9,7 +9,7 @@ The following image gives you a view of the Reporting page.
 
 
 :::info
-> We are here to help! For any questions about this feature, please email support@botlhale.ai.
+> We are here to help! Please email support@botlhale.ai with any questions.
 :::
 
 

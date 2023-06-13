@@ -23,3 +23,7 @@ Use the following steps to train your chatbot.
 6. Once training is completed, the status changes to "Done". You will also receive an email confirming this. 
 7. Repeat this process until you have trained your chatbot in all your desired languages.
 
+:::info
+> We are here to help! Please email support@botlhale.ai with any questions.
+:::
+

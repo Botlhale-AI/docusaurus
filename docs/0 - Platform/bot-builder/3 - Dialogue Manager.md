@@ -52,5 +52,9 @@ Use the following steps to create a new custom dialogue.
 5. Click the `Create dialogue` button. Your new custom dialogue is created and listed on the Dialogue Manager page. 
 6. Now, you can begin building the conversation sequence for your dialogue by creating and adding dialogue elements. This is discussed in detail in the section that follows.
 
+:::info
+> We are here to help! Please email support@botlhale.ai with any questions.
+:::
+
 
 

@@ -78,5 +78,5 @@ if (socket.connected) {
 
 
 :::info
-> We are here to help! For any questions regarding this feature, please email support@botlhale.ai
+> We are here to help! Please email support@botlhale.ai with any questions.
 :::

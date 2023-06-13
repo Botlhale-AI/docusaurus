@@ -36,4 +36,8 @@ This setting configures the maximum amount of time an agent can remain in an Awa
 
 This setting allows you to configure automatic replies which get sent to the user as they wait in the queue. Messages configured here typically give the user periodic updates pertaining to the status of their handoff. 
 
+:::info
+> We are here to help! Please email support@botlhale.ai with any questions.
+:::
+
 

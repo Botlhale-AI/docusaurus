@@ -745,3 +745,7 @@ req.end();
     "TextResponse":["What size would you like?"]
 }
 ```
+
+:::info
+> We are here to help! Please email support@botlhale.ai with any questions.
+:::

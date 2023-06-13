@@ -21,3 +21,8 @@ Language | Region | Code | Translation |ASR | TTS | Diarization | Language ID |
 | Kinyarwanda   | Rwanda        |  rw-RW    | √ | √ |  - | - | - |
 | Shona         | Zimbabwe      |  sh-ZM    | √ | - |  - | - | - |
 | Ewe           | Ghana         |  ee-GH    | √ | - |  - | - | - |
+
+
+:::info
+> We are here to help! Please email support@botlhale.ai with any questions.
+:::

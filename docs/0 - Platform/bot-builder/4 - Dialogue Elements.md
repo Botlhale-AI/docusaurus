@@ -62,3 +62,7 @@ The example below shows how these dialogue elements can be used together.
 ![create entity](https://botlhale-docs1-new.s3.amazonaws.com/dlm-components.png)
 
 Note that if you make any changes to the dialogue, you must make sure to save your progress before leaving the page otherwise your changes will be lost.
+
+:::info
+> We are here to help! Please email support@botlhale.ai with any questions.
+:::

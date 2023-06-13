@@ -38,9 +38,13 @@ Before you delete an intent, ensure it is not in use in the Dialogue Manager. If
 Use the following steps to delete an intent.
 
 1. From the Intents Manager page, click on the Delete icon corresponding to the intent you wish to remove. 
-2. A pop-up window appears, prompting you to confirm this action by clicking the `Delete Intent` button. 
-
+2. A pop-up window appears, prompting you to confirm this action by clicking the `Delete Intent` button.
 
 :::danger
-Deleting an intent permanently deletes any example values associated with that intent. This cannot be restored.
+> Deleting an intent permanently deletes any example values associated with that intent. This cannot be restored.
 :::
+
+:::info
+> We are here to help! Please email support@botlhale.ai with any questions.
+:::
+

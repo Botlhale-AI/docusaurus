@@ -100,3 +100,7 @@ Use the following steps to delete an entity.
 > Deleting an entity also deletes any example values associated with that entity. Deleted content cannot be restored.
 :::
 
+:::info
+> We are here to help! Please email support@botlhale.ai with any questions.
+:::
+

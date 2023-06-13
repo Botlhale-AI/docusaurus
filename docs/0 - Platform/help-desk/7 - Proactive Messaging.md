@@ -32,5 +32,9 @@ Additionally, you have the option of selecting the date and time when you would 
 
 4. Click `Send Campaign`. Your new campaign message is sent to your users. 
 
+:::info
+> We are here to help! Please email support@botlhale.ai with any questions.
+:::
+
 
 

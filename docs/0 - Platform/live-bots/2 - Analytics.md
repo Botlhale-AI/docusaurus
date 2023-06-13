@@ -11,3 +11,7 @@ The following image gives you a look at the analytics dashboard.
 ![analytics.png](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/botbuilder-analytics.png)
 
 The Analytics page also gives you the option to download the full report as a CSV file. To do this, click the `Download CSV` button on the top-right corner of the page. 
+
+:::info
+> We are here to help! Please email support@botlhale.ai with any questions.
+:::

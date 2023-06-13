@@ -127,3 +127,7 @@ Include `IdToken` as the Bearer Token in headers for Authorization on other API 
 ```python
 headers = {"Authorization": "Bearer <IdToken>"}
 ```
+
+:::info
+> We are here to help! Please email support@botlhale.ai with any questions.
+:::

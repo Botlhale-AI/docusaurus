@@ -39,3 +39,7 @@ The `One-click Deployments` tab allows you to get your chatbot live on the platf
 When attempting to launch your chatbot on the platforms listed above, you are prompted for an authentication token or key. This information is made available to you during the onboarding process.
 :::
 
+:::info
+> We are here to help! Please email support@botlhale.ai with any questions.
+:::
+

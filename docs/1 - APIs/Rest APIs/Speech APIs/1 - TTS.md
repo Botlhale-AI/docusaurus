@@ -116,3 +116,7 @@ request(options, function (error, response) {
     "TextMsg": "Xa ufuna ukuthenga imoto cofa iqhosha lokuqala."
 }
 ```
+
+:::info
+> We are here to help! Please email support@botlhale.ai with any questions.
+:::

@@ -27,3 +27,7 @@ With asynchronous requests (REST), audio data is sent to the Speech-to-Text API 
 
 * `Sample Rate` - We support all sample rates between 8 000 Hz and 48 000 Hz. If you can choose the sample rate of the source, record the audio at 16 000 Hz. This is because sample rates below that might affect the accuracy of our models, and sample rates above 16 000 Hz have no significant impact on the accuracy of our models.  
 
+:::info
+> We are here to help! Please email support@botlhale.ai with any questions.
+:::
+

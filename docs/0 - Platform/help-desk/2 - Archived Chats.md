@@ -21,6 +21,10 @@ Use the following steps to restart an archived chat.
 6. Select the desired template message and click `Send Template`.
 7. Your template message is sent and you can continue conversing with the user. 
 
+:::info
+> We are here to help! Please email support@botlhale.ai with any questions.
+:::
+
 
 
 

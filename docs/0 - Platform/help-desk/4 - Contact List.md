@@ -39,6 +39,10 @@ Use the View icon to see the full details of an existing contact. You also have 
 Use the Delete icon to remove an existing contact from your list. Note that this operation is final and cannot be undone.
 :::
 
+:::info
+> We are here to help! Please email support@botlhale.ai with any questions.
+:::
+
 
 
 

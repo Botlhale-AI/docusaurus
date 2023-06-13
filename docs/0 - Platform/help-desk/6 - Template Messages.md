@@ -26,6 +26,10 @@ To create a new template message:
 
 Once your message has been created and approved, you can begin sending it to your customers. This is done on the Proactive Messaging interface. For more information on this, see the [Proactive Messaging](https://docs.botlhale.xyz/docs/Platform/help-desk/Proactive%20Messaging) section of this documentation. 
 
+:::info
+> We are here to help! Please email support@botlhale.ai with any questions.
+:::
+
 
 
 

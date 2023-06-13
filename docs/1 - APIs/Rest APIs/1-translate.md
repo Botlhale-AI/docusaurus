@@ -113,3 +113,7 @@ request(options, function (error, response) {
     "characters": "40"
 }
 ```
+
+:::info
+> We are here to help! Please email support@botlhale.ai with any questions.
+:::

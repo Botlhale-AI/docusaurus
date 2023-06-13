@@ -22,3 +22,7 @@ See what you can do with our Speech API!
 
 1. [Convert Speech to Text](Rest%20APIs/Speech%20APIs/Automatic%20Speech%20Recogniton/0%20-%20Overview.md)
 2. [Convert Text to Speech](Rest%20APIs/Speech%20APIs/1%20-%20TTS.md)
+
+:::info
+> We are here to help! Please email support@botlhale.ai with any questions.
+:::

@@ -6,3 +6,6 @@ If automatic assigning is not enabled, transferred users must be manually assign
 
 ![queue_live_chat.png](https://stoplight.io/api/v1/projects/cHJqOjU4NzU5/images/mf8zrDUM4ro)
 
+:::info
+> We are here to help! Please email support@botlhale.ai with any questions.
+:::
