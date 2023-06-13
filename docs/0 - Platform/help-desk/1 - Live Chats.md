@@ -24,7 +24,14 @@ To begin a live chat:
 
    ![quick reply](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/quick-reply-live-chat.png)
 
-   c. Select your desired quick reply and click the Send icon when done. 
+   c. Select your desired quick reply and click the Send icon when done.
+
+:::tip 
+> Use the icons at the top of the conversation pane to do the following:
+> - Add a subject line to your conversation
+> - Transfer the user to another agent
+> - Mark the conversation as resolved
+:::
    
 
 
