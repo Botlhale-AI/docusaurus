@@ -16,7 +16,7 @@ To begin a live chat:
 
 1. On the Live Chat page, click on the user with whom you would like to converse.
 2. Their chat history with the bot appears on the conversation pane to the right on the page.
-3. Here, you have the option of typing a free-form text message or using the Quick Reply feature.
+3. Here, you have the option of typing a free-form text message or using the Quick Reply feature. See the [Quick Replies](https://docs.botlhale.xyz/docs/Platform/help-desk/Quick%20Replies) section of this documentation for more information.
    
    a. For free-form messages, simply begin typing in the message bar and click the Send icon when done.
 
