@@ -168,12 +168,14 @@ Use the following steps to add this element to your dialogue.
 
       ![new button](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/bot-button.png)
 11. Select the payload type from the drop-down menu.
+    
     a. Selecting *from_intent* as the payload type prompts you to select the intent your button should be linked to.
+
     b. Selecting *from_faq* as the payload type prompts you to select the frequently asked question your button should be linked to.
 
-12. You have the option of attaching an entity to your button. To do so, select the `Attach entity to payload` checkbox and choose the entity you would like to attach from the dropdown.
-13. Enter the title for your new button in the field provided. This is the text that should be displayed on the button. This text needs to be entered in all the languages your chatbot supports.
-14. Click `Save`. Your new button is now added.  
+13. You have the option of attaching an entity to your button. To do so, select the `Attach entity to payload` checkbox and choose the entity you would like to attach from the dropdown.
+14. Enter the title for your new button in the field provided. This is the text that should be displayed on the button. This text needs to be entered in all the languages your chatbot supports.
+15. Click `Save`. Your new button is now added.  
 
 # Example
 The following example shows how these dialogue elements can be used together.
