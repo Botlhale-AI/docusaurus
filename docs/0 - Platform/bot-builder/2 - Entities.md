@@ -49,6 +49,7 @@ Use the following steps to create a custom entity.
 11. A pop-up window appears, prompting you to enter a role for your entity.
 
 ![create entity role](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/create-entity-role.png)
+
 12. Fill in the required information and click `Create entity role`. Repeat the process again to add as many roles as needed.
 
 13. Your entity roles are created and they appear in a list on the Entity roles tab. 
