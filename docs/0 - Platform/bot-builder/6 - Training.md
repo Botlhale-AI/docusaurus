@@ -10,6 +10,7 @@ Use the following steps to train your chatbot.
    ![training dashboard](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/training-dashboard.png)
 
 3. Select the language you wish to use to train your chatbot.
+   
    :::info
    > You can only train your chatbot with one language at a time.
    :::
