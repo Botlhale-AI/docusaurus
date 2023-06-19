@@ -29,7 +29,7 @@ Use the following steps to create a preset dialogue for your chatbot.
 1. From the Dialogue Manager page, click the `New dialogue` button.
 2. A pop-up window appears, prompting you to select the dialogue type. Use the arrows to toggle between the available options.
 
-![new dialogue](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/create-dialogue-preset.png)
+   ![new dialogue](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/create-dialogue-preset.png)
 
 3. Ensure "Preset" is selected as the dialogue type, and select the preset dialogue you wish to assign to your bot.
 4. Click the `Create dialogue` button. Your preset dialogue is created and listed on the Dialogue Manager page. 
@@ -44,13 +44,13 @@ Use the following steps to create a preset dialogue for your chatbot.
 Use the following steps to create a new custom dialogue.
 
 1. From the Dialogue Manager page, click the `New dialogue` button.
-2. A pop-up window appears, prompting you to select the dialogue type and assign it a name. 
+2. A pop-up window appears, prompting you to select the dialogue type and assign it a name.
 
-![new dialogue](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/new-dialogue.png)
+   ![new dialogue](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/new-dialogue.png)
 
 3. Ensure "Custom" is selected as the dialogue type, and enter an appropriate name for your new dialogue.
-5. Click the `Create dialogue` button. Your new custom dialogue is created and listed on the Dialogue Manager page. 
-6. Now, you can begin building the conversation sequence for your dialogue by creating and adding dialogue elements. This is discussed in detail in the section that follows.
+4. Click the `Create dialogue` button. Your new custom dialogue is created and listed on the Dialogue Manager page. 
+5. Now, you can begin building the conversation sequence for your dialogue by creating and adding dialogue elements. This is discussed in detail in the section that follows.
 
 :::info
 > We are here to help! Please email support@botlhale.ai with any questions.
