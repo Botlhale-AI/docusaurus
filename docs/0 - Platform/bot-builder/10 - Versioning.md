@@ -16,9 +16,9 @@ To create a new chatbot version:
 3. Enter your desired version name and click `Create version`.
 4. Your new chatbot version is created.
    
-   :::tip
-   > You can toggle between different versions of your chatbot by using the dropdown menu in the top-right corner of any page on the platform.
-   :::
+:::tip
+> You can toggle between different versions of your chatbot by using the dropdown menu in the top-right corner of any page on the platform.
+:::
 
 :::info
 > We are here to help! Please email support@botlhale.ai with any questions.
