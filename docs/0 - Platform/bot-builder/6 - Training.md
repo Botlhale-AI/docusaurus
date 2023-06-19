@@ -7,18 +7,17 @@ Use the following steps to train your chatbot.
 1. Ensure the chatbot you wish to train is selected. Use the dropdown menu in the top-right corner of the Botlhale NLP Toolkit site to toggle between chatbots.
 2. Navigate to the Training Dashboard.
 
-![training dashboard](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/training-dashboard.png)
+   ![training dashboard](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/training-dashboard.png)
 
 3. Select the language you wish to use to train your chatbot.
-
-:::info
-> You can only train your chatbot with one language at a time.
-:::
+   :::info
+   > You can only train your chatbot with one language at a time.
+   :::
 
 4. Set the Training Cycle parameter. This parameter indicates the number of times you would like to train your chatbot.
 5. Click the `Train` button. Your chatbot training begins. You can monitor the status of your training in the Saved Models tab.
 
-![saved models](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/training-in-progress.png)
+   ![saved models](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/training-in-progress.png)
 
 6. Once training is completed, the status changes to "Done". You will also receive an email confirming this. 
 7. Repeat this process until you have trained your chatbot in all your desired languages.
