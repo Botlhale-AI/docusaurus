@@ -1,12 +1,21 @@
 # Custom Functions
 
-Introducing our state-of-the-art bot builder platform, designed to empower you with the capabilities of natural language processing (NLP) and enhance your conversational AI solutions. As part of our commitment to delivering a truly tailored experience, we are delighted to offer a range of custom functions (some preset/predefined, some customizable) that will revolutionize the way your bots interact with your end users and/or customer. Custom functions enable you to create personalized and dynamic conversational flows, allowing your bots to understand user intents, extract key information, and generate intelligent responses. With our platform, you can effortlessly integrate custom functions to perform tasks such as third party integrations, hitting end-points on a server, processing specific documents, and much more. These functions not only streamline the user experience but also provide you with invaluable insights and increased efficiency. We are excited to bring you this cutting-edge technology and invite you to explore the endless possibilities it offers.
+Botlhale AI's platform allows for a range of custom functions that can be used to tailor and personalise the way your chatbot interacts with the end user. These custom functions are either predefined or customisable. Integrating custom functions on the platform allows you to integrate with third parties, hit enpoints on a server, process specific documents, and much more. These functions not only streamline and enhance the user's experience, but also provide you with invaluable insights and increased efficiency.
+
+Custom functions are configurable and visible on the Actions Dashboard page of Botlhale's NLP Toolkit platform. The following image shows a code snippet of a custom action that allows your chatbot to process images.  
 
 ![actions dasboard](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/actions-dashboard.png)
+
+The Actions Dashboard also flags any errors in your code, highlighting the erroneous code. You are able to resolve these errors within the Actions Dashboard window. The following screenshots illustrate this. 
+
 ![actions dasboard error](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/actions-dashboard-error.png)
 ![actions dasboard success](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/actions-dashboard-success.png)
 
-:::info Human HandOff Integration to External Parties
+:::caution
+Adding preset or custom bot actions to your dialogue via Dialogue Manager automatically will override any previous related configuration done in the Actions Dashboard. See the section on [Bot Action](https://docs.botlhale.xyz/docs/Platform/bot-builder/Dialogue%20Elements#bot-action) for more information.
+:::
+
+:::info Human Handoff Integration to External Parties
 :::
 
 ## Human Handoff Integration
@@ -20,7 +29,7 @@ The human handoff dialogue contains the following two dialogue streams:
 
 These two dialogues work off the shell and do not require any modifications. 
 
-The human handoff capability uses [Socket.IO](https://socket.io/docs/v3/), a library that allows message passing between a server and multiple clients. All chatbots with human handoff set up need to connect to Botlhale AI's [Socket.IO server](https://app.botlhale.xyz/live_server)
+The human handoff capability uses [Socket.IO](https://socket.io/docs/v3/), a library that allows message passing between a server and multiple clients. All chatbots with human handoff set up need to connect to Botlhale AI's [Socket.IO server](https://app.botlhale.xyz/live_server).
 
 The following code snippets can be used to set up socket IO, as well as event listener and emitter functions to interface with Botlhale AI's Socket.IO server. The code snippets use JavaScript. However, if your bot is integrated in a non-JavaScript environment, there are several client implementations available in other languages. See the [Socket.IO documentation](https://socket.io/docs/v3/) for additional information.
 
