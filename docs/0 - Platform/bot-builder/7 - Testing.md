@@ -14,17 +14,18 @@ Use the following steps to perform a Quick Test on your chatbot.
 
 1. On the Testing Dashboard, ensure the Quick Test tab is selected.
 2. Enter the Model Parameters for your Quick Test. This is the language and model (trained chatbot) you wish to test.
-![testing dashboard](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/testing-dashboard.png)
 
-:::info
-> Like with training, you can only test one model and language at a time.
-:::
+   ![testing dashboard](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/testing-dashboard.png)
+
+   :::info
+   > Like with training, you can only test one model and language at a time.
+   :::
 
 3. Click the `Load Model` button.
 
 4. Once your model is loaded, a message from your chatbot appears on the Chat Interface, and you can begin interacting with the chatbot.
 
-![Chatbot interaction interface](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/chatbot-interface.png)
+   ![Chatbot interaction interface](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/chatbot-interface.png)
 
 :::info
 > We are here to help! Please email support@botlhale.ai with any questions.
