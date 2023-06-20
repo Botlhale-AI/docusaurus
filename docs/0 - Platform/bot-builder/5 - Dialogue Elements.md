@@ -171,7 +171,7 @@ Use the following steps to add this element to your dialogue.
     
     a. Selecting *from_intent* as the payload type prompts you to select the intent your button should be linked to.
 
-    b. Selecting *from_faq* as the payload type prompts you to select the frequently asked question your button should be linked to.
+    b. Selecting *from_faq* as the payload type prompts you to select the frequently asked question your button should be linked to. See the [FAQ](https://docs.botlhale.xyz/docs/Platform/bot-builder/FAQs) section of this documentation for more information.
 
 13. You have the option of attaching an entity to your button. To do so, select the `Attach entity to payload` checkbox and choose the entity you would like to attach from the dropdown.
 14. Enter the title for your new button in the field provided. This is the text that should be displayed on the button. This text needs to be entered in all the languages your chatbot supports.

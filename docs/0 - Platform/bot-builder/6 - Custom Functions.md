@@ -1,6 +1,6 @@
 # Custom Functions
 
-Botlhale AI's platform allows for a range of custom functions that can be used to tailor and personalise the way your chatbot interacts with the end user. These custom functions are either predefined or customisable. Integrating custom functions on the platform allows you to integrate with third parties, hit enpoints on a server, process specific documents, and much more. These functions not only streamline and enhance the user's experience, but also provide you with invaluable insights and increased efficiency.
+Botlhale AI's platform allows for a range of custom functions that can be used to tailor and personalise the way your chatbot interacts with the end user. These custom functions are either predefined or customisable. Integrating custom functions on the platform allows you to integrate with third parties, hit endpoints on a server, process specific documents, and much more. These functions not only streamline and enhance the user's experience, but also provide you with invaluable insights and increased efficiency.
 
 Custom functions are configurable and visible on the Actions Dashboard page of Botlhale's NLP Toolkit platform. The following image shows a code snippet of a custom action that allows your chatbot to process images.  
 
@@ -8,8 +8,8 @@ Custom functions are configurable and visible on the Actions Dashboard page of B
 
 The Actions Dashboard also flags any errors in your code, highlighting the erroneous code. You are able to resolve these errors within the Actions Dashboard window. The following screenshots illustrate this. 
 
-![actions dasboard error](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/actions-dashboard-error.png)
-![actions dasboard success](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/actions-dashboard-success.png)
+![actions dashboard error](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/actions-dashboard-error.png)
+![actions dashboard success](https://botlhale-ai-assets.s3.amazonaws.com/doc-imgs/actions-dashboard-success.png)
 
 :::caution
 Adding preset or custom bot actions to your dialogue via Dialogue Manager automatically will override any previous related configuration done in the Actions Dashboard. See the section on [Bot Action](https://docs.botlhale.xyz/docs/Platform/bot-builder/Dialogue%20Elements#bot-action) for more information.
