@@ -1,0 +1,12 @@
+# Notes
+
+Chat to TP about Notes section. Is there a way to use Custom Actions to access notes or make them visible across your organisation
+
+Use cases: collaborative sace to dump notes
+Access - admin and botbuilder
+
+Use case - get the bots to pull what's written here. School example, has announcements button parents can sent from here
+
+How do people hit notes? via specific url on the actions dashboard - response is entirety of what's written on notes
+
+specify the organisation, chatbot, language - this is done on the actions dashboard
