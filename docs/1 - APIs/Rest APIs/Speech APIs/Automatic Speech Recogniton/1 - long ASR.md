@@ -314,7 +314,7 @@ request(options, function (error, response) {
 ## ASR Async get data `GET`
 
 ```bash
-https://api.botlhale.xyz/asr/async/getdata
+https://api.botlhale.xyz/asr/async/data
 ```
 
 :::tip

@@ -12,9 +12,9 @@ https://api.botlhale.xyz/translate
 This endpoint handles translations from the specified language to English.
 
 Request Params | Data Type | |Description
-| ------------- | ------------- | ------------- |
-| Text  | `string` **Required** |Text to be translated | 
-| LanguageCode  | `string` **Optional** |Source language of text to be translated <br/>See the [Supported Languages](2%20-%20Languages.md) page for a list of supported languages and codes. |
+| ------------- | ------------- | ------------- | ------------- |
+| Text  | `string` |**Required** |Text to be translated | 
+| LanguageCode  | `string` |**Optional** |Source language of text to be translated <br/>See the [Supported Languages](2%20-%20Languages.md) page for a list of supported languages and codes. |
 
 
 #### Request Example
