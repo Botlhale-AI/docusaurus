@@ -16,6 +16,9 @@ Request Params |Data Type | |Description |
 | ------------- | ------------- | ------------- | ------------- |
 | BotID  | `string` |**Required** |Specifies the bot to which the message should be sent| 
 | LanguageCode  | `string`  |**Required** |This is the language in which the user interacts with the bot. <br/>See the [Supported Languages](2%20-%20Languages.md) page for a list of supported languages and codes. |
+| ConversationID  | `string`  |**Optional** |This is a unique Id that you have to provide to keep track of different conversations. **Auto-generated if not provided**. |
+| UserID  | `string` |**Optional** |Set to ConversationID if not provided.| 
+| Platform  | `string` |**Optional** |Set to 'API' if not provided.| 
 
 
 #### Request Example
