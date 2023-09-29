@@ -9,7 +9,7 @@ https://api.botlhale.xyz/asr
 ```
 
 :::tip
-> You need to include an `Authentication Token` in request headers. See the [Authentication](../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
+> You need to include an `Authentication Token` in request headers. See the [Authentication](../../../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
 :::
 
 
@@ -19,7 +19,7 @@ Request Params |File Type | | Description |
 | ------------- | ------------- | ------------- | ------------- |
 | SpeechFile  | `File`  | **Required** | This is the binary audio file of the user's message.| 
 | SampleRate  | `Number`  | **Required** | This is the sample rate of the supplied audio clip in hertz. <br/>For example, an 8kHz sample rate would be input as 8000.|
-| LanguageCode  | `String`  | **Optional** | This is the language spoken in the supplied audio clip. We use BCP-47 language tags. <br/>See the [Supported Languages](2%20-%20Languages.md) page for a list of supported languages and codes. |
+| LanguageCode  | `String`  | **Optional** | This is the language spoken in the supplied audio clip. We use BCP-47 language tags. <br/>See the [Supported Languages](../../2%20-%20Languages.md) page for a list of supported languages and codes. |
 
 
 <br />

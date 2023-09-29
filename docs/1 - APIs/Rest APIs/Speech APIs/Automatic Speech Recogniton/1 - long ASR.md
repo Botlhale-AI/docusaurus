@@ -8,7 +8,7 @@ Asynchronous recognition requests are another means of performing recognition on
 https://api.botlhale.xyz/asr/async/upload
 ```
 :::tip
-> You need to include an `Authentication Token` in request headers. See the [Authentication](../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
+> You need to include an `Authentication Token` in request headers. See the [Authentication](../../../1%20-%20Authentication.md#generate-a-bearer-token-post) page of this documentation for information on how to generate authentication token codes.
 :::
 
 This endpoint generates a presigned URL that allows the user to upload a speech file for the async ASR request. This endpoint returns a presigned URL and the auto-generated filename.
@@ -17,7 +17,7 @@ This endpoint generates a presigned URL that allows the user to upload a speech 
 | ------------- | ------------- | ------------- | ------------- |
 | OrgID  | `String`  | **Required** |Organisation ID |
 | SampleRate  | `Number`  | **Required** |The sample rate of the supplied audio clip in hertz, for example, 8kHz rendered as 8 000|
-| LanguageCode  | `String`  | **Optional** |This is the language spoken in the supplied audio clip. We use BCP-47 language tags. <br/>See the [Supported Languages](2%20-%20Languages.md) page for a list of supported languages and codes. If this information is not provided, the language is automatically detected. This is done at sentence level.|
+| LanguageCode  | `String`  | **Optional** |This is the language spoken in the supplied audio clip. We use BCP-47 language tags. <br/>See the [Supported Languages](../../2%20-%20Languages.md) page for a list of supported languages and codes. If this information is not provided, the language is automatically detected. This is done at sentence level.|
 | Diarization | `Boolean`  |**Optional** | Speaker diarization is used to identify the different speakers in an audio clip, as well as when the different speakers are speaking. Valid values are as follows: <br/>_**False** - Default, Speaker diarization is disabled._ <br/>_**True** - Speaker diarization is enabled._|
 
 #### Request Example
