@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
   title: 'Bua',
-  tagline: "Let's get started! 🚀",
+  tagline: "Let's go! 🚀",
   url: 'https://docs.botlhale.xyz',
   baseUrl: '/',
   onBrokenLinks: 'warn',
