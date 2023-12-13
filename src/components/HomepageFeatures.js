@@ -19,7 +19,7 @@ const FeatureList = [
     Svg: require('../../static/img/launch.svg').default,
     description: (
       <>
-      The Botlhale NLP Toolkit makes it easy for you to build, test, and deploy one or more chatbots onto platforms like WhatsApp, Facebook, and Telegram with just one <code>click</code>.
+      Bua makes it easy for you to build, test, and deploy one or more chatbots onto platforms like WhatsApp, Facebook, and Telegram with just one <code>click</code>.
       </>
     ),
   },
